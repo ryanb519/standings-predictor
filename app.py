@@ -43,7 +43,7 @@ def calculate_standings(picks, projections, starters):
   # 1. Reads in the dataframes
   hitter_df = getAggregateHitterProj(projections)
   pitcher_df = getAggregatePitcherProj(projections)
-  picks_df = pd.read_csv('picks.tsv', sep='\t')
+  picks_df = pd.read_csv(picks, sep='\t')
 
   # Function to transform 'Firstname Lastname' to 'Lastname, Firstname'
   def transform_player_name(name):
