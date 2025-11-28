@@ -283,7 +283,7 @@ if calculate_button:
                 st.markdown("### 🔍 Highlight Options")
 
                 # Team dropdown (populate after calculation)
-                team_list = standings_df["Team"].dropna().unique().tolist()
+                team_list = standings_df["DraftTeam"].dropna().unique().tolist()
                 highlight_team = st.selectbox(
                     "Highlight a team (optional):",
                     options=["None"] + team_list,
@@ -293,7 +293,7 @@ if calculate_button:
                 # Category highlight dropdown
                 numeric_cols = [
                     col for col in standings_df.columns
-                    if standings_df[col].dtype != "object" and col not in ("Rank")
+                    if standings_df[col].dtype != "object" and col not in ("Overall_Rank")
                 ]
 
                 highlight_stat = st.selectbox(
@@ -316,7 +316,7 @@ if calculate_button:
                 def highlight_rows(row):
                     base = ""
                     # Team highlight
-                    if highlight_team != "None" and row["Team"] == highlight_team:
+                    if highlight_team != "None" and row["DraftTeam"] == highlight_team:
                         base = f"background-color: rgba(255, 255, 0, {intensity});"
 
                     # Category highlight
