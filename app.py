@@ -265,7 +265,6 @@ if calculate_button:
     elif len(selected_systems) == 0:
         st.warning("Please select at least one projection system.")
     else:
-        # Run the calculation
         with st.spinner("Calculating projected standings..."):
             try:
                 standings_df = calculate_standings(picks_df, selected_systems, starters_only)
@@ -273,66 +272,57 @@ if calculate_button:
                 if not isinstance(standings_df, pd.DataFrame):
                     raise ValueError("calculate_standings did not return a pandas DataFrame.")
 
-                # Display timestamp
-                now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                last_run_info.markdown(f"**Last calculated:** {now} — using: {', '.join(selected_systems)}")
-
                 # -----------------------
-                # EXTRA UI: Highlight Controls
+                # APPLY DISPLAY ROUNDING
                 # -----------------------
-                st.markdown("### 🔍 Highlight Options")
-
-                # Team dropdown (populate after calculation)
-                team_list = standings_df["DraftTeam"].dropna().unique().tolist()
-                highlight_team = st.selectbox(
-                    "Highlight a team (optional):",
-                    options=["None"] + team_list,
-                    index=0
-                )
-
-                # Category highlight dropdown
-                numeric_cols = [
-                    col for col in standings_df.columns
-                    if standings_df[col].dtype != "object" and col not in ("Overall_Rank")
+                whole_number_columns = [
+                    "R", "R_Rank",
+                    "HR", "HR_Rank",
+                    "RBI", "RBI_Rank",
+                    "SB", "SB_Rank",
+                    "Grand_Total_Score",
+                    "Hitter_Score",
+                    "Pitcher_Score",
+                    "W", "W_Rank",
+                    "SO", "SO_Rank",
+                    "SV", "SV_Rank"
                 ]
 
-                highlight_stat = st.selectbox(
-                    "Highlight top team in a category (optional):",
-                    options=["None"] + numeric_cols,
-                    index=0
-                )
+                # Round whole-number columns
+                for col in whole_number_columns:
+                    if col in standings_df.columns:
+                        standings_df[col] = pd.to_numeric(standings_df[col], errors="coerce").round(0).astype("Int64")
 
-                # Color intensity
-                intensity = st.slider(
-                    "Highlight intensity:",
-                    min_value=0.1, max_value=1.0, value=0.3, step=0.05
-                )
+                # Round ERA & WHIP to 2 decimals
+                if "ERA" in standings_df.columns:
+                    standings_df["ERA"] = (
+                        pd.to_numeric(standings_df["ERA"], errors="coerce")
+                        .round(2)
+                    )
 
-                # -----------------------
-                # APPLY HIGHLIGHTING
-                # -----------------------
-                styled_df = standings_df.copy()
+                if "WHIP" in standings_df.columns:
+                    standings_df["WHIP"] = (
+                        pd.to_numeric(standings_df["WHIP"], errors="coerce")
+                        .round(2)
+                    )
 
-                def highlight_rows(row):
-                    base = ""
-                    # Team highlight
-                    if highlight_team != "None" and row["DraftTeam"] == highlight_team:
-                        base = f"background-color: rgba(255, 255, 0, {intensity});"
-
-                    # Category highlight
-                    if highlight_stat != "None":
-                        max_val = standings_df[highlight_stat].max()
-                        if row[highlight_stat] == max_val:
-                            base = f"background-color: rgba(0, 255, 0, {intensity});"
-
-                    return [base] * len(row)
-
-                styled_output = standings_df.style.apply(highlight_rows, axis=1)
+                # Format AVG to 3 decimals and remove leading zero
+                if "AVG" in standings_df.columns:
+                    standings_df["AVG"] = (
+                        pd.to_numeric(standings_df["AVG"], errors="coerce")
+                        .round(3)
+                        .map(lambda x: f"{x:.3f}".lstrip("0") if pd.notnull(x) else "")
+                    )
 
                 # -----------------------
                 # DISPLAY THE TABLE
                 # -----------------------
-                results_placeholder.dataframe(styled_output, use_container_width=True)
+                now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                last_run_info.markdown(
+                    f"**Last calculated:** {now} — using: {', '.join(selected_systems)}"
+                )
+
+                results_placeholder.dataframe(standings_df, use_container_width=True)
 
                 # -----------------------
                 # DOWNLOAD BUTTON
@@ -347,15 +337,3 @@ if calculate_button:
 
             except Exception as e:
                 st.exception(f"Calculation failed: {e}")
-
-
-# -----------------------
-# Footer / helpful tips
-# -----------------------
-st.markdown("---")
-st.caption(
-    "This interface implements: 1) TSV draft file upload, 2) six projection-system checkboxes, "
-    "3) roster option (entire roster vs starters only), 4) a Calculate button, and 5) "
-    "a sortable standings table with CSV download. Replace the placeholder `projection_engine.calculate_standings` "
-    "import with your existing function to plug in your projection engine."
-)
