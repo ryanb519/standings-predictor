@@ -186,84 +186,75 @@ with st.expander("Instructions / Notes", expanded=False):
     - Click **Calculate Projected Standings** to run the engine.
     """)
 
-# -----------------------
-# INPUT SECTION (TOP)
-# -----------------------
-st.subheader("Inputs")
+# Layout: left column for inputs, right column for outputs
+left_col, right_col = st.columns([1, 2])
 
-uploaded = st.file_uploader("Upload Draft Picks (.tsv)", type=["tsv"], accept_multiple_files=False)
-picks_df = None
+with left_col:
+    st.subheader("Inputs")
 
-if uploaded is not None:
-    filename = uploaded.name.lower()
-    if not filename.endswith(".tsv"):
-        st.error("Please upload a file with a .tsv extension.")
-    else:
-        try:
-            uploaded.seek(0)
-            picks_df = pd.read_csv(uploaded, sep="\t", dtype=str)
-            st.success(f"Loaded `{uploaded.name}` — {picks_df.shape[0]:,} rows, {picks_df.shape[1]:,} columns.")
+    uploaded = st.file_uploader("Upload Draft Picks (.tsv)", type=["tsv"], accept_multiple_files=False)
+    picks_df = None
+    if uploaded is not None:
+        # Validate extension (extra check)
+        filename = uploaded.name.lower()
+        if not filename.endswith(".tsv"):
+            st.error("Please upload a file with a .tsv extension.")
+        else:
+            try:
+                # read as TSV
+                uploaded.seek(0)
+                picks_df = pd.read_csv(uploaded, sep="\t", dtype=str)
+                st.success(f"Loaded `{uploaded.name}` — {picks_df.shape[0]:,} rows, {picks_df.shape[1]:,} columns.")
+                st.write("Preview (first 10 rows):")
+                st.dataframe(picks_df.head(10))
+            except Exception as e:
+                st.error(f"Could not read the TSV file: {e}")
 
-            st.write("Preview (first 10 rows):")
-            st.dataframe(picks_df.head(10), use_container_width=True)
+    st.markdown("---")
+    st.subheader("Projection Systems")
+    # Six individual checkboxes as requested
+    st.write("Select projection systems to include:")
+    col_a, col_b = st.columns(2)
+    with col_a:
+        use_steamer = st.checkbox("Steamer", value=False)
+        use_fgdc = st.checkbox("FanGraphs Depth Charts", value=True)
+        use_thebat = st.checkbox("The Bat", value=False)
+    with col_b:
+        use_thebatx = st.checkbox("The Bat X", value=False)
+        use_oopsy = st.checkbox("OOPSY", value=False)
+        use_atc = st.checkbox("ATC", value=False)
 
-        except Exception as e:
-            st.error(f"Could not read the TSV file: {e}")
+    selected_systems = []
+    if use_steamer: selected_systems.append("steamer")
+    if use_fgdc: selected_systems.append("fangraphsdc")
+    if use_thebat: selected_systems.append("thebat")
+    if use_thebatx: selected_systems.append("thebatx")
+    if use_oopsy: selected_systems.append("oopsy")
+    if use_atc: selected_systems.append("atc")
 
-st.markdown("---")
+    st.markdown("---")
+    st.subheader("Roster Option")
+    roster_option = st.radio(
+        "Calculate standings based on:",
+        ("Starters only (first 9 pitchers, 14 hitters)","Entire roster"),
+        index=0
+    )
+    starters_only = True
+    starters_only = roster_option.startswith("Starters")
 
+    st.markdown("---")
+    st.write("Calculation control")
+    # The Calculate button
+    calculate_button = st.button("Calculate Projected Standings")
 
-# -----------------------
-# PROJECTION SYSTEM CHECKBOXES
-# -----------------------
-st.subheader("Projection Systems")
-st.write("Select projection systems to include:")
+    st.markdown("---")
 
-col_a, col_b = st.columns(2)
-
-with col_a:
-    use_steamer = st.checkbox("Steamer", value=False)
-    use_fgdc = st.checkbox("FanGraphs Depth Charts", value=True)
-    use_thebat = st.checkbox("The Bat", value=False)
-
-with col_b:
-    use_thebatx = st.checkbox("The Bat X", value=False)
-    use_oopsy = st.checkbox("OOPSY", value=False)
-    use_atc = st.checkbox("ATC", value=False)
-
-selected_systems = []
-if use_steamer: selected_systems.append("steamer")
-if use_fgdc: selected_systems.append("fangraphsdc")
-if use_thebat: selected_systems.append("thebat")
-if use_thebatx: selected_systems.append("thebatx")
-if use_oopsy: selected_systems.append("oopsy")
-if use_atc: selected_systems.append("atc")
-
-st.markdown("---")
-
-
-# -----------------------
-# ROSTER OPTIONS
-# -----------------------
-st.subheader("Roster Option")
-roster_option = st.radio(
-    "Calculate standings based on:",
-    ("Entire roster", "Starters only (first 9 pitchers, first 14 hitters)"),
-    index=0
-)
-starters_only = roster_option.startswith("Starters")
-
-st.markdown("---")
-
-# CALCULATE BUTTON
-calculate_button = st.button("Calculate Projected Standings")
-
-st.markdown("---")
-
-# Placeholder for results below the inputs
-results_placeholder = st.empty()
-download_placeholder = st.empty()
-last_run_info = st.empty()
+with right_col:
+    st.subheader("Projected Standings")
+    # Placeholder for results area
+    results_placeholder = st.empty()
+    download_placeholder = st.empty()
+    last_run_info = st.empty()
 
 # -----------------------
 # Perform calculation when button pressed
