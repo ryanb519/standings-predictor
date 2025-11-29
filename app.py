@@ -222,8 +222,8 @@ st.write("Select projection systems to include:")
 col_a, col_b = st.columns(2)
 
 with col_a:
-    use_steamer = st.checkbox("Steamer", value=True)
-    use_fgdc = st.checkbox("FanGraphs Depth Charts", value=False)
+    use_steamer = st.checkbox("Steamer", value=False)
+    use_fgdc = st.checkbox("FanGraphs Depth Charts", value=True)
     use_thebat = st.checkbox("The Bat", value=False)
 
 with col_b:
@@ -232,12 +232,12 @@ with col_b:
     use_atc = st.checkbox("ATC", value=False)
 
 selected_systems = []
-if use_steamer: selected_systems.append("Steamer")
-if use_fgdc: selected_systems.append("FanGraphs Depth Charts")
-if use_thebat: selected_systems.append("The Bat")
-if use_thebatx: selected_systems.append("The Bat X")
-if use_oopsy: selected_systems.append("OOPSY")
-if use_atc: selected_systems.append("ATC")
+if use_steamer: selected_systems.append("steamer")
+if use_fgdc: selected_systems.append("fangraphsdc")
+if use_thebat: selected_systems.append("thebat")
+if use_thebatx: selected_systems.append("thebatx")
+if use_oopsy: selected_systems.append("oopsy")
+if use_atc: selected_systems.append("atc")
 
 st.markdown("---")
 
