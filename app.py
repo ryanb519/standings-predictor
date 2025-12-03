@@ -14,12 +14,12 @@ def getAggregateHitterProj(list):
     projDF['#Proj'] = 1
     df = pd.concat([df,projDF])
 
-  aggDF = df.groupby(by=['playerid','PlayerName'], as_index=False).agg({
+  aggDF = df.groupby(by=['xMLBAMID','playerid','PlayerName'], as_index=False).agg({
     'PA':'mean','AB':'mean','AVG':'mean','R':'mean','HR':'mean','RBI':'mean','SB':'mean',
     'G':'mean','H':'mean','1B':'mean','2B':'mean','3B':'mean','BB':'mean','IBB':'mean','SO':'mean','HBP':'mean','SF':'mean',
     'SH':'mean','GDP':'mean','CS':'mean','OBP':'mean','SLG':'mean','OPS':'mean','wOBA':'mean','BB%':'mean','K%':'mean',
     'ISO':'mean','BABIP':'mean','wRC+':'mean','WAR':'mean','Team':'min','#Proj':'sum'})#,'Source':'transform(lambda x: '',''.join(x))'})
-  aggDF.rename(columns={'playerid':'FanGraphsID','PlayerName':'Name'},inplace=True)
+  aggDF.rename(columns={'playerid':'FanGraphsID','PlayerName':'Name','xMLBAMID':'MLBAMID'},inplace=True)
   return aggDF
 
 def getAggregatePitcherProj(list):
@@ -30,12 +30,12 @@ def getAggregatePitcherProj(list):
     projDF['#Proj'] = 1
     df = pd.concat([df,projDF])
 
-  aggDF = df.groupby(by=['playerid','PlayerName'], as_index=False).agg({
+  aggDF = df.groupby(by=['xMLBAMID','playerid','PlayerName'], as_index=False).agg({
     'IP':'mean','W':'mean','ERA':'mean','WHIP':'mean','SO':'mean','SV':'mean','L':'mean','GS':'mean','G':'mean',
     'HLD':'mean','BS':'mean','TBF':'mean','H':'mean','R':'mean','ER':'mean','HR':'mean','BB':'mean','IBB':'mean',
     'HBP':'mean','HR/9':'mean','K%':'mean','BB%':'mean','K-BB%':'mean','GB%':'mean','AVG':'mean','BABIP':'mean',
     'LOB%':'mean','FIP':'mean','WAR':'mean','QS':'mean','Team':'min','#Proj':'sum'})#,'Source':'transform(lambda x: '',''.join(x))'})'Source':'mean',
-  aggDF.rename(columns={'playerid':'FanGraphsID','PlayerName':'Name'},inplace=True)
+  aggDF.rename(columns={'playerid':'FanGraphsID','PlayerName':'Name','xMLBAMID':'MLBAMID'},inplace=True)
   return aggDF
 
 def calculate_standings(picks_df, projections, starters):
@@ -204,6 +204,7 @@ with left_col:
                 # read as TSV
                 uploaded.seek(0)
                 picks_df = pd.read_csv(uploaded, sep="\t", dtype=str)
+                picks_df = picks_df[picks_df['Player'] != '-'] #Remove picks without players yet
                 st.success(f"Loaded `{uploaded.name}` — {picks_df.shape[0]:,} rows, {picks_df.shape[1]:,} columns.")
                 st.write("Preview (first 10 rows):")
                 st.dataframe(picks_df.head(10))
