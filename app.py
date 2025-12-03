@@ -47,12 +47,26 @@ def calculate_standings(picks_df, projections, starters):
 
   # Function to transform 'Firstname Lastname' to 'Lastname, Firstname'
   def transform_player_name(name):
-      if pd.isna(name) or ', ' in name:
-          return name
-      parts = name.split()
-      if len(parts) > 1:
-          return f"{parts[-1]}, {' '.join(parts[:-1])}"
-      return name
+    if not isinstance(name, str) or name.strip() == "":
+        return name  # return as-is for blank/invalid input
+
+    suffixes = {"Jr.", "Sr.", "II", "III", "IV", "V"}
+
+    parts = name.strip().split()
+
+    # No transformation possible
+    if len(parts) == 1:
+        return name
+
+    # Check if last token is a suffix
+    if parts[-1] in suffixes:
+        last_name = " ".join(parts[-2:])      # e.g. "Witt Jr."
+        first_name = " ".join(parts[:-2])     # e.g. "Bobby"
+    else:
+        last_name = parts[-1]
+        first_name = " ".join(parts[:-1])
+
+    return f"{last_name}, {first_name}"
 
   # Apply the transformation to the projection dataframes
   hitter_df['Player'] = hitter_df['Name'].apply(transform_player_name)
