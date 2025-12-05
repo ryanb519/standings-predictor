@@ -1,0 +1,28 @@
+name: Update Cached Data
+
+on:
+  schedule:
+    - cron: "0 4 * * *"   # runs every day at 04:00 UTC
+  workflow_dispatch:        # allows manual runs
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
+
+    - name: Install dependencies
+      run: |
+        pip install pandas PyGithub
+
+    - name: Run update script
+      env:
+        TOKEN_PRIVATE: ${{ secrets.TOKEN_PRIVATE }}
+      run: python scripts/update_cached_projections.py
