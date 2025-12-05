@@ -1,6 +1,7 @@
 import pandas as pd
 from github import Github
 import os
+import requests
 
 def upload_df_to_github(df, repo_name, file_path, commit_message, github_token):
     """Uploads a Pandas DataFrame to GitHub as a CSV."""
