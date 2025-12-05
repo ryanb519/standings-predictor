@@ -8,9 +8,8 @@ import requests
 def getAggregateHitterProj(list):
   df = pd.DataFrame()
   for i in list:
-    data = requests.get("https://www.fangraphs.com/api/projections?pos=all&stats=bat&type="+i).json()
-    #data = requests.get("https://www.fangraphs.com/api/projections?type=steamerr&stats=bat&pos=all&team=0&players=0&lg=all&z=1744109615&pageitems=30&statgroup=dashboard&fantasypreset=dashboard")
-    projDF = pd.DataFrame(data)
+    data = "https://raw.githubusercontent.com/ryanb519/standings-predictor/main/data/"+i+"_batters.csv"
+    projDF = pd.read_csv(data)
     projDF['#Proj'] = 1
     df = pd.concat([df,projDF])
 
@@ -25,8 +24,8 @@ def getAggregateHitterProj(list):
 def getAggregatePitcherProj(list):
   df = pd.DataFrame()
   for i in list:
-    data = requests.get("https://www.fangraphs.com/api/projections?pos=all&stats=pit&type="+i).json()
-    projDF = pd.DataFrame(data)
+    data = "https://raw.githubusercontent.com/ryanb519/standings-predictor/main/data/"+i+"_pitchers.csv"
+    projDF = pd.read_csv(data)
     projDF['#Proj'] = 1
     df = pd.concat([df,projDF])
 
