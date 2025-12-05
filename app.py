@@ -8,7 +8,7 @@ import requests
 def getAggregateHitterProj(list):
   df = pd.DataFrame()
   for i in list:
-    data = "https://raw.githubusercontent.com/ryanb519/standings-predictor/main/data/"+i+"_batters.csv"
+    data = "https://raw.githubusercontent.com/ryanb519/standings-predictor/main/data/"+i+"_hitters.csv"
     projDF = pd.read_csv(data)
     projDF['#Proj'] = 1
     df = pd.concat([df,projDF])
