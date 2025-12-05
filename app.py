@@ -374,7 +374,7 @@ if calculate_button:
             try:
                 standings_df = calculate_standings(picks_df, selected_systems, starters_only)
                 hitter_picks_df = get_hitters(picks_df, selected_systems, starters_only)
-                pitcher_picks_df = get_pitchers((picks_df, selected_systems, starters_only)
+                pitcher_picks_df = get_pitchers(picks_df, selected_systems, starters_only)
 
                 if not isinstance(standings_df, pd.DataFrame):
                     raise ValueError("calculate_standings did not return a pandas DataFrame.")
