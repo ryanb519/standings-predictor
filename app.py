@@ -440,8 +440,8 @@ if calculate_button:
                 
                 # Teams are the same for hitters and pitchers
                 teams = sorted(
-                    set(hitter_picks_df["Team"].unique().tolist() +
-                        pitcher_picks_df["Team"].unique().tolist())
+                    set(hitter_picks_df["DraftTeam"].unique().tolist() +
+                        pitcher_picks_df["DraftTeam"].unique().tolist())
                 )
                 
                 team_selected = st.selectbox("Select Team", teams)
@@ -452,14 +452,14 @@ if calculate_button:
                 # Pick the correct dataframe
                 # -----------------------------
                 if hp_toggle == "Hitters":
-                    detail = hitter_picks_df[hitter_picks_df["Team"] == team_selected].copy()
+                    detail = hitter_picks_df[hitter_picks_df["DraftTeam"] == team_selected].copy()
                 
-                    columns = ["Pick", "Player", "Pos", "PA", "R", "HR", "AVG", "RBI", "SB"]
+                    columns = ["Pick", "Player", "Position", "PA", "R", "HR", "AVG", "RBI", "SB"]
                 
                 else:
-                    detail = pitcher_picks_df[pitcher_picks_df["Team"] == team_selected].copy()
+                    detail = pitcher_picks_df[pitcher_picks_df["DraftTeam"] == team_selected].copy()
                 
-                    columns = ["Pick", "Player", "Pos", "ERA", "WHIP", "SO", "W", "SV"]
+                    columns = ["Pick", "Player", "Position", "ERA", "WHIP", "SO", "W", "SV"]
                 
                 df_detail = detail[columns].copy()
                 
@@ -486,7 +486,7 @@ if calculate_button:
                 # -----------------------------
                 # Build Totals Row
                 # -----------------------------
-                totals_numeric = df_detail.drop(columns=["Player", "Pos", "Pick"], errors='ignore').apply(
+                totals_numeric = df_detail.drop(columns=["Player", "Position", "Pick"], errors='ignore').apply(
                     pd.to_numeric, errors="coerce"
                 ).sum()
                 
