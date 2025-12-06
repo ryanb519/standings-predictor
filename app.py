@@ -491,8 +491,8 @@ with right_col:
                 styler = standings_df.style
                 color_cols = ["R", "HR", "RBI", "SB", "W", "SO", "SV"]
                 styler = standings_df.style  # create a Styler once
-                styler = styler.apply(lambda s: color_metric_diverging(s, higher_is_better=False, subset=["ERA", "WHIP"])
-                styler = styler.apply(lambda s: color_metric_diverging(s, higher_is_better=True, subset=color_cols)
+                styler = styler.apply(lambda s: color_metric_diverging(s, higher_is_better=False), subset=["ERA", "WHIP"])
+                styler = styler.apply(lambda s: color_metric_diverging(s, higher_is_better=True), subset=color_cols)
                                       
                 #results_placeholder.dataframe(standings_df, use_container_width=True, hide_index=True, height=575)
                 results_placeholder.dataframe(styler, use_container_width=True, hide_index=True, height=575)
