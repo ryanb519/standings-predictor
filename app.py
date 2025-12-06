@@ -369,8 +369,8 @@ with left_col:
                 picks_df = pd.read_csv(uploaded, sep="\t", dtype=str)
                 picks_df = picks_df[picks_df['Player'] != '-'] #Remove picks without players yet
                 st.success(f"Loaded `{uploaded.name}` — {picks_df.shape[0]:,} rows, {picks_df.shape[1]:,} columns.")
-                st.write("Preview (first 10 rows):")
-                st.dataframe(picks_df.head(10))
+                #st.write("Preview (first 10 rows):")
+                #st.dataframe(picks_df.head(10))
             except Exception as e:
                 st.error(f"Could not read the TSV file: {e}")
 
@@ -493,24 +493,9 @@ with right_col:
                 styler = styler.apply(lambda s: color_metric_diverging(s, higher_is_better=False), subset=color_cols)
 
                 # Round ERA & WHIP to 2 decimals
-                if "ERA" in styler.columns:
-                    styler["ERA"] = (
-                        pd.to_numeric(styler["ERA"], errors="coerce")
-                        .round(2)
-                    )
-
-                if "WHIP" in styler.columns:
-                    styler["WHIP"] = (
-                        pd.to_numeric(styler["WHIP"], errors="coerce")
-                        .round(2)
-                    )
-                    
-                # Format AVG to 3 decimals
-                if "AVG" in styler.columns:
-                    styler["AVG"] = (
-                        pd.to_numeric(styler["AVG"], errors="coerce")
-                        .round(3)
-                    )
+                styler["ERA"] = styler["ERA"].round(2)
+                styler["WHIP"] = styler["WHIP"].round(2)
+                styler["AVG"] = styler["AVG"].round(3)
                                       
                 #results_placeholder.dataframe(standings_df, use_container_width=True, hide_index=True, height=575)
                 results_placeholder.dataframe(styler, use_container_width=True, hide_index=True, height=575)
