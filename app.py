@@ -456,7 +456,7 @@ with right_col:
                 # -----------------------
                 st.subheader("Team Detail")
     
-                teams = sorted(standings_df["DraftTeam"].unique())
+                teams = sorted(standings_df["Team"].unique())
                 selected_team = st.selectbox("Select a Team", teams)
     
                 # Filter team-specific DFS
