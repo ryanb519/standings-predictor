@@ -5,6 +5,42 @@ from typing import List
 from datetime import datetime
 import requests
 
+def color_metric_diverging(series, higher_is_better=True):
+    """
+    Creates Green → White → Red gradient for any metric.
+    
+    - higher_is_better=True  → high values = green, low = red
+    - higher_is_better=False → low values = green, high = red
+    """
+    
+    # Reverse values when "lower is better" so we can reuse one scale
+    values = series.copy()
+    if not higher_is_better:
+        values = values.max() - values  # invert scale
+
+    max_val = values.max()
+    min_val = values.min()
+    mid_val = (max_val + min_val) / 2
+
+    colors = []
+    for v in values:
+        if v <= mid_val:
+            # Green → White
+            scale = (v - min_val) / (mid_val - min_val)
+            r = int(255 * scale)
+            g = 255
+            b = int(255 * scale)
+        else:
+            # White → Red
+            scale = (v - mid_val) / (max_val - mid_val)
+            r = 255
+            g = int(255 * (1 - scale))
+            b = int(255 * (1 - scale))
+
+        colors.append(f"background-color: rgba({r}, {g}, {b}, 0.6);")
+
+    return colors
+    
 def format_standings_df(df):
     # Whole-number columns
     whole_cols = [
@@ -443,7 +479,12 @@ with right_col:
                         .round(3)
                         .map(lambda x: f"{x:.3f}".lstrip("0") if pd.notnull(x) else "")
                     )
-
+                    
+                # Apply red-green color formatting to Standings
+                rank_cols = ["R", "HR", "RBI", "SB", "W", "SO", "SV"]
+                standings_df = standings_df.style.apply(color_metric_diverging, higher_is_better=True,subset=rank_cols)
+                standings_df = standings_df.style.apply(color_metric_diverging, higher_is_better=False,subset=["ERA", "WHIP"])
+                
                 # -----------------------
                 # DISPLAY THE TABLE
                 # -----------------------
