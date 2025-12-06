@@ -360,6 +360,12 @@ with right_col:
     results_placeholder = st.empty()
     download_placeholder = st.empty()
     last_run_info = st.empty()
+    st.subheader("Team Detail")
+    team_selected = st.empty()
+    hitter_placeholder = st.empty()
+    pitcher_placeholder = st.empty()
+    
+  
 
 # -----------------------
 # Perform calculation when button pressed
@@ -373,8 +379,8 @@ if calculate_button:
         with st.spinner("Calculating projected standings..."):
             try:
                 standings_df = calculate_standings(picks_df, selected_systems, starters_only)
-                #hitter_picks_df = get_hitters(picks_df, selected_systems, starters_only)
-                #pitcher_picks_df = get_pitchers(picks_df, selected_systems, starters_only)
+                hitter_picks_df = get_hitters(picks_df, selected_systems, starters_only)
+                pitcher_picks_df = get_pitchers(picks_df, selected_systems, starters_only)
 
                 if not isinstance(standings_df, pd.DataFrame):
                     raise ValueError("calculate_standings did not return a pandas DataFrame.")
@@ -421,6 +427,8 @@ if calculate_button:
                         .map(lambda x: f"{x:.3f}".lstrip("0") if pd.notnull(x) else "")
                     )
 
+              
+
                 # -----------------------
                 # DISPLAY THE TABLE
                 # -----------------------
@@ -443,6 +451,87 @@ if calculate_button:
                     file_name="projected_standings.csv",
                     mime="text/csv"
                 )
+
+                # ---------------------------------------------------------
+                # TEAM DETAIL SECTION (right column, below standings)
+                # ---------------------------------------------------------
+                
+                # All teams from both dataframes
+                teams = sorted(
+                    set(hitter_picks_df["Team"].unique().tolist() +
+                        pitcher_picks_df["Team"].unique().tolist())
+                )
+                
+                team_selected = st.selectbox("Select Team", teams)
+                
+                # =========================================================
+                #                     HITTER DETAILS
+                # =========================================================
+                
+                st.markdown("### 🥎 Hitters")
+                
+                hitters = hitter_picks_df[hitter_picks_df["DraftTeam"] == team_selected].copy()
+                
+                h_cols = ["Pick", "Player", "Position", "PA", "R", "HR", "AVG", "RBI", "SB"]
+                df_hitters = hitters[h_cols].copy()
+                
+                # Format AVG (3 decimal places, no leading zero)
+                df_hitters["AVG"] = df_hitters["AVG"].round(3).astype(str)
+                df_hitters["AVG"] = df_hitters["AVG"].str.replace("0.", ".", regex=False)
+                
+                # Round counting stats
+                for col in ["PA", "R", "HR", "RBI", "SB"]:
+                    df_hitters[col] = df_hitters[col].round(0).astype("Int64")
+                
+                # Totals row
+                h_totals = df_hitters.drop(columns=["Pick", "Player", "Position"], errors="ignore") \
+                                     .apply(pd.to_numeric, errors="coerce").sum()
+                
+                h_total_row = {col: "" for col in df_hitters.columns}
+                for col in h_totals.index:
+                    h_total_row[col] = h_totals[col]
+                
+                # Team AVG mean
+                team_avg = hitters["AVG"].mean()
+                h_total_row["AVG"] = "." + str(round(team_avg, 3))[2:]
+                
+                df_hitters = pd.concat([df_hitters, pd.DataFrame([h_total_row])], ignore_index=True)
+                
+                hitter_placeholder.dataframe(df_hitters, use_container_width=True)
+                
+                
+                # =========================================================
+                #                     PITCHER DETAILS
+                # =========================================================
+                
+                st.markdown("### ⚾ Pitchers")
+                
+                pitchers = pitcher_picks_df[pitcher_picks_df["DraftTeam"] == team_selected].copy()
+                
+                p_cols = ["Pick", "Player", "Position", "ERA", "WHIP", "SO", "W", "SV"]
+                df_pitchers = pitchers[p_cols].copy()
+                
+                # Format ERA/WHIP
+                df_pitchers["ERA"] = df_pitchers["ERA"].round(2)
+                df_pitchers["WHIP"] = df_pitchers["WHIP"].round(2)
+                
+                # Round counting stats
+                for col in ["SO", "W", "SV"]:
+                    df_pitchers[col] = df_pitchers[col].round(0).astype("Int64")
+                
+                # Totals row
+                p_totals = df_pitchers.drop(columns=["Pick", "Player", "Position"], errors="ignore") \
+                                       .apply(pd.to_numeric, errors="coerce").sum()
+                
+                p_total_row = {col: "" for col in df_pitchers.columns}
+                for col in p_totals.index:
+                    p_total_row[col] = p_totals[col]
+                
+                # Append totals
+                df_pitchers = pd.concat([df_pitchers, pd.DataFrame([p_total_row])], ignore_index=True)
+                
+                pitcher_placeholder.dataframe(df_pitchers, use_container_width=True)
+
 
             except Exception as e:
                 st.exception(f"Calculation failed: {e}")
