@@ -378,6 +378,7 @@ with left_col:
 
 with right_col:
     st.header("Projected Standings")
+    results_placeholder=st.empty()
 
     if calculate_button:
         if uploaded is None:
