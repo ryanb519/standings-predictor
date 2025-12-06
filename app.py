@@ -439,7 +439,7 @@ if calculate_button:
                 standings_df = standings_df.drop(columns=['R_Rank','RBI_Rank','HR_Rank','SB_Rank','AVG_Rank','ERA_Rank','WHIP_Rank','SO_Rank','W_Rank','SV_Rank'])
                 standings_df = standings_df.rename(columns={'Overall_Rank':'Rank','DraftTeam':'Team','Grand_Total_Score':'Total Points','Hitter_Score':'Hitters','Pitcher_Score':'Pitchers'})
 
-                results_placeholder.dataframe(standings_df, use_container_width=True, hide_index=True, height=650)
+                results_placeholder.dataframe(standings_df, use_container_width=True, hide_index=True, height=None)
 
                 # -----------------------
                 # DOWNLOAD BUTTON
@@ -458,8 +458,8 @@ if calculate_button:
                 
                 # All teams from both dataframes
                 teams = sorted(
-                    set(hitter_picks_df["Team"].unique().tolist() +
-                        pitcher_picks_df["Team"].unique().tolist())
+                    set(hitter_picks_df["DraftTeam"].unique().tolist() +
+                        pitcher_picks_df["DraftTeam"].unique().tolist())
                 )
                 
                 team_selected = st.selectbox("Select Team", teams)
