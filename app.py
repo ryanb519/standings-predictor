@@ -491,11 +491,6 @@ with right_col:
                 styler = standings_df.style  # create a Styler once
                 styler = styler.apply(lambda s: color_metric_diverging(s, higher_is_better=True), subset=["ERA", "WHIP"])
                 styler = styler.apply(lambda s: color_metric_diverging(s, higher_is_better=False), subset=color_cols)
-
-                # Round ERA & WHIP to 2 decimals
-                styler["ERA"] = styler["ERA"].str.replace("000","")
-                styler["WHIP"] = styler["WHIP"].str.replace("000","")
-                styler["AVG"] = styler["AVG"].str.replace("000","")
                                       
                 #results_placeholder.dataframe(standings_df, use_container_width=True, hide_index=True, height=575)
                 results_placeholder.dataframe(styler, use_container_width=True, hide_index=True, height=575)
