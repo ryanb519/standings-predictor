@@ -385,53 +385,54 @@ with right_col:
         elif len(selected_systems) == 0:
             st.warning("Please select at least one projection system.")
         else:
-            # ------------------------------------------------------
-            # NOTE: User already has the calculation logic.
-            # Here we call a placeholder function.
-            # standings_df, hitter_picks_df, pitcher_picks_df
-            # MUST be produced by your calculation function.
-            # ------------------------------------------------------
-            st.info("Running calculations... (using your custom logic)")
-
             standings_df = calculate_standings(picks_df, selected_systems, starters_only)
             hitter_picks_df = get_hitters(picks_df, selected_systems, starters_only)
             pitcher_picks_df = get_pitchers(picks_df, selected_systems, starters_only)
 
             standings_df = format_standings_df(standings_df)
 
-            # Display standings without index
-            st.dataframe(
-                standings_df,
-                hide_index=True,
-                use_container_width=True,
-                height=575  # Auto height so all 15 teams show
-            )
+            st.session_state["standings_df"] = standings_df
+            st.session_state["hitter_picks_df"] = hitter_picks_df
+            st.session_state["pitcher_picks_df"] = pitcher_picks_df
 
-            # -----------------------
-            # TEAM DETAIL SECTION
-            # -----------------------
-            st.subheader("Team Detail")
-
-            teams = sorted(standings_df["DraftTeam"].unique())
-            selected_team = st.selectbox("Select a Team", teams)
-
-            # Filter team-specific DFS
-            team_hitters = hitter_picks_df[hitter_picks_df["DraftTeam"] == selected_team].copy()
-            team_pitchers = pitcher_picks_df[pitcher_picks_df["DraftTeam"] == selected_team].copy()
-
-            # Format hitter AVG
-            if "AVG" in team_hitters.columns:
-                team_hitters["AVG"] = team_hitters["AVG"].apply(
-                    lambda x: f"{x:.3f}".lstrip("0") if pd.notnull(x) else x
+            if "standings_df" in st.session_state:
+                standings_df = st.session_state["standings_df"]
+                hitter_picks_df = st.session_state["hitter_picks_df"]
+                pitcher_picks_df = st.session_state["pitcher_picks_df"]
+    
+                # Display standings without index
+                st.dataframe(
+                    standings_df,
+                    hide_index=True,
+                    use_container_width=True,
+                    height=575  # Auto height so all 15 teams show
                 )
-
-            # HITTERS TABLE
-            st.markdown("### Hitters")
-            st.dataframe(team_hitters, hide_index=True, use_container_width=True)
-
-            # PITCHERS TABLE
-            st.markdown("### Pitchers")
-            st.dataframe(team_pitchers, hide_index=True, use_container_width=True)
+    
+                # -----------------------
+                # TEAM DETAIL SECTION
+                # -----------------------
+                st.subheader("Team Detail")
+    
+                teams = sorted(standings_df["DraftTeam"].unique())
+                selected_team = st.selectbox("Select a Team", teams)
+    
+                # Filter team-specific DFS
+                team_hitters = hitter_picks_df[hitter_picks_df["DraftTeam"] == selected_team].copy()
+                team_pitchers = pitcher_picks_df[pitcher_picks_df["DraftTeam"] == selected_team].copy()
+    
+                # Format hitter AVG
+                if "AVG" in team_hitters.columns:
+                    team_hitters["AVG"] = team_hitters["AVG"].apply(
+                        lambda x: f"{x:.3f}".lstrip("0") if pd.notnull(x) else x
+                    )
+    
+                # HITTERS TABLE
+                st.markdown("### Hitters")
+                st.dataframe(team_hitters, hide_index=True, use_container_width=True)
+    
+                # PITCHERS TABLE
+                st.markdown("### Pitchers")
+                st.dataframe(team_pitchers, hide_index=True, use_container_width=True)
     
 '''
 # -----------------------
