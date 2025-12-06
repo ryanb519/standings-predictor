@@ -360,7 +360,6 @@ with right_col:
     results_placeholder = st.empty()
     download_placeholder = st.empty()
     last_run_info = st.empty()
-    st.subheader("
 
 # -----------------------
 # Perform calculation when button pressed
@@ -432,7 +431,7 @@ if calculate_button:
                 standings_df = standings_df.drop(columns=['R_Rank','RBI_Rank','HR_Rank','SB_Rank','AVG_Rank','ERA_Rank','WHIP_Rank','SO_Rank','W_Rank','SV_Rank'])
                 standings_df = standings_df.rename(columns={'Overall_Rank':'Rank','DraftTeam':'Team','Grand_Total_Score':'Total Points','Hitter_Score':'Hitters','Pitcher_Score':'Pitchers'})
 
-                results_placeholder.dataframe(standings_df, use_container_width=True)
+                results_placeholder.dataframe(standings_df, use_container_width=True, hide_index=True)
 
                 # -----------------------
                 # DOWNLOAD BUTTON
