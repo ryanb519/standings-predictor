@@ -521,7 +521,3 @@ with right_col:
                 # PITCHERS TABLE
                 st.markdown("### Pitchers")
                 st.dataframe(team_pitchers, hide_index=True, use_container_width=True)
-
-
-            except Exception as e:
-                st.exception(f"Calculation failed: {e}")
