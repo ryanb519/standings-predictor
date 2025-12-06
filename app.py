@@ -400,13 +400,55 @@ with right_col:
                 hitter_picks_df = st.session_state["hitter_picks_df"]
                 pitcher_picks_df = st.session_state["pitcher_picks_df"]
     
-                # Display standings without index
-                st.dataframe(
-                    standings_df,
-                    hide_index=True,
-                    use_container_width=True,
-                    height=575  # Auto height so all 15 teams show
-                )
+                # -----------------------
+                # APPLY DISPLAY ROUNDING
+                # -----------------------
+                whole_number_columns = [
+                    "R", "R_Rank",
+                    "HR", "HR_Rank",
+                    "RBI", "RBI_Rank",
+                    "SB", "SB_Rank",
+                    "Grand_Total_Score",
+                    "Hitter_Score",
+                    "Pitcher_Score",
+                    "W", "W_Rank",
+                    "SO", "SO_Rank",
+                    "SV", "SV_Rank"
+                ]
+
+                # Round whole-number columns
+                for col in whole_number_columns:
+                    if col in standings_df.columns:
+                        standings_df[col] = pd.to_numeric(standings_df[col], errors="coerce").round(0).astype("Int64")
+
+                # Round ERA & WHIP to 2 decimals
+                if "ERA" in standings_df.columns:
+                    standings_df["ERA"] = (
+                        pd.to_numeric(standings_df["ERA"], errors="coerce")
+                        .round(2)
+                    )
+
+                if "WHIP" in standings_df.columns:
+                    standings_df["WHIP"] = (
+                        pd.to_numeric(standings_df["WHIP"], errors="coerce")
+                        .round(2)
+                    )
+
+                # Format AVG to 3 decimals and remove leading zero
+                if "AVG" in standings_df.columns:
+                    standings_df["AVG"] = (
+                        pd.to_numeric(standings_df["AVG"], errors="coerce")
+                        .round(3)
+                        .map(lambda x: f"{x:.3f}".lstrip("0") if pd.notnull(x) else "")
+                    )
+
+                # -----------------------
+                # DISPLAY THE TABLE
+                # -----------------------
+                standings_df = standings_df.drop(columns=['R_Rank','RBI_Rank','HR_Rank','SB_Rank','AVG_Rank','ERA_Rank','WHIP_Rank','SO_Rank','W_Rank','SV_Rank'])
+                standings_df = standings_df.rename(columns={'Overall_Rank':'Rank','DraftTeam':'Team','Grand_Total_Score':'Total Points','Hitter_Score':'Hitters','Pitcher_Score':'Pitchers'})
+
+                results_placeholder.dataframe(standings_df, use_container_width=True, hide_index=True, height=575)
     
                 # -----------------------
                 # TEAM DETAIL SECTION
