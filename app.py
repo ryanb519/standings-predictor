@@ -360,6 +360,7 @@ with right_col:
     results_placeholder = st.empty()
     download_placeholder = st.empty()
     last_run_info = st.empty()
+    st.subheader("
 
 # -----------------------
 # Perform calculation when button pressed
@@ -373,8 +374,8 @@ if calculate_button:
         with st.spinner("Calculating projected standings..."):
             try:
                 standings_df = calculate_standings(picks_df, selected_systems, starters_only)
-                hitter_picks_df = get_hitters(picks_df, selected_systems, starters_only)
-                pitcher_picks_df = get_pitchers(picks_df, selected_systems, starters_only)
+                #hitter_picks_df = get_hitters(picks_df, selected_systems, starters_only)
+                #pitcher_picks_df = get_pitchers(picks_df, selected_systems, starters_only)
 
                 if not isinstance(standings_df, pd.DataFrame):
                     raise ValueError("calculate_standings did not return a pandas DataFrame.")
@@ -432,79 +433,6 @@ if calculate_button:
                 standings_df = standings_df.rename(columns={'Overall_Rank':'Rank','DraftTeam':'Team','Grand_Total_Score':'Total Points','Hitter_Score':'Hitters','Pitcher_Score':'Pitchers'})
 
                 results_placeholder.dataframe(standings_df, use_container_width=True)
-
-                # -----------------------------
-                # TEAM DETAIL SECTION
-                # -----------------------------
-                st.subheader("🔍 Team Detail")
-                
-                # Teams are the same for hitters and pitchers
-                teams = sorted(
-                    set(hitter_picks_df["DraftTeam"].unique().tolist() +
-                        pitcher_picks_df["DraftTeam"].unique().tolist())
-                )
-                
-                team_selected = st.selectbox("Select Team", teams)
-                
-                hp_toggle = st.radio("Show:", ["Hitters", "Pitchers"], horizontal=True)
-                
-                # -----------------------------
-                # Pick the correct dataframe
-                # -----------------------------
-                if hp_toggle == "Hitters":
-                    detail = hitter_picks_df[hitter_picks_df["DraftTeam"] == team_selected].copy()
-                
-                    columns = ["Pick", "Player", "Position", "PA", "R", "HR", "AVG", "RBI", "SB"]
-                
-                else:
-                    detail = pitcher_picks_df[pitcher_picks_df["DraftTeam"] == team_selected].copy()
-                
-                    columns = ["Pick", "Player", "Position", "ERA", "WHIP", "SO", "W", "SV"]
-                
-                df_detail = detail[columns].copy()
-                
-                # -----------------------------
-                # Formatting
-                # -----------------------------
-                
-                # AVG formatting (3 decimal places, no leading zero)
-                if "AVG" in df_detail.columns:
-                    df_detail["AVG"] = df_detail["AVG"].round(3).astype(str)
-                    df_detail["AVG"] = df_detail["AVG"].str.replace("0.", ".", regex=False)
-                
-                # ERA & WHIP to two decimals
-                for col in ["ERA", "WHIP"]:
-                    if col in df_detail.columns:
-                        df_detail[col] = df_detail[col].round(2)
-                
-                # Count stats to whole number
-                count_stats = ["PA", "R", "HR", "RBI", "SB", "SO", "W", "SV"]
-                for col in count_stats:
-                    if col in df_detail.columns:
-                        df_detail[col] = df_detail[col].round(0).astype("Int64")
-                
-                # -----------------------------
-                # Build Totals Row
-                # -----------------------------
-                totals_numeric = df_detail.drop(columns=["Player", "Position", "Pick"], errors='ignore').apply(
-                    pd.to_numeric, errors="coerce"
-                ).sum()
-                
-                total_row = {col: "" for col in df_detail.columns}
-                
-                for col in totals_numeric.index:
-                    total_row[col] = totals_numeric[col]
-                
-                # For AVG — show team average instead of sum
-                if "AVG" in df_detail.columns:
-                    team_avg = detail["AVG"].mean()
-                    total_row["AVG"] = "." + str(round(team_avg, 3))[2:]  # remove leading zero
-                
-                # Append totals row
-                df_detail = pd.concat([df_detail, pd.DataFrame([total_row])], ignore_index=True)
-                
-                # Display detail table
-                st.dataframe(df_detail, use_container_width=True)
 
                 # -----------------------
                 # DOWNLOAD BUTTON
