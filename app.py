@@ -242,7 +242,7 @@ def get_hitters(picks_df, projections, starters):
     hitter_picks_df = hitter_picks_df[hitter_picks_df['Hitter_Count'] <= 14]
     hitter_picks_df = hitter_picks_df.drop(columns=['Hitter_Count'])
 
-  return hitter_picks_df[['Round','Pick','Player','Position','PA','R','HR','RBI','AVG','SB']].sort_values(by='Pick')
+  return hitter_picks_df[['DraftTeam','Round','Pick','Player','Position','PA','R','HR','RBI','AVG','SB']].sort_values(by='Pick')
 
 def get_pitchers(picks_df, projections, starters):
 
@@ -289,7 +289,7 @@ def get_pitchers(picks_df, projections, starters):
     pitcher_picks_df = pitcher_picks_df[pitcher_picks_df['Pitcher_Count'] <= 9]
     pitcher_picks_df = pitcher_picks_df.drop(columns=['Pitcher_Count'])
 
-  return pitcher_picks_df[['Round','Pick','Player','Position','IP','W','SV','ERA','WHIP','SO']].sort_values(by='Pick')
+  return pitcher_picks_df[['DraftTeam','Round','Pick','Player','Position','IP','W','SV','ERA','WHIP','SO']].sort_values(by='Pick')
   
 st.set_page_config(page_title="Fantasy Baseball Standings (2026)", layout="wide")
 
