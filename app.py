@@ -471,6 +471,13 @@ with right_col:
                         pd.to_numeric(standings_df["WHIP"], errors="coerce")
                         .round(2)
                     )
+                    
+                # Format AVG to 3 decimals
+                if "AVG" in standings_df.columns:
+                    standings_df["AVG"] = (
+                        pd.to_numeric(standings_df["AVG"], errors="coerce")
+                        .round(3)
+                    )
                 
                 # -----------------------
                 # DISPLAY THE TABLE
@@ -484,14 +491,6 @@ with right_col:
                 styler = standings_df.style  # create a Styler once
                 styler = styler.apply(lambda s: color_metric_diverging(s, higher_is_better=True), subset=["ERA", "WHIP"])
                 styler = styler.apply(lambda s: color_metric_diverging(s, higher_is_better=False), subset=color_cols)
-
-                # Format AVG to 3 decimals and remove leading zero
-                if "AVG" in standings_df.columns:
-                    standings_df["AVG"] = (
-                        pd.to_numeric(standings_df["AVG"], errors="coerce")
-                        .round(3)
-                        .map(lambda x: f"{x:.3f}".lstrip("0") if pd.notnull(x) else "")
-                    )
                                       
                 #results_placeholder.dataframe(standings_df, use_container_width=True, hide_index=True, height=575)
                 results_placeholder.dataframe(styler, use_container_width=True, hide_index=True, height=575)
