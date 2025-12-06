@@ -5,6 +5,28 @@ from typing import List
 from datetime import datetime
 import requests
 
+def format_standings_df(df):
+    # Whole-number columns
+    whole_cols = [
+        "R", "R_Rank", "HR", "HR_Rank", "RBI", "RBI_Rank", "SB", "SB_Rank",
+        "Grand_Total_Score", "Hitter_Score", "Pitcher_Score",
+        "W", "W_Rank", "SO", "SO_Rank", "SV", "SV_Rank"
+    ]
+    for col in whole_cols:
+        if col in df.columns:
+            df[col] = df[col].round(0).astype("Int64")
+
+    # ERA / WHIP → 2 decimals
+    for col in ["ERA", "WHIP"]:
+        if col in df.columns:
+            df[col] = df[col].round(2)
+
+    # AVG → 3 decimals, no leading zero
+    if "AVG" in df.columns:
+        df["AVG"] = df["AVG"].apply(lambda x: f"{x:.3f}".lstrip("0") if pd.notnull(x) else x)
+
+    return df
+
 def getAggregateHitterProj(list):
   df = pd.DataFrame()
   for i in list:
@@ -355,18 +377,63 @@ with left_col:
     st.markdown("---")
 
 with right_col:
-    st.subheader("Projected Standings")
-    # Placeholder for results area
-    results_placeholder = st.empty()
-    download_placeholder = st.empty()
-    last_run_info = st.empty()
-    st.subheader("Team Detail")
-    team_selected = st.empty()
-    hitter_placeholder = st.empty()
-    pitcher_placeholder = st.empty()
-    
-  
+    st.header("Projected Standings")
 
+    if calculate_button:
+        if uploaded is None:
+            st.warning("Please upload a TSV draft file first.")
+        elif len(selected_systems) == 0:
+            st.warning("Please select at least one projection system.")
+        else:
+            # ------------------------------------------------------
+            # NOTE: User already has the calculation logic.
+            # Here we call a placeholder function.
+            # standings_df, hitter_picks_df, pitcher_picks_df
+            # MUST be produced by your calculation function.
+            # ------------------------------------------------------
+            st.info("Running calculations... (using your custom logic)")
+
+            standings_df = calculate_standings(picks_df, selected_systems, starters_only)
+            hitter_picks_df = get_hitters(picks_df, selected_systems, starters_only)
+            pitcher_picks_df = get_pitchers(picks_df, selected_systems, starters_only)
+
+            standings_df = format_standings_df(standings_df)
+
+            # Display standings without index
+            st.dataframe(
+                standings_df,
+                hide_index=True,
+                use_container_width=True,
+                height=575  # Auto height so all 15 teams show
+            )
+
+            # -----------------------
+            # TEAM DETAIL SECTION
+            # -----------------------
+            st.subheader("Team Detail")
+
+            teams = sorted(standings_df["DraftTeam"].unique())
+            selected_team = st.selectbox("Select a Team", teams)
+
+            # Filter team-specific DFS
+            team_hitters = hitter_picks_df[hitter_picks_df["DraftTeam"] == selected_team].copy()
+            team_pitchers = pitcher_picks_df[pitcher_picks_df["DraftTeam"] == selected_team].copy()
+
+            # Format hitter AVG
+            if "AVG" in team_hitters.columns:
+                team_hitters["AVG"] = team_hitters["AVG"].apply(
+                    lambda x: f"{x:.3f}".lstrip("0") if pd.notnull(x) else x
+                )
+
+            # HITTERS TABLE
+            st.markdown("### Hitters")
+            st.dataframe(team_hitters, hide_index=True, use_container_width=True)
+
+            # PITCHERS TABLE
+            st.markdown("### Pitchers")
+            st.dataframe(team_pitchers, hide_index=True, use_container_width=True)
+    
+'''
 # -----------------------
 # Perform calculation when button pressed
 # -----------------------
@@ -535,3 +602,4 @@ if calculate_button:
 
             except Exception as e:
                 st.exception(f"Calculation failed: {e}")
+'''
