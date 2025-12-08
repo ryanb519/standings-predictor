@@ -4,6 +4,7 @@ import io
 from typing import List
 from datetime import datetime
 import requests
+import unicodedata
 
 def color_metric_diverging(series, higher_is_better=True):
     """
@@ -107,6 +108,10 @@ def calculate_standings(picks_df, projections, starters):
     if not isinstance(name, str) or name.strip() == "":
         return name  # return as-is for blank/invalid input
 
+    #Remove accents
+    name = unicodedata.normalize("NFD", name)
+    name = "".join(c for c in name if unicodedata.category(c) != "Mn")
+      
     suffixes = {"Jr.", "Sr.", "II", "III", "IV", "V"}
 
     parts = name.strip().split()
