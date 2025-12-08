@@ -147,12 +147,14 @@ def calculate_standings(picks_df, projections, starters):
   # --- 2.5. Apply player limits based on draft order (Pick) ---
   # Hitter Limit: First 14 non-pitchers
   if starters:
+    hitter_picks_df['Pick'] = hitter_picks_df['Pick'].astype(int)
     hitter_picks_df = hitter_picks_df.sort_values(by=['DraftTeam', 'Pick'])
     hitter_picks_df['Hitter_Count'] = hitter_picks_df.groupby('DraftTeam').cumcount() + 1
     hitter_picks_df = hitter_picks_df[hitter_picks_df['Hitter_Count'] <= 14]
     hitter_picks_df = hitter_picks_df.drop(columns=['Hitter_Count'])
 
     # Pitcher Limit: First 9 pitchers
+    pitcher_picks_df['Pick'] = pitcher_picks_df['Pick'].astype(int)
     pitcher_picks_df = pitcher_picks_df.sort_values(by=['DraftTeam', 'Pick'])
     pitcher_picks_df['Pitcher_Count'] = pitcher_picks_df.groupby('DraftTeam').cumcount() + 1
     pitcher_picks_df = pitcher_picks_df[pitcher_picks_df['Pitcher_Count'] <= 9]
