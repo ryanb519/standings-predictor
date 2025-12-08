@@ -239,6 +239,9 @@ def calculate_standings(picks_df, projections, starters):
   # Sort by Overall Rank and save to a new file
   final_standings = final_standings.sort_values(by='Overall_Rank').reset_index(drop=True)
   final_standings.to_csv('projected_fantasy_standings_with_totals.csv', index=False)
+
+  hitter_picks_df = hitter_picks_df[['DraftTeam','Round','Pick','Position','Name','PA','R','RBI','SB','HR','AVG']].sort_values(by='Pick')
+  pitcher_picks_df = pitcher_picks_df[['DraftTeam','Round','Pick','Position','Name','IP','W','SV','SO','ERA','WHIP']].sort_values(by='Pick')
   return hitter_picks_df, pitcher_picks_df, final_standings
   
 st.set_page_config(page_title="Fantasy Baseball Standings (2026)", layout="wide")
@@ -324,12 +327,31 @@ with left_col:
     st.write("Calculation control")
     # The Calculate button
     calculate_button = st.button("Calculate Projected Standings")
+    clear_button = st.button("Clear Results")
 
     st.markdown("---")
 
 with right_col:
     st.header("Projected Standings")
     results_placeholder=st.empty()
+
+    # Initialize session_state keys if missing
+    if "standings_df" not in st.session_state:
+        st.session_state["standings_df"] = None
+    if "hitter_picks_df" not in st.session_state:
+        st.session_state["hitter_picks_df"] = None
+    if "pitcher_picks_df" not in st.session_state:
+        st.session_state["pitcher_picks_df"] = None
+    if "last_calculated" not in st.session_state:
+        st.session_state["last_calculated"] = None
+
+    # Clear results
+    if clear_button:
+        st.session_state["standings_df"] = None
+        st.session_state["hitter_picks_df"] = None
+        st.session_state["pitcher_picks_df"] = None
+        st.session_state["last_calculated"] = None
+        st.success("Cleared previous results. Upload a file and click Calculate.")
 
     if calculate_button:
         if uploaded is None:
@@ -338,8 +360,16 @@ with right_col:
             st.warning("Please select at least one projection system.")
         else:
             hitter_picks_df, pitcher_picks_df, standings_df = calculate_standings(picks_df, selected_systems, starters_only)
+            # Save to session_state
+            st.session_state["standings_df"] = standings_df
+            st.session_state["hitter_picks_df"] = hitter_picks_df
+            st.session_state["pitcher_picks_df"] = pitcher_picks_df
+            st.session_state["last_calculated"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-            #standings_df = format_standings_df(standings_df)
+            st.success("Calculation complete — results saved.")
+
+            if st.session_state.get("standings_df") is not None:
+                standings_df = st.session_state["standings_df"].copy()
 
             # -----------------------
             # APPLY DISPLAY ROUNDING
@@ -404,10 +434,13 @@ with right_col:
     
             teams = sorted(standings_df["Team"].unique())
             selected_team = st.selectbox("Select a Team", teams)
+
+            hitter_df = st.session_state["hitter_picks_df"].copy()
+            pitcher_df = st.session_state["pitcher_picks_df"].copy()
     
             # Filter team-specific DFS
-            team_hitters = hitter_picks_df[hitter_picks_df["DraftTeam"] == "Bloom DC3 - Rockaway"].copy()
-            team_pitchers = pitcher_picks_df[pitcher_picks_df["DraftTeam"] == "Bloom DC3 - Rockaway"].copy()
+            team_hitters = hitter_picks_df[hitter_df["DraftTeam"] == selected_team].copy()
+            team_pitchers = pitcher_picks_df[pitcher_df["DraftTeam"] == selected_team].copy()
     
             # Format hitter AVG
             if "AVG" in team_hitters.columns:
