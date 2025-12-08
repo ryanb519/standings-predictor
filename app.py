@@ -404,8 +404,8 @@ with right_col:
             selected_team = st.selectbox("Select a Team", teams)
     
             # Filter team-specific DFS
-            team_hitters = hitter_picks_df[hitter_picks_df["DraftTeam"] == selected_team].copy()
-            team_pitchers = pitcher_picks_df[pitcher_picks_df["DraftTeam"] == selected_team].copy()
+            team_hitters = hitter_picks_df[hitter_picks_df["DraftTeam"] == "Bloom DC3 - Rockaway"].copy()
+            team_pitchers = pitcher_picks_df[pitcher_picks_df["DraftTeam"] == "Bloom DC3 - Rockaway"].copy()
     
             # Format hitter AVG
             if "AVG" in team_hitters.columns:
