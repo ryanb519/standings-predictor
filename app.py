@@ -366,8 +366,6 @@ with right_col:
             st.session_state["pitcher_picks_df"] = pitcher_picks_df
             st.session_state["last_calculated"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-            st.success("Calculation complete — results saved.")
-
             if st.session_state.get("standings_df") is not None:
                 standings_df = st.session_state["standings_df"].copy()
 
@@ -431,27 +429,45 @@ with right_col:
             # TEAM DETAIL SECTION
             # -----------------------
             st.subheader("Team Detail")
-    
-            teams = sorted(standings_df["Team"].unique())
-            selected_team = st.selectbox("Select a Team", teams)
 
-            hitter_df = st.session_state["hitter_picks_df"].copy()
-            pitcher_df = st.session_state["pitcher_picks_df"].copy()
+            # --- Team selector + refresh button side by side ---
+            tcol1, tcol2 = st.columns([3,1])
+            with tcol1:
+                team_choice = st.selectbox(
+                    "Select a team:",
+                    options=standings_df["Team"].unique(),
+                    key="team_selector"
+                )
+            with tcol2:
+                refresh_clicked = st.button("Refresh", key="refresh_detail")
     
-            # Filter team-specific DFS
-            team_hitters = hitter_picks_df[hitter_df["DraftTeam"] == selected_team].copy()
-            team_pitchers = pitcher_picks_df[pitcher_df["DraftTeam"] == selected_team].copy()
+            # Only refresh team detail when button is pressed
+            if refresh_clicked:
     
-            # Format hitter AVG
-            if "AVG" in team_hitters.columns:
-                team_hitters["AVG"] = team_hitters["AVG"].apply(
-                    lambda x: f"{x:.3f}".lstrip("0") if pd.notnull(x) else x
+                # Filter detail data
+                team_hitters = hitter_picks_df[hitter_picks_df["Team"] == team_choice]
+                team_pitchers = pitcher_picks_df[pitcher_picks_df["Team"] == team_choice]
+    
+                # Store in session_state so next rerun shows it
+                st.session_state["team_hitters"] = team_hitters
+                st.session_state["team_pitchers"] = team_pitchers
+                st.session_state["selected_team"] = team_choice
+    
+            # Display team detail if available
+            if "team_hitters" in st.session_state and "team_pitchers" in st.session_state:
+    
+                st.markdown(f"### Team Detail: **{st.session_state['selected_team']}**")
+    
+                st.markdown("#### Hitters")
+                st.dataframe(
+                    st.session_state["team_hitters"],
+                    hide_index=True,
+                    use_container_width=True
                 )
     
-            # HITTERS TABLE
-            st.markdown("### Hitters")
-            st.dataframe(team_hitters, hide_index=True, use_container_width=True)
-    
-            # PITCHERS TABLE
-            st.markdown("### Pitchers")
-            st.dataframe(team_pitchers, hide_index=True, use_container_width=True)
+                st.markdown("#### Pitchers")
+                st.dataframe(
+                    st.session_state["team_pitchers"],
+                    hide_index=True,
+                    use_container_width=True
+                )
