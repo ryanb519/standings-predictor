@@ -237,100 +237,7 @@ def calculate_standings(picks_df, projections, starters):
   # Sort by Overall Rank and save to a new file
   final_standings = final_standings.sort_values(by='Overall_Rank').reset_index(drop=True)
   final_standings.to_csv('projected_fantasy_standings_with_totals.csv', index=False)
-  return final_standings
-
-def get_hitters(picks_df, projections, starters):
-
-  # 1. Reads in the dataframes
-  hitter_df = getAggregateHitterProj(projections)
-
-  # Function to transform 'Firstname Lastname' to 'Lastname, Firstname'
-  def transform_player_name(name):
-    if not isinstance(name, str) or name.strip() == "":
-        return name  # return as-is for blank/invalid input
-
-    suffixes = {"Jr.", "Sr.", "II", "III", "IV", "V"}
-
-    parts = name.strip().split()
-
-    # No transformation possible
-    if len(parts) == 1:
-        return name
-
-    # Check if last token is a suffix
-    if parts[-1] in suffixes:
-        last_name = " ".join(parts[-2:])      # e.g. "Witt Jr."
-        first_name = " ".join(parts[:-2])     # e.g. "Bobby"
-    else:
-        last_name = parts[-1]
-        first_name = " ".join(parts[:-1])
-
-    return f"{last_name}, {first_name}"
-
-  # Apply the transformation to the projection dataframes
-  hitter_df['Player'] = hitter_df['Name'].apply(transform_player_name)
-
-  # 2. Merges projection data with picks.tsv based on the player name
-  hitter_picks_df = picks_df[picks_df['Position'] != 'P'].merge(
-      hitter_df, on='Player', how='inner', suffixes=('_picks', '_proj')
-  ).rename(columns={'Team_picks': 'DraftTeam'})
-
-  # --- 2.5. Apply player limits based on draft order (Pick) ---
-  # Hitter Limit: First 14 non-pitchers
-  if starters:
-    hitter_picks_df = hitter_picks_df.sort_values(by=['DraftTeam', 'Pick'])
-    hitter_picks_df['Hitter_Count'] = hitter_picks_df.groupby('DraftTeam').cumcount() + 1
-    hitter_picks_df = hitter_picks_df[hitter_picks_df['Hitter_Count'] <= 14]
-    hitter_picks_df = hitter_picks_df.drop(columns=['Hitter_Count'])
-
-  return hitter_picks_df[['DraftTeam','Round','Pick','Player','Position','PA','R','HR','RBI','AVG','SB']].sort_values(by='Pick')
-
-def get_pitchers(picks_df, projections, starters):
-
-  # 1. Reads in the dataframes
-  pitcher_df = getAggregatePitcherProj(projections)
-
-  # Function to transform 'Firstname Lastname' to 'Lastname, Firstname'
-  def transform_player_name(name):
-    if not isinstance(name, str) or name.strip() == "":
-        return name  # return as-is for blank/invalid input
-
-    suffixes = {"Jr.", "Sr.", "II", "III", "IV", "V"}
-
-    parts = name.strip().split()
-
-    # No transformation possible
-    if len(parts) == 1:
-        return name
-
-    # Check if last token is a suffix
-    if parts[-1] in suffixes:
-        last_name = " ".join(parts[-2:])      # e.g. "Witt Jr."
-        first_name = " ".join(parts[:-2])     # e.g. "Bobby"
-    else:
-        last_name = parts[-1]
-        first_name = " ".join(parts[:-1])
-
-    return f"{last_name}, {first_name}"
-
-  # Apply the transformation to the projection dataframes
-  pitcher_df['Player'] = pitcher_df['Name'].apply(transform_player_name)
-
-  # 2. Merges projection data with picks.tsv based on the player name
-  pitcher_picks_df = picks_df[picks_df['Position'] == 'P'].merge(
-      pitcher_df, on='Player', how='inner', suffixes=('_picks', '_proj')
-  ).rename(columns={'Team_picks': 'DraftTeam'})
-
-
-  # --- 2.5. Apply player limits based on draft order (Pick) ---
-  if starters:
-    # Pitcher Limit: First 9 pitchers
-    pitcher_picks_df = pitcher_picks_df.sort_values(by=['DraftTeam', 'Pick'])
-    pitcher_picks_df['Pitcher_Count'] = pitcher_picks_df.groupby('DraftTeam').cumcount() + 1
-    pitcher_picks_df = pitcher_picks_df[pitcher_picks_df['Pitcher_Count'] <= 9]
-    pitcher_picks_df = pitcher_picks_df.drop(columns=['Pitcher_Count'])
-
-  return pitcher_picks_df[['DraftTeam','Round','Pick','Player','Position','IP','W','SV','ERA','WHIP','SO']].sort_values(by='Pick')
+  return hitter_picks_df, pitcher_picks_df, final_standings
   
 st.set_page_config(page_title="Fantasy Baseball Standings (2026)", layout="wide")
 
@@ -428,21 +335,10 @@ with right_col:
         elif len(selected_systems) == 0:
             st.warning("Please select at least one projection system.")
         else:
-            standings_df = calculate_standings(picks_df, selected_systems, starters_only)
-            hitter_picks_df = get_hitters(picks_df, selected_systems, starters_only)
-            pitcher_picks_df = get_pitchers(picks_df, selected_systems, starters_only)
+            hitter_picks_df, pitcher_picks_df, standings_df = calculate_standings(picks_df, selected_systems, starters_only)
 
-            standings_df = format_standings_df(standings_df)
+            #standings_df = format_standings_df(standings_df)
 
-            st.session_state["standings_df"] = standings_df
-            st.session_state["hitter_picks_df"] = hitter_picks_df
-            st.session_state["pitcher_picks_df"] = pitcher_picks_df
-
-            if "standings_df" in st.session_state:
-                standings_df = st.session_state["standings_df"]
-                hitter_picks_df = st.session_state["hitter_picks_df"]
-                pitcher_picks_df = st.session_state["pitcher_picks_df"]
-    
                 # -----------------------
                 # APPLY DISPLAY ROUNDING
                 # -----------------------
