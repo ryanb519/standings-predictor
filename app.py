@@ -249,7 +249,7 @@ st.set_page_config(page_title="NFBC Standings Predictor", layout="wide")
 # -----------------------
 # UI
 # -----------------------
-st.title("NFBC Standings Predicgtor")
+st.title("NFBC Standings Predictor")
 st.markdown(
     """
 Upload your draft picks (click **Download** on the 
@@ -261,7 +261,7 @@ or starters-only, then click **Calculate Projected Standings**.
 
 with st.expander("Instructions / Notes", expanded=False):
     st.write("""
-    - Upload a draft picks file in **TSV** format, which you can download on the [**NFBC Draft Results Page**](https://nfc.shgn.com/draftresults/baseball)).
+    - Upload a draft picks file in **TSV** format, which you can download on the [**NFBC Draft Results Page**](https://nfc.shgn.com/draftresults/baseball).
     - Select one or more projection systems using the checkboxes. Selecting multiple will result in an average projection across all selected systems for each player.
     - Choose whether to calculate the standings using the entire roster or only starters
       (starters defined as first 9 pitchers, first 14 hitters).
