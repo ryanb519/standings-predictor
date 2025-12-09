@@ -270,8 +270,13 @@ with st.expander("Instructions / Notes", expanded=False):
 left_col, right_col = st.columns([1, 2])
 
 with left_col:
-    st.subheader("Inputs")
+    # --- PASSWORD PROTECTION ---
+    CORRECT_PASSWORD = "mascot"  # <-- set your password here
 
+    st.subheader("Access Required")
+    password_input = st.text_input("Enter password:", type="password", key="password_field")
+
+    st.subheader("Draft Picks")
     uploaded = st.file_uploader("Upload Draft Picks (.tsv)", type=["tsv"], accept_multiple_files=False)
     picks_df = None
     if uploaded is not None:
@@ -334,6 +339,10 @@ with right_col:
     results_placeholder=st.empty()
 
     if calculate_button:
+        # --- PASSWORD CHECK ---
+        if password_input != CORRECT_PASSWORD:
+            st.error("❌ Invalid password. Please try again.")
+            st.stop()  # Immediately end execution of this rerun
         if uploaded is None:
             st.warning("Please upload a TSV draft file first.")
         elif len(selected_systems) == 0:
