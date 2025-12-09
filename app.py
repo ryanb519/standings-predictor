@@ -327,31 +327,11 @@ with left_col:
     st.write("Calculation control")
     # The Calculate button
     calculate_button = st.button("Calculate Projected Standings")
-    clear_button = st.button("Clear Results")
-
     st.markdown("---")
 
 with right_col:
     st.header("Projected Standings")
     results_placeholder=st.empty()
-
-    # Initialize session_state keys if missing
-    if "standings_df" not in st.session_state:
-        st.session_state["standings_df"] = None
-    if "hitter_picks_df" not in st.session_state:
-        st.session_state["hitter_picks_df"] = None
-    if "pitcher_picks_df" not in st.session_state:
-        st.session_state["pitcher_picks_df"] = None
-    if "last_calculated" not in st.session_state:
-        st.session_state["last_calculated"] = None
-
-    # Clear results
-    if clear_button:
-        st.session_state["standings_df"] = None
-        st.session_state["hitter_picks_df"] = None
-        st.session_state["pitcher_picks_df"] = None
-        st.session_state["last_calculated"] = None
-        st.success("Cleared previous results. Upload a file and click Calculate.")
 
     if calculate_button:
         if uploaded is None:
@@ -360,14 +340,6 @@ with right_col:
             st.warning("Please select at least one projection system.")
         else:
             hitter_picks_df, pitcher_picks_df, standings_df = calculate_standings(picks_df, selected_systems, starters_only)
-            # Save to session_state
-            st.session_state["standings_df"] = standings_df
-            st.session_state["hitter_picks_df"] = hitter_picks_df
-            st.session_state["pitcher_picks_df"] = pitcher_picks_df
-            st.session_state["last_calculated"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-            if st.session_state.get("standings_df") is not None:
-                standings_df = st.session_state["standings_df"].copy()
 
             # -----------------------
             # APPLY DISPLAY ROUNDING
@@ -424,50 +396,3 @@ with right_col:
                                       
             #results_placeholder.dataframe(standings_df, use_container_width=True, hide_index=True, height=575)
             results_placeholder.dataframe(styler, use_container_width=True, hide_index=True, height=575)
-    
-            # -----------------------
-            # TEAM DETAIL SECTION
-            # -----------------------
-            st.subheader("Team Detail")
-
-            # --- Team selector + refresh button side by side ---
-            tcol1, tcol2 = st.columns([3,1])
-            with tcol1:
-                team_choice = st.selectbox(
-                    "Select a team:",
-                    options=standings_df["Team"].unique(),
-                    key="team_selector"
-                )
-            with tcol2:
-                refresh_clicked = st.button("Refresh", key="refresh_detail")
-    
-            # Only refresh team detail when button is pressed
-            if refresh_clicked:
-    
-                # Filter detail data
-                team_hitters = hitter_picks_df[hitter_picks_df["Team"] == team_choice]
-                team_pitchers = pitcher_picks_df[pitcher_picks_df["Team"] == team_choice]
-    
-                # Store in session_state so next rerun shows it
-                st.session_state["team_hitters"] = team_hitters
-                st.session_state["team_pitchers"] = team_pitchers
-                st.session_state["selected_team"] = team_choice
-    
-            # Display team detail if available
-            if "team_hitters" in st.session_state and "team_pitchers" in st.session_state:
-    
-                st.markdown(f"### Team Detail: **{st.session_state['selected_team']}**")
-    
-                st.markdown("#### Hitters")
-                st.dataframe(
-                    st.session_state["team_hitters"],
-                    hide_index=True,
-                    use_container_width=True
-                )
-    
-                st.markdown("#### Pitchers")
-                st.dataframe(
-                    st.session_state["team_pitchers"],
-                    hide_index=True,
-                    use_container_width=True
-                )
