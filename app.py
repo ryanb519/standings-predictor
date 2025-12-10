@@ -258,15 +258,7 @@ st.set_page_config(page_title="NFBC Standings Predictor", layout="wide")
 col_logo, col_title = st.columns([1, 6])
 
 with col_logo:
-    st.markdown(
-    """
-    <a href="https://nfc.shgn.com/draftresults/baseball" target="_blank">
-        <img src="_Wordmark.png" style="width:180px;">
-    </a>
-    """,
-    unsafe_allow_html=True
-)
-    #st.image("_Wordmark.png", width=180)   # adjust size as needed
+    st.image("_Wordmark.png", width=180)   # adjust size as needed
 
 with col_title:
     st.title("NFBC Standings Predictor")
