@@ -258,7 +258,7 @@ st.set_page_config(page_title="NFBC Standings Predictor", layout="wide")
 col_logo, col_title = st.columns([1, 2])
 
 with col_logo:
-    st.image("_Wordmark.png", width=80)   # adjust size as needed
+    st.image("_Wordmark.png", width=180)   # adjust size as needed
 
 with col_title:
     st.title("NFBC Standings Predictor")
