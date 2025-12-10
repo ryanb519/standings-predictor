@@ -433,5 +433,5 @@ with right_col:
             )
     
             standings_placeholder.dataframe(
-                styler, use_container_width=True, hide_index=True, height=575
+                styler, width=True, hide_index=True, height=575
             )
