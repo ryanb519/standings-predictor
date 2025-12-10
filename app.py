@@ -7,33 +7,39 @@ import requests
 import unicodedata
 
 def color_metric_diverging(series, higher_is_better=True):
-    """
-    Creates Green → White → Red gradient for any metric.
-    
-    - higher_is_better=True  → high values = green, low = red
-    - higher_is_better=False → low values = green, high = red
-    """
-    
-    # Reverse values when "lower is better" so we can reuse one scale
+    """Green → White → Red; optionally inverted when lower is better."""
     values = series.copy()
+
+    if values.empty or values.isnull().all():
+        return ["" for _ in series]
+
+    values = pd.to_numeric(values, errors="coerce")
+
     if not higher_is_better:
-        values = values.max() - values  # invert scale
+        if values.max() != values.min():
+            values = values.max() - values
 
     max_val = values.max()
     min_val = values.min()
+
+    if max_val == min_val:
+        return ["background-color: lightgray;" for _ in series]
+
     mid_val = (max_val + min_val) / 2
 
     colors = []
     for v in values:
+        if pd.isna(v):
+            colors.append("")
+            continue
+
         if v <= mid_val:
-            # Green → White
-            scale = (v - min_val) / (mid_val - min_val)
+            scale = (v - min_val) / (mid_val - mid_val if mid_val == min_val else mid_val - min_val)
             r = int(255 * scale)
             g = 255
             b = int(255 * scale)
         else:
-            # White → Red
-            scale = (v - mid_val) / (max_val - mid_val)
+            scale = (v - mid_val) / (max_val - mid_val if max_val == mid_val else max_val - mid_val)
             r = 255
             g = int(255 * (1 - scale))
             b = int(255 * (1 - scale))
