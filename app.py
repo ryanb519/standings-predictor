@@ -249,22 +249,20 @@ def format_standings_df(df):
         df["AVG"] = df["AVG"].apply(lambda x: f"{x:.3f}".lstrip("0") if pd.notnull(x) else x)
 
     return df
-
-def center_df(df):
-    return (
-        df.style
-        .set_properties(**{'text-align': 'center'})        # center cell values
-        .set_table_styles([                               # center column headers
-            dict(selector='th', props=[('text-align', 'center')])
-        ])
-    )
     
 st.set_page_config(page_title="NFBC Standings Predictor", layout="wide")
 
 # -----------------------
 # UI
 # -----------------------
-st.title("NFBC Standings Predictor")
+col_logo, col_title = st.columns([1, 4])
+
+with col_logo:
+    st.image("_Wordmark.png", width=80)   # adjust size as needed
+
+with col_title:
+    st.title("NFBC Standings Predictor")
+
 st.markdown(
     """
 Upload your draft picks (click **Download** on the 
@@ -435,5 +433,5 @@ with right_col:
             )
     
             standings_placeholder.dataframe(
-                center_df(styler), use_container_width=True, hide_index=True, height=575
+                styler, use_container_width=True, hide_index=True, height=575
             )
