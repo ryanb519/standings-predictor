@@ -391,6 +391,14 @@ with right_col:
                     pd.to_numeric(standings_df["AVG"], errors="coerce")
                     .round(3)
                 )
+
+            # Force formatted text to control decimals in Styler
+            if "AVG" in standings_df.columns:
+                standings_df["AVG"] = standings_df["AVG"].map("{:.3f}".format)
+            if "ERA" in standings_df.columns:
+                standings_df["ERA"] = standings_df["ERA"].map("{:.2f}".format)
+            if "WHIP" in standings_df.columns:
+                standings_df["WHIP"] = standings_df["WHIP"].map("{:.2f}".format)
                 
             # -----------------------
             # DISPLAY THE TABLE
