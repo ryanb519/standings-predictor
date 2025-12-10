@@ -6,70 +6,6 @@ from datetime import datetime
 import requests
 import unicodedata
 
-def color_metric_diverging(series, higher_is_better=True):
-    """Green → White → Red; optionally inverted when lower is better."""
-    values = series.copy()
-
-    if values.empty or values.isnull().all():
-        return ["" for _ in series]
-
-    values = pd.to_numeric(values, errors="coerce")
-
-    if not higher_is_better:
-        if values.max() != values.min():
-            values = values.max() - values
-
-    max_val = values.max()
-    min_val = values.min()
-
-    if max_val == min_val:
-        return ["background-color: lightgray;" for _ in series]
-
-    mid_val = (max_val + min_val) / 2
-
-    colors = []
-    for v in values:
-        if pd.isna(v):
-            colors.append("")
-            continue
-
-        if v <= mid_val:
-            scale = (v - min_val) / (mid_val - mid_val if mid_val == min_val else mid_val - min_val)
-            r = int(255 * scale)
-            g = 255
-            b = int(255 * scale)
-        else:
-            scale = (v - mid_val) / (max_val - mid_val if max_val == mid_val else max_val - mid_val)
-            r = 255
-            g = int(255 * (1 - scale))
-            b = int(255 * (1 - scale))
-
-        colors.append(f"background-color: rgba({r}, {g}, {b}, 0.6);")
-
-    return colors
-    
-def format_standings_df(df):
-    # Whole-number columns
-    whole_cols = [
-        "R", "R_Rank", "HR", "HR_Rank", "RBI", "RBI_Rank", "SB", "SB_Rank",
-        "Grand_Total_Score", "Hitter_Score", "Pitcher_Score",
-        "W", "W_Rank", "SO", "SO_Rank", "SV", "SV_Rank"
-    ]
-    for col in whole_cols:
-        if col in df.columns:
-            df[col] = df[col].round(0).astype("Int64")
-
-    # ERA / WHIP → 2 decimals
-    for col in ["ERA", "WHIP"]:
-        if col in df.columns:
-            df[col] = df[col].round(2)
-
-    # AVG → 3 decimals, no leading zero
-    if "AVG" in df.columns:
-        df["AVG"] = df["AVG"].apply(lambda x: f"{x:.3f}".lstrip("0") if pd.notnull(x) else x)
-
-    return df
-
 def getAggregateHitterProj(list):
   df = pd.DataFrame()
   for i in list:
@@ -249,7 +185,80 @@ def calculate_standings(picks_df, projections, starters):
   hitter_picks_df = hitter_picks_df[['DraftTeam','Round','Pick','Position','Name','PA','R','RBI','SB','HR','AVG']].sort_values(by='Pick')
   pitcher_picks_df = pitcher_picks_df[['DraftTeam','Round','Pick','Position','Name','IP','W','SV','SO','ERA','WHIP']].sort_values(by='Pick')
   return hitter_picks_df, pitcher_picks_df, final_standings
-  
+
+def color_metric_diverging(series, higher_is_better=True):
+    """Green → White → Red; optionally inverted when lower is better."""
+    values = series.copy()
+
+    if values.empty or values.isnull().all():
+        return ["" for _ in series]
+
+    values = pd.to_numeric(values, errors="coerce")
+
+    if not higher_is_better:
+        if values.max() != values.min():
+            values = values.max() - values
+
+    max_val = values.max()
+    min_val = values.min()
+
+    if max_val == min_val:
+        return ["background-color: lightgray;" for _ in series]
+
+    mid_val = (max_val + min_val) / 2
+
+    colors = []
+    for v in values:
+        if pd.isna(v):
+            colors.append("")
+            continue
+
+        if v <= mid_val:
+            scale = (v - min_val) / (mid_val - mid_val if mid_val == min_val else mid_val - min_val)
+            r = int(255 * scale)
+            g = 255
+            b = int(255 * scale)
+        else:
+            scale = (v - mid_val) / (max_val - mid_val if max_val == mid_val else max_val - mid_val)
+            r = 255
+            g = int(255 * (1 - scale))
+            b = int(255 * (1 - scale))
+
+        colors.append(f"background-color: rgba({r}, {g}, {b}, 0.6);")
+
+    return colors
+    
+def format_standings_df(df):
+    # Whole-number columns
+    whole_cols = [
+        "R", "R_Rank", "HR", "HR_Rank", "RBI", "RBI_Rank", "SB", "SB_Rank",
+        "Grand_Total_Score", "Hitter_Score", "Pitcher_Score",
+        "W", "W_Rank", "SO", "SO_Rank", "SV", "SV_Rank"
+    ]
+    for col in whole_cols:
+        if col in df.columns:
+            df[col] = df[col].round(0).astype("Int64")
+
+    # ERA / WHIP → 2 decimals
+    for col in ["ERA", "WHIP"]:
+        if col in df.columns:
+            df[col] = df[col].round(2)
+
+    # AVG → 3 decimals, no leading zero
+    if "AVG" in df.columns:
+        df["AVG"] = df["AVG"].apply(lambda x: f"{x:.3f}".lstrip("0") if pd.notnull(x) else x)
+
+    return df
+
+def center_df(df):
+    return (
+        df.style
+        .set_properties(**{'text-align': 'center'})        # center cell values
+        .set_table_styles([                               # center column headers
+            dict(selector='th', props=[('text-align', 'center')])
+        ])
+    )
+    
 st.set_page_config(page_title="NFBC Standings Predictor", layout="wide")
 
 # -----------------------
@@ -426,5 +435,5 @@ with right_col:
             )
     
             standings_placeholder.dataframe(
-                styler, use_container_width=True, hide_index=True, height=575
+                center_df(styler), use_container_width=True, hide_index=True, height=575
             )
