@@ -444,11 +444,11 @@ with right_col:
       
       styler = styler.apply(
         lambda s: color_metric_diverging(s, True),
-        subset=[c for c in higher_is_better_cols if c in standings_df.columns],
+        subset=[c for c in higher_is_better_cols if c in team_hitters.columns],
       )
       styler = styler.apply(
           lambda s: color_metric_diverging(s, False),
-          subset=[c for c in lower_is_better_cols if c in standings_df.columns],
+          subset=[c for c in lower_is_better_cols if c in team_hitters.columns],
       )
    
       st.markdown("### Hitters")
@@ -456,14 +456,15 @@ with right_col:
   
       # PITCHERS TABLE
       styler = team_pitchers.style
+
       
       styler = styler.apply(
         lambda s: color_metric_diverging(s, True),
-        subset=[c for c in higher_is_better_cols if c in standings_df.columns],
+        subset=[c for c in higher_is_better_cols if c in team_pitchers.columns],
       )
       styler = styler.apply(
           lambda s: color_metric_diverging(s, False),
-          subset=[c for c in lower_is_better_cols if c in standings_df.columns],
+          subset=[c for c in lower_is_better_cols if c in team_pitchers.columns],
       )
       st.markdown("### Pitchers")
       st.dataframe(team_pitchers, hide_index=True, width='stretch')
