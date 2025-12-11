@@ -392,63 +392,43 @@ with right_col:
             st.session_state["pitcher_picks_df"] = pitcher_picks_df
 
 
-            if "standings_df" in st.session_state:
-              standings_df = st.session_state["standings_df"]
-              hitter_picks_df = st.session_state["hitter_picks_df"]
-              pitcher_picks_df = st.session_state["pitcher_picks_df"]
+    if "standings_df" in st.session_state:
+      standings_df = st.session_state["standings_df"]
+      hitter_picks_df = st.session_state["hitter_picks_df"]
+      pitcher_picks_df = st.session_state["pitcher_picks_df"]
 
-              # -----------------------
-              # DISPLAY THE TABLE
-              # -----------------------
-              styler = standings_df.style
-              higher_is_better_cols = ["R", "HR", "RBI", "SB", "W", "SO", "SV", "AVG"]
-              lower_is_better_cols = ["ERA", "WHIP"]
+      # -----------------------
+      # DISPLAY THE TABLE
+      # -----------------------
+      styler = standings_df.style
+      higher_is_better_cols = ["R", "HR", "RBI", "SB", "W", "SO", "SV", "AVG"]
+      lower_is_better_cols = ["ERA", "WHIP"]
       
-              styler = styler.apply(
-                  lambda s: color_metric_diverging(s, True),
-                  subset=[c for c in higher_is_better_cols if c in standings_df.columns],
-              )
-              styler = styler.apply(
-                  lambda s: color_metric_diverging(s, False),
-                  subset=[c for c in lower_is_better_cols if c in standings_df.columns],
-              )
+      styler = styler.apply(
+        lambda s: color_metric_diverging(s, True),
+        subset=[c for c in higher_is_better_cols if c in standings_df.columns],
+      )
+      styler = styler.apply(
+          lambda s: color_metric_diverging(s, False),
+          subset=[c for c in lower_is_better_cols if c in standings_df.columns],
+      )
       
-              standings_placeholder.dataframe(
-                  styler, width='stretch', hide_index=True, height=575
-              )
+      standings_placeholder.dataframe(styler, width='stretch', hide_index=True, height=575)
   
-              # -----------------------
-              # TEAM DETAIL SECTION
-              # -----------------------
-              st.subheader("Team Detail")
-              teams = sorted(standings_df["Team"].unique())
-              selected_team = st.selectbox("Select a Team", teams)
+      # -----------------------
+      # TEAM DETAIL SECTION
+      # -----------------------
+      st.subheader("Team Detail")
+      teams = sorted(standings_df["Team"].unique())
+      selected_team = st.selectbox("Select a Team", teams)
   
-              team_hitters = hitter_picks_df[hitter_picks_df["DraftTeam"] == selected_team].copy()
-              team_pitchers = pitcher_picks_df[pitcher_picks_df["DraftTeam"] == selected_team].copy()
-
-              # STANDINGS TABLE
-              styler = standings_df.style
-              higher_is_better_cols = ["R", "HR", "RBI", "SB", "W", "SO", "SV", "AVG"]
-              lower_is_better_cols = ["ERA", "WHIP"]
-      
-              styler = styler.apply(
-                  lambda s: color_metric_diverging(s, True),
-                  subset=[c for c in higher_is_better_cols if c in standings_df.columns],
-              )
-              styler = styler.apply(
-                  lambda s: color_metric_diverging(s, False),
-                  subset=[c for c in lower_is_better_cols if c in standings_df.columns],
-              )
-      
-              standings_placeholder.dataframe(
-                  styler, width='stretch', hide_index=True, height=575
-              )
-              
-              # HITTERS TABLE
-              st.markdown("### Hitters")
-              st.dataframe(team_hitters, hide_index=True, use_container_width=True)
+      team_hitters = hitter_picks_df[hitter_picks_df["DraftTeam"] == selected_team].copy()
+      team_pitchers = pitcher_picks_df[pitcher_picks_df["DraftTeam"] == selected_team].copy()
+   
+      # HITTERS TABLE
+      st.markdown("### Hitters")
+      st.dataframe(team_hitters, hide_index=True, width='stretch')
   
-              # PITCHERS TABLE
-              st.markdown("### Pitchers")
-              st.dataframe(team_pitchers, hide_index=True, use_container_width=True)
+      # PITCHERS TABLE
+      st.markdown("### Pitchers")
+      st.dataframe(team_pitchers, hide_index=True, width='stretch')
