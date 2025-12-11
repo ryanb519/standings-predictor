@@ -229,49 +229,32 @@ def color_metric_diverging(series, higher_is_better=True):
     return colors
     
 def format_standings_df(df):
-  whole_number_columns = [
-                "R", "R_Rank",
-                "HR", "HR_Rank",
-                "RBI", "RBI_Rank",
-                "SB", "SB_Rank",
-                "Grand_Total_Score",
-                "Hitter_Score",
-                "Pitcher_Score",
-                "W", "W_Rank",
-                "SO", "SO_Rank",
-                "SV", "SV_Rank"]
+    # Whole-number columns
+    whole_cols = [
+        "R", "R_Rank", "HR", "HR_Rank", "RBI", "RBI_Rank", "SB", "SB_Rank",
+        "Grand_Total_Score", "Hitter_Score", "Pitcher_Score",
+        "W", "W_Rank", "SO", "SO_Rank", "SV", "SV_Rank"
+    ]
+    for col in whole_cols:
+        if col in df.columns:
+            df[col] = df[col].round(0).astype("Int64")
 
-  # Round whole-number columns
-  for col in whole_number_columns:
-    if col in df.columns:
-      df[col] = pd.to_numeric(df[col], errors="coerce").round(0).astype("Int64")
+    # ERA / WHIP → 2 decimals
+    for col in ["ERA", "WHIP"]:
+        if col in df.columns:
+            df[col] = df[col].round(2)
 
-  # Round ERA & WHIP to 2 decimals
-  if "ERA" in df.columns:
-    df["ERA"] = (pd.to_numeric(df["ERA"], errors="coerce").round(2))
+    # AVG → 3 decimals, no leading zero
+    if "AVG" in df.columns:
+        df["AVG"] = df["AVG"].apply(lambda x: f"{x:.3f}".lstrip("0") if pd.notnull(x) else x)
 
-  if "WHIP" in df.columns:
-    df["WHIP"] = (pd.to_numeric(df["WHIP"], errors="coerce").round(2))
-                    
-  # Format AVG to 3 decimals
-  if "AVG" in df.columns:
-    df["AVG"] = (pd.to_numeric(df["AVG"], errors="coerce").round(3))
-
-  # Force formatted text to control decimals in Styler
-  if "AVG" in df.columns:
-    df["AVG"] = df["AVG"].map("{:.3f}".format)
-  if "ERA" in df.columns:
-    df["ERA"] = df["ERA"].map("{:.2f}".format)
-  if "WHIP" in standings_df.columns:
-    df["WHIP"] = df["WHIP"].map("{:.2f}".format)
-
-  return df
+    return df
+    
+st.set_page_config(page_title="NFBC Standings Predictor", layout="wide")
 
 # -----------------------
 # UI
 # -----------------------
-st.set_page_config(page_title="NFBC Standings Predictor", layout="wide")
-
 col_logo, col_title = st.columns([1, 6])
 
 with col_logo:
@@ -383,9 +366,56 @@ with right_col:
             hitter_picks_df, pitcher_picks_df, standings_df = calculate_standings(picks_df, selected_systems, starters_only)
 
             # -----------------------
+            # APPLY DISPLAY ROUNDING
+            # -----------------------
+            whole_number_columns = [
+                "R", "R_Rank",
+                "HR", "HR_Rank",
+                "RBI", "RBI_Rank",
+                "SB", "SB_Rank",
+                "Grand_Total_Score",
+                "Hitter_Score",
+                "Pitcher_Score",
+                "W", "W_Rank",
+                "SO", "SO_Rank",
+                "SV", "SV_Rank"]
+
+            # Round whole-number columns
+            for col in whole_number_columns:
+                if col in standings_df.columns:
+                    standings_df[col] = pd.to_numeric(standings_df[col], errors="coerce").round(0).astype("Int64")
+
+            # Round ERA & WHIP to 2 decimals
+            if "ERA" in standings_df.columns:
+                standings_df["ERA"] = (
+                    pd.to_numeric(standings_df["ERA"], errors="coerce")
+                    .round(2)
+                )
+
+            if "WHIP" in standings_df.columns:
+                standings_df["WHIP"] = (
+                    pd.to_numeric(standings_df["WHIP"], errors="coerce")
+                    .round(2)
+                )
+                    
+            # Format AVG to 3 decimals
+            if "AVG" in standings_df.columns:
+                standings_df["AVG"] = (
+                    pd.to_numeric(standings_df["AVG"], errors="coerce")
+                    .round(3)
+                )
+
+            # Force formatted text to control decimals in Styler
+            if "AVG" in standings_df.columns:
+                standings_df["AVG"] = standings_df["AVG"].map("{:.3f}".format)
+            if "ERA" in standings_df.columns:
+                standings_df["ERA"] = standings_df["ERA"].map("{:.2f}".format)
+            if "WHIP" in standings_df.columns:
+                standings_df["WHIP"] = standings_df["WHIP"].map("{:.2f}".format)
+                
+            # -----------------------
             # DISPLAY THE TABLE
             # -----------------------
-            standings_df = format_standings_df(standings_df)
             standings_df = standings_df.drop(columns=['R_Rank','RBI_Rank','HR_Rank','SB_Rank','AVG_Rank','ERA_Rank','WHIP_Rank','SO_Rank','W_Rank','SV_Rank'])
             standings_df = standings_df.rename(columns={'Overall_Rank':'Rank','DraftTeam':'Team','Grand_Total_Score':'Total Points','Hitter_Score':'Hitters','Pitcher_Score':'Pitchers'})
 
