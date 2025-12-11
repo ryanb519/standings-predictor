@@ -262,7 +262,7 @@ def format_standings_df(df):
     df["AVG"] = df["AVG"].map("{:.3f}".format)
   if "ERA" in df.columns:
     df["ERA"] = df["ERA"].map("{:.2f}".format)
-  if "WHIP" in standings_df.columns:
+  if "WHIP" in df.columns:
     df["WHIP"] = df["WHIP"].map("{:.2f}".format)
 
   return df
