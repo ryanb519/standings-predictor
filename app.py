@@ -412,8 +412,6 @@ with right_col:
                   lambda s: color_metric_diverging(s, False),
                   subset=[c for c in lower_is_better_cols if c in standings_df.columns],
               )
-
-              styler = st.session_state["styler"]
       
               standings_placeholder.dataframe(
                   styler, width='stretch', hide_index=True, height=575
@@ -430,9 +428,23 @@ with right_col:
               team_pitchers = pitcher_picks_df[pitcher_picks_df["DraftTeam"] == selected_team].copy()
 
               # STANDINGS TABLE
+              styler = standings_df.style
+              higher_is_better_cols = ["R", "HR", "RBI", "SB", "W", "SO", "SV", "AVG"]
+              lower_is_better_cols = ["ERA", "WHIP"]
+      
+              styler = styler.apply(
+                  lambda s: color_metric_diverging(s, True),
+                  subset=[c for c in higher_is_better_cols if c in standings_df.columns],
+              )
+              styler = styler.apply(
+                  lambda s: color_metric_diverging(s, False),
+                  subset=[c for c in lower_is_better_cols if c in standings_df.columns],
+              )
+      
               standings_placeholder.dataframe(
                   styler, width='stretch', hide_index=True, height=575
               )
+              
               # HITTERS TABLE
               st.markdown("### Hitters")
               st.dataframe(team_hitters, hide_index=True, use_container_width=True)
