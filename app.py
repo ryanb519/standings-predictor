@@ -239,7 +239,8 @@ def format_standings_df(df):
                 "Pitcher_Score",
                 "W", "W_Rank",
                 "SO", "SO_Rank",
-                "SV", "SV_Rank"]
+                "SV", "SV_Rank",
+                "PA", "IP"]
 
   # Round whole-number columns
   for col in whole_number_columns:
@@ -264,6 +265,10 @@ def format_standings_df(df):
     df["ERA"] = df["ERA"].map("{:.2f}".format)
   if "WHIP" in df.columns:
     df["WHIP"] = df["WHIP"].map("{:.2f}".format)
+  if "PA" in df.columns:
+    df["PA"] = df["PA"].map("{:.0f}".format)
+  if "IP" in df.columns:
+    df["IP"] = df["iP"].map("{:.0f}".format)
 
   return df
 
@@ -457,7 +462,6 @@ with right_col:
       # PITCHERS TABLE
       styler = team_pitchers.style
 
-      
       styler = styler.apply(
         lambda s: color_metric_diverging(s, True),
         subset=[c for c in higher_is_better_cols if c in team_pitchers.columns],
@@ -467,4 +471,4 @@ with right_col:
           subset=[c for c in lower_is_better_cols if c in team_pitchers.columns],
       )
       st.markdown("### Pitchers")
-      st.dataframe(team_pitchers, hide_index=True, width='stretch')
+      st.dataframe(styler, hide_index=True, width='stretch')
