@@ -268,7 +268,7 @@ def format_standings_df(df):
   if "PA" in df.columns:
     df["PA"] = df["PA"].map("{:.0f}".format)
   if "IP" in df.columns:
-    df["IP"] = df["iP"].map("{:.0f}".format)
+    df["IP"] = df["IP"].map("{:.0f}".format)
 
   return df
 
