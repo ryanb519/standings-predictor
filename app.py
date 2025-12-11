@@ -370,6 +370,9 @@ with right_col:
     st.header("Projected Standings")
     standings_placeholder=st.empty()
 
+    # -----------------------
+    # CALCULATE STANDINGS
+    # -----------------------
     if calculate_button:
         # --- PASSWORD CHECK ---
         if password_input != CORRECT_PASSWORD:
@@ -398,7 +401,7 @@ with right_col:
       pitcher_picks_df = st.session_state["pitcher_picks_df"]
 
       # -----------------------
-      # DISPLAY THE TABLE
+      # DISPLAY THE TABLES
       # -----------------------
       styler = standings_df.style
       higher_is_better_cols = ["R", "HR", "RBI", "SB", "W", "SO", "SV", "AVG"]
@@ -424,11 +427,43 @@ with right_col:
   
       team_hitters = hitter_picks_df[hitter_picks_df["DraftTeam"] == selected_team].copy()
       team_pitchers = pitcher_picks_df[pitcher_picks_df["DraftTeam"] == selected_team].copy()
-   
+
+      team_hitters = team_hitters.drop(columns=["DraftTeam"])
+      team_pitchers = team_pitchers.drop(columns=["DraftTeam"])
+      
+      team_hitters["Round"] = team_hitters["Round"].astype(int)
+      team_hitters = team_hitters.sort_values(by="Round")
+      
+      team_pitchers["Round"] = team_pitchers["Round"].astype(int)
+      team_pitchers = team_pitchers.sort_values(by="Round")
+
       # HITTERS TABLE
+      styler = team_hitters.style
+      higher_is_better_cols = ["R", "HR", "RBI", "SB", "W", "SO", "SV", "AVG"]
+      lower_is_better_cols = ["ERA", "WHIP"]
+      
+      styler = styler.apply(
+        lambda s: color_metric_diverging(s, True),
+        subset=[c for c in higher_is_better_cols if c in standings_df.columns],
+      )
+      styler = styler.apply(
+          lambda s: color_metric_diverging(s, False),
+          subset=[c for c in lower_is_better_cols if c in standings_df.columns],
+      )
+   
       st.markdown("### Hitters")
-      st.dataframe(team_hitters, hide_index=True, width='stretch')
+      st.dataframe(styler, hide_index=True, width='stretch')
   
       # PITCHERS TABLE
+      styler = team_pitchers.style
+      
+      styler = styler.apply(
+        lambda s: color_metric_diverging(s, True),
+        subset=[c for c in higher_is_better_cols if c in standings_df.columns],
+      )
+      styler = styler.apply(
+          lambda s: color_metric_diverging(s, False),
+          subset=[c for c in lower_is_better_cols if c in standings_df.columns],
+      )
       st.markdown("### Pitchers")
       st.dataframe(team_pitchers, hide_index=True, width='stretch')
