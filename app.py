@@ -424,8 +424,8 @@ with right_col:
               teams = sorted(standings_df["Team"].unique())
               selected_team = st.selectbox("Select a Team", teams)
   
-              team_hitters = hitter_picks_df[hitter_picks_df["Team"] == selected_team].copy()
-              team_pitchers = pitcher_picks_df[pitcher_picks_df["Team"] == selected_team].copy()
+              team_hitters = hitter_picks_df[hitter_picks_df["DraftTeam"] == selected_team].copy()
+              team_pitchers = pitcher_picks_df[pitcher_picks_df["DraftTeam"] == selected_team].copy()
   
               # HITTERS TABLE
               st.markdown("### Hitters")
