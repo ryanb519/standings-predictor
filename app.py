@@ -413,11 +413,11 @@ with right_col:
       lower_is_better_cols = ["ERA", "WHIP"]
       
       styler = styler.apply(
-        lambda s: color_metric_diverging(s, True),
+        lambda s: color_metric_diverging(s, False),
         subset=[c for c in higher_is_better_cols if c in standings_df.columns],
       )
       styler = styler.apply(
-          lambda s: color_metric_diverging(s, False),
+          lambda s: color_metric_diverging(s, True),
           subset=[c for c in lower_is_better_cols if c in standings_df.columns],
       )
       
@@ -448,11 +448,11 @@ with right_col:
       lower_is_better_cols = ["ERA", "WHIP"]
       
       styler = styler.apply(
-        lambda s: color_metric_diverging(s, True),
+        lambda s: color_metric_diverging(s, False),
         subset=[c for c in higher_is_better_cols if c in team_hitters.columns],
       )
       styler = styler.apply(
-          lambda s: color_metric_diverging(s, False),
+          lambda s: color_metric_diverging(s, True),
           subset=[c for c in lower_is_better_cols if c in team_hitters.columns],
       )
    
@@ -463,11 +463,11 @@ with right_col:
       styler = team_pitchers.style
 
       styler = styler.apply(
-        lambda s: color_metric_diverging(s, True),
+        lambda s: color_metric_diverging(s, False),
         subset=[c for c in higher_is_better_cols if c in team_pitchers.columns],
       )
       styler = styler.apply(
-          lambda s: color_metric_diverging(s, False),
+          lambda s: color_metric_diverging(s, True),
           subset=[c for c in lower_is_better_cols if c in team_pitchers.columns],
       )
       st.markdown("### Pitchers")
