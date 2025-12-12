@@ -368,6 +368,7 @@ with left_col:
 
     st.markdown("---")
     # The Calculate button
+    st.subheader("Calculate")
     calculate_button = st.button("Calculate Projected Standings")
     st.markdown("---")
 
