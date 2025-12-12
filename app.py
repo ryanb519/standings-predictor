@@ -20,6 +20,7 @@ def getAggregateHitterProj(list):
     'SH':'mean','GDP':'mean','CS':'mean','OBP':'mean','SLG':'mean','OPS':'mean','wOBA':'mean','BB%':'mean','K%':'mean',
     'ISO':'mean','BABIP':'mean','wRC+':'mean','WAR':'mean','Team':'min','#Proj':'sum'})#,'Source':'transform(lambda x: '',''.join(x))'})
   aggDF.rename(columns={'playerid':'FanGraphsID','PlayerName':'Name','xMLBAMID':'MLBAMID'},inplace=True)
+  aggDF = aggDF[aggDF['PA'] > 1]
   return aggDF
 
 def getAggregatePitcherProj(list):
@@ -36,6 +37,7 @@ def getAggregatePitcherProj(list):
     'HBP':'mean','HR/9':'mean','K%':'mean','BB%':'mean','K-BB%':'mean','GB%':'mean','AVG':'mean','BABIP':'mean',
     'LOB%':'mean','FIP':'mean','WAR':'mean','QS':'mean','Team':'min','#Proj':'sum'})#,'Source':'transform(lambda x: '',''.join(x))'})'Source':'mean',
   aggDF.rename(columns={'playerid':'FanGraphsID','PlayerName':'Name','xMLBAMID':'MLBAMID'},inplace=True)
+  aggDF = aggDF[aggDF['IP'] > 1]
   return aggDF
 
 def calculate_standings(picks_df, projections, starters):
@@ -180,7 +182,6 @@ def calculate_standings(picks_df, projections, starters):
 
   # Sort by Overall Rank and save to a new file
   final_standings = final_standings.sort_values(by='Overall_Rank').reset_index(drop=True)
-  final_standings.to_csv('projected_fantasy_standings_with_totals.csv', index=False)
 
   hitter_picks_df = hitter_picks_df[['DraftTeam','Round','Pick','Position','Name','PA','R','RBI','SB','HR','AVG']].sort_values(by='Pick')
   pitcher_picks_df = pitcher_picks_df[['DraftTeam','Round','Pick','Position','Name','IP','W','SV','SO','ERA','WHIP']].sort_values(by='Pick')
@@ -366,7 +367,6 @@ with left_col:
     starters_only = roster_option.startswith("Starters")
 
     st.markdown("---")
-    st.write("Calculation control")
     # The Calculate button
     calculate_button = st.button("Calculate Projected Standings")
     st.markdown("---")
