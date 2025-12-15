@@ -44,6 +44,6 @@ for i in projList:
   data = requests.get("https://www.fangraphs.com/api/projections?pos=all&stats=pit&type="+i).json()
   df = pd.DataFrame(data)
   df.to_csv(i+'_pitchers.csv', index=False)
-  upload_df_to_github(df, repo_name, "data/pitchers.csv", "Daily update: pitchers", github_token)
+  upload_df_to_github(df, repo_name, "data/"+i+"_pitchers.csv", "Daily update: pitchers", github_token)
 
 
