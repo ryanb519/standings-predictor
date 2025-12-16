@@ -1,0 +1,951 @@
+Rank	Player ID	Player	Team	Position(s)	ADP	Min Pick	Max Pick	Difference	# Picks	Team	Team Pick
+1	9810	Ohtani, Shohei	LAD	UT, P	1.20	1	2	-0.20	15	@steveymer	1
+2	8956	Judge, Aaron	NYY	OF	1.87	1	3	0.13	15	Bloom DC1 - Meatball	2
+3	10932	Witt Jr., Bobby	KC	SS	3.00	2	4	-	15	Unregulated Nervous System DC1	3
+4	10030	Soto, Juan	NYM	OF	4.60	4	6	3.40	15	Cleveland Dustmites	8
+5	8594	Ramirez, Jose	CLE	3B	5.20	3	7	-1.20	15	Dommy Meatballs	4
+6	10711	Skubal, Tarik	DET	P	6.07	4	8	-0.07	15	Bronx Yankees DC1	6
+7	11025	Carroll, Corbin	ARZ	OF	8.00	6	11	-1.00	15	@ven_armbarn	7
+8	9775	Acuna Jr., Ronald	ATL	OF	8.93	4	12	17.07	15	Perfect Imperfection DC 2	26
+9	11583	De La Cruz, Elly	CIN	SS	9.53	5	12	-4.53	15	Perfect Imperfection DC 2	5
+10	10900	Crochet, Garrett	BOS	P	9.80	6	13	4.20	15	@DOUGHBOYS	14
+11	11885	Skenes, Paul	PIT	P	10.00	6	13	3.00	15	@Butlerj25	13
+12	10260	Rodriguez, Julio	SEA	OF	10.40	7	13	-0.40	15	The Robot DC1	10
+13	11875	Caminero, Junior	TB	3B	13.67	10	16	-1.67	15	KCBubba Meatball	12
+14	9948	Tatis Jr., Fernando	SD	OF	14.33	12	20	6.67	15	The Robot DC1	21
+15	11108	Henderson, Gunnar	BAL	SS	16.33	14	20	-1.33	15	So Many Miles	15
+16	8226	Lindor, Francisco	NYM	SS	17.13	13	20	1.87	15	KCBubba Meatball	19
+17	9785	Guerrero Jr., Vladimir	TOR	1B	18.20	16	24	-2.20	15	So Many Miles	16
+18	12222	Kurtz, Nick	ATH	1B	18.40	14	22	-1.40	15	@DOUGHBOYS	17
+19	9787	Tucker, Kyle	CHC	OF	18.87	15	24	-0.87	15	@Butlerj25	18
+20	11738	Chourio, Jackson	MLW	OF	19.40	16	22	-8.40	15	@gmarti12	11
+21	10866	Raleigh, Cal	SEA	C	19.73	14	26	2.27	15	Rufe Too-Early-Meatball DC	22
+22	10231	Chisholm Jr., Jazz	NYY	2B, 3B	22.13	15	27	5.87	15	Unregulated Nervous System DC1	28
+23	11883	Yamamoto, Yoshinobu	LAD	P	22.53	18	26	14.47	15	@ven_armbarn	37
+24	8940	Schwarber, Kyle	PHI	UT	25.53	17	36	-16.53	15	Rufe Too-Early-Meatball DC	9
+25	11864	Crow-Armstrong, Pete	CHC	OF	26.73	14	32	-6.73	15	@gmarti12	20
+26	10312	Alonso, Pete	BAL	1B	28.20	24	34	-1.20	15	Dommy Meatballs	27
+27	11750	Wood, James	WAS	OF	29.13	22	44	3.87	15	Unregulated Nervous System DC1	33
+28	9132	Turner, Trea	PHI	SS	29.27	23	40	-6.27	15	Cleveland Dustmites	23
+29	11741	Neto, Zach	LAA	SS	30.53	17	40	-6.53	15	@ven_armbarn	24
+30	10770	Sanchez, Cristopher	PHI	P	31.20	26	37	7.80	15	Rufe Too-Early-Meatball DC	39
+31	7887	Sale, Chris	ATL	P	31.67	25	40	-0.67	15	@steveymer	31
+32	10134	Munoz, Andres	SEA	P	32.93	28	39	20.07	15	Cleveland Dustmites	53
+33	11435	Brown, Hunter	HOU	P	33.13	25	43	2.87	15	Bronx Yankees DC1	36
+34	10712	Gilbert, Logan	SEA	P	33.60	23	41	0.40	15	Dommy Meatballs	34
+35	9112	Marte, Ketel	ARZ	2B	34.53	23	47	-9.53	15	Bronx Yankees DC1	25
+36	9376	Diaz, Edwin	LAD	P	35.67	31	42	14.33	15	@gmarti12	50
+37	10367	Alvarez, Yordan	HOU	UT	37.27	21	52	16.73	15	@ven_armbarn	54
+38	11787	Miller, Mason	SD	P	38.00	31	47	38.00	15	So Many Miles	76
+39	10239	Duran, Jhoan	PHI	P	38.33	33	45	9.67	15	@Butlerj25	48
+40	7891	Machado, Manny	SD	3B	39.67	31	53	-10.67	15	Bloom DC1 - Meatball	29
+41	11800	Woo, Bryan	SEA	P	40.27	32	55	17.73	15	Unregulated Nervous System DC1	58
+42	11982	Smith, Cade	CLE	P	41.53	37	48	86.47	15	Cleveland Dustmites	128
+43	8784	deGrom, Jacob	TEX	P	43.60	37	49	-3.60	15	The Robot DC1	40
+44	10216	Greene, Hunter	CIN	P	46.53	35	59	10.47	15	Dommy Meatballs	57
+45	11045	Abrams, CJ	WAS	SS	47.73	34	75	-15.73	15	Bloom DC1 - Meatball	32
+46	10681	Bednar, David	NYY	P	49.53	39	65	31.47	15	The Robot DC1	81
+47	8638	Betts, Mookie	LAD	SS	49.67	31	63	-3.67	15	So Many Miles	46
+48	10149	Rooker, Brent	ATH	OF	49.73	35	58	-2.73	15	@DOUGHBOYS	47
+49	7885	Harper, Bryce	PHI	1B	50.07	41	60	-9.07	15	@gmarti12	41
+50	10166	Ragans, Cole	KC	P	50.87	42	64	52.13	15	@Butlerj25	103
+51	8690	Olson, Matt	ATL	1B	52.13	36	61	13.87	15	Bronx Yankees DC1	66
+52	10364	Contreras, William	MLW	C	53.87	46	63	-11.87	15	KCBubba Meatball	42
+53	7709	Chapman, Aroldis	BOS	P	53.93	46	67	41.07	15	Perfect Imperfection DC 2	95
+54	11881	Langford, Wyatt	TEX	OF	54.20	46	63	30.80	15	Bronx Yankees DC1	85
+55	10480	Webb, Logan	SF	P	54.67	45	71	-3.67	15	The Robot DC1	51
+56	9708	Devers, Rafael	SF	1B	56.93	42	70	-18.93	15	Cleveland Dustmites	38
+57	8704	Fried, Max	NYY	P	57.07	41	74	46.93	15	@DOUGHBOYS	104
+58	9492	Hader, Josh	HOU	P	59.47	50	69	14.53	15	@DOUGHBOYS	74
+59	10845	Langeliers, Shea	ATH	C	59.67	44	77	3.33	15	Unregulated Nervous System DC1	63
+60	11948	Anthony, Roman	BOS	OF	59.73	43	80	-14.73	15	So Many Miles	45
+61	11911	Rice, Ben	NYY	C, 1B	60.73	47	71	32.27	15	Unregulated Nervous System DC1	93
+62	9915	Peralta, Freddy	MLW	P	60.93	41	74	-8.93	15	Rufe Too-Early-Meatball DC	52
+63	9328	Snell, Blake	LAD	P	61.20	42	71	-5.20	15	Perfect Imperfection DC 2	56
+64	10151	Turang, Brice	MLW	2B	63.20	51	78	71.80	15	So Many Miles	135
+65	10786	Ryan, Joe	MIN	P	63.80	54	73	-28.80	15	Perfect Imperfection DC 2	35
+66	10874	Kirby, George	SEA	P	66.80	60	73	-4.80	15	Bloom DC1 - Meatball	62
+67	7793	Freeman, Freddie	LAD	1B	67.20	36	84	-24.20	15	@Butlerj25	43
+68	10255	Naylor, Josh	SEA	1B	67.67	60	78	2.33	15	The Robot DC1	70
+69	11848	Goodman, Hunter	COL	C	69.40	47	84	45.60	15	Bronx Yankees DC1	115
+70	10191	Cease, Dylan	TOR	P	72.13	44	82	-12.13	15	@steveymer	60
+71	8981	Iglesias, Raisel	ATL	P	73.13	58	95	48.87	15	Bloom DC1 - Meatball	122
+72	11985	Ramirez, Agustin	MIA	C	75.27	65	95	-7.27	15	Cleveland Dustmites	68
+73	9821	Riley, Austin	ATL	3B	75.27	64	95	-10.27	15	Perfect Imperfection DC 2	65
+74	10235	Luzardo, Jesus	PHI	P	75.33	65	84	54.67	15	The Robot DC1	130
+75	11891	Merrill, Jackson	SD	OF	75.53	59	89	32.47	15	@Butlerj25	108
+76	11407	Suarez, Robert	ATL	P	75.60	59	88	31.40	15	@DOUGHBOYS	107
+77	8674	Buxton, Byron	MIN	OF	77.13	62	88	22.87	15	The Robot DC1	100
+78	10822	Greene, Riley	DET	OF	77.20	64	98	-33.20	15	@DOUGHBOYS	44
+79	10824	Duran, Jarren	BOS	OF	77.80	61	97	-18.80	15	Bloom DC1 - Meatball	59
+80	11099	Bradish, Kyle	BAL	P	78.13	61	93	86.87	15	So Many Miles	165
+81	12096	Schwellenbach, Spencer	ATL	P	80.27	67	93	-11.27	15	Rufe Too-Early-Meatball DC	69
+82	10397	Perdomo, Geraldo	ARZ	SS	80.53	71	96	75.47	15	Bronx Yankees DC1	156
+83	9649	Bellinger, Cody	NYY	OF	84.40	74	102	-0.40	15	@ven_armbarn	84
+84	10665	Williams, Devin	NYM	P	85.53	53	102	28.47	15	@ven_armbarn	114
+85	9294	Estevez, Carlos	KC	P	85.60	64	100	98.40	15	Dommy Meatballs	184
+86	9570	Pivetta, Nick	SD	P	88.07	78	104	17.93	15	So Many Miles	106
+87	11591	Perez, Eury	MIA	P	88.87	76	113	12.13	15	@gmarti12	101
+88	11415	Pasquantino, Vinnie	KC	1B	89.33	70	109	-17.33	15	KCBubba Meatball	72
+89	11387	Garcia, Maikel	KC	3B	89.40	76	105	19.60	15	KCBubba Meatball	109
+90	10083	Valdez, Framber	HOU	P	91.80	74	111	-16.80	15	So Many Miles	75
+91	12203	Baldwin, Drake	ATL	C	94.00	81	107	30.00	15	Dommy Meatballs	124
+92	11071	Soderstrom, Tyler	ATH	OF, 1B	94.07	76	110	2.93	15	@ven_armbarn	97
+93	11065	Harris II, Michael	ATL	OF	94.93	84	116	-7.93	15	Dommy Meatballs	87
+94	10305	Cruz, Oneil	PIT	OF	95.00	81	111	-65.00	15	@steveymer	30
+95	10671	Arozarena, Randy	SEA	OF	95.33	80	116	-13.33	15	Rufe Too-Early-Meatball DC	82
+96	11309	Pena, Jeremy	HOU	SS	96.20	84	113	-41.20	15	Bronx Yankees DC1	55
+97	8668	Seager, Corey	TEX	SS	97.20	32	120	-26.20	15	@gmarti12	71
+98	11305	Suzuki, Seiya	CHC	OF	97.47	85	116	-20.47	15	@DOUGHBOYS	77
+99	12443	McLean, Nolan	NYM	P	98.93	87	115	71.07	15	@gmarti12	170
+100	11300	Strider, Spencer	ATL	P	102.67	75	136	-24.67	15	@Butlerj25	78
+101	8134	Perez, Salvador	KC	C, 1B	103.80	95	128	-12.80	15	@steveymer	91
+102	10804	Megill, Trevor	MLW	P	103.93	85	129	-24.93	15	KCBubba Meatball	79
+103	10302	Hoerner, Nico	CHC	2B	104.20	85	120	75.80	15	@steveymer	180
+104	11048	Busch, Michael	CHC	1B	106.20	94	122	65.80	15	Rufe Too-Early-Meatball DC	172
+105	10363	Smith, Will	LAD	C	108.13	90	120	-19.13	15	Bloom DC1 - Meatball	89
+106	8700	Glasnow, Tyler	LAD	P	108.87	90	126	1.13	15	@gmarti12	110
+107	9820	Bichette, Bo	TOR	SS	109.00	89	128	18.00	15	@ven_armbarn	127
+108	8433	Springer, George	TOR	OF	109.40	92	135	69.60	15	Bloom DC1 - Meatball	179
+109	8658	Story, Trevor	BOS	SS	111.87	91	141	55.13	15	@DOUGHBOYS	167
+110	9678	Woodruff, Brandon	MLW	P	112.60	92	158	-16.60	15	Bronx Yankees DC1	96
+111	8546	Gray, Sonny	BOS	P	113.80	91	146	7.20	15	@steveymer	121
+112	12193	Burns, Chase	CIN	P	114.13	102	141	3.87	15	Unregulated Nervous System DC1	118
+113	11559	Diaz, Yainer	HOU	C	115.73	96	146	0.27	15	Perfect Imperfection DC 2	116
+114	8805	Suarez, Eugenio	SEA	3B	116.80	98	145	-3.80	15	Cleveland Dustmites	113
+115	7903	Yelich, Christian	MLW	UT	118.07	94	144	-20.07	15	Cleveland Dustmites	98
+116	9415	Bregman, Alex	BOS	3B	120.20	104	141	-53.20	15	@ven_armbarn	67
+117	11811	Sheehan, Emmet	LAD	P	120.47	91	148	45.53	15	So Many Miles	166
+118	8116	Altuve, Jose	HOU	OF, 2B	121.27	105	133	-57.27	15	Dommy Meatballs	64
+119	8427	Gausman, Kevin	TOR	P	121.33	98	136	52.67	15	@ven_armbarn	174
+120	7931	Jansen, Kenley	DET	P	122.33	98	148	52.67	15	Bronx Yankees DC1	175
+121	10964	Lodolo, Nick	CIN	P	123.93	107	142	-12.93	15	The Robot DC1	111
+122	11894	Misiorowski, Jacob	MLW	P	123.93	99	146	23.07	15	Dommy Meatballs	147
+123	8971	Adames, Willy	SF	SS	124.20	96	153	-4.20	15	@steveymer	120
+124	10038	Bieber, Shane	TOR	P	125.07	106	150	14.93	15	@gmarti12	140
+125	12361	Schlittler, Cam	NYY	P	125.60	114	150	56.40	15	Bloom DC1 - Meatball	182
+126	9428	Hernandez, Teoscar	LAD	OF	125.87	109	146	-33.87	15	Bloom DC1 - Meatball	92
+127	11414	Stowers, Kyle	MIA	OF	126.60	106	150	7.40	15	@DOUGHBOYS	134
+128	10321	Helsley, Ryan	BAL	P	128.00	56	205	23.00	15	@steveymer	151
+129	9958	Robert Jr., Luis	CWS	OF	129.07	110	146	-39.07	15	@steveymer	90
+130	10241	Adell, Jo	LAA	OF	133.20	107	156	44.80	15	Unregulated Nervous System DC1	178
+131	10419	Marte, Noelvi	CIN	OF, 3B	133.87	118	162	-7.87	15	Bronx Yankees DC1	126
+132	11682	Pages, Andy	LAD	OF	134.07	104	156	6.93	15	The Robot DC1	141
+133	9876	Lopez, Pablo	MIN	P	135.20	117	158	-41.20	15	Dommy Meatballs	94
+134	11610	Westburg, Jordan	BAL	3B	135.87	122	164	-62.87	15	@Butlerj25	73
+135	11628	Rafaela, Ceddanne	BOS	2B, OF	137.53	121	150	-32.53	15	So Many Miles	105
+136	9639	Diaz, Yandy	TB	1B	138.53	110	163	11.47	15	@steveymer	150
+137	11590	Williams, Gavin	CLE	P	139.13	107	181	24.87	15	@DOUGHBOYS	164
+138	11059	Pepiot, Ryan	TB	P	140.13	112	167	-1.13	15	KCBubba Meatball	139
+139	9432	Swanson, Dansby	CHC	SS	140.47	111	157	8.53	15	Bloom DC1 - Meatball	149
+140	8235	Wheeler, Zack	PHI	P	141.60	107	192	-92.60	15	KCBubba Meatball	49
+141	10634	Fairbanks, Pete	TB	P	142.13	109	180	95.87	15	Unregulated Nervous System DC1	238
+142	11751	Holliday, Jackson	BAL	2B	142.27	126	172	-5.27	15	@DOUGHBOYS	137
+143	12463	Yesavage, Trey	TOR	P	144.00	123	179	56.00	15	@gmarti12	200
+144	12228	Keaschall, Luke	MIN	2B	144.93	127	163	-2.93	15	Rufe Too-Early-Meatball DC	142
+145	11939	Marsee, Jakob	MIA	OF	146.73	124	174	1.27	15	Unregulated Nervous System DC1	148
+146	10289	King, Michael	SD	P	147.00	118	176	-67.00	15	@gmarti12	80
+147	10807	Rasmussen, Drew	TB	P	147.13	119	175	-35.13	15	Rufe Too-Early-Meatball DC	112
+148	12212	Simpson, Chandler	TB	OF	148.00	106	215	-49.00	15	Rufe Too-Early-Meatball DC	99
+149	12471	Imai, Tatsuya	FA	P	148.87	118	182	375.13	15	@DOUGHBOYS	524
+150	12035	Chandler, Bubba	PIT	P	148.93	129	170	34.07	15	Unregulated Nervous System DC1	183
+151	8130	Eovaldi, Nathan	TEX	P	151.20	121	175	-49.20	15	KCBubba Meatball	102
+152	8955	Nimmo, Brandon	TEX	OF	151.47	130	173	39.53	15	@gmarti12	191
+153	11649	Butler, Lawrence	ATH	OF	152.87	121	171	-9.87	15	Cleveland Dustmites	143
+154	11821	Palencia, Daniel	CHC	P	153.27	129	176	85.73	15	Bloom DC1 - Meatball	239
+155	9506	Castillo, Luis	SEA	P	154.07	130	170	-2.07	15	Bloom DC1 - Meatball	152
+156	8775	Ray, Robbie	SF	P	154.93	133	175	-71.93	15	Cleveland Dustmites	83
+157	9917	Santana, Dennis	PIT	P	156.87	140	175	103.13	15	@gmarti12	260
+158	9754	Alcantara, Sandy	MIA	P	157.27	127	190	19.73	15	Dommy Meatballs	177
+159	12039	Basallo, Samuel	BAL	C	159.07	131	178	-5.07	15	Dommy Meatballs	154
+160	12127	Wilson, Jacob	ATH	SS	160.20	125	188	-1.20	15	Rufe Too-Early-Meatball DC	159
+161	11922	Crews, Dylan	WAS	OF	160.40	137	181	-14.40	15	Perfect Imperfection DC 2	146
+162	8975	Hoffman, Jeff	TOR	P	160.47	100	221	-99.47	15	@steveymer	61
+163	11653	Doyle, Brenton	COL	OF	161.47	143	182	-29.47	15	KCBubba Meatball	132
+164	9683	Chapman, Matt	SF	3B	165.73	148	174	-36.73	15	Rufe Too-Early-Meatball DC	129
+165	9721	Albies, Ozzie	ATL	2B	166.20	130	195	-11.20	15	Perfect Imperfection DC 2	155
+166	11884	Imanaga, Shota	CHC	P	166.53	137	199	-47.53	15	Bloom DC1 - Meatball	119
+167	10076	Ward, Taylor	BAL	OF	166.73	143	191	19.27	15	Bronx Yankees DC1	186
+168	10851	Kirk, Alejandro	TOR	C	170.13	148	188	-39.13	15	@gmarti12	131
+169	10351	Rogers, Trevor	BAL	P	171.93	137	199	-2.93	15	KCBubba Meatball	169
+170	11315	Kwan, Steven	CLE	OF	172.27	156	195	29.73	15	Rufe Too-Early-Meatball DC	202
+171	10365	Edwards, Xavier	MIA	2B, SS	172.53	141	205	-39.53	15	@Butlerj25	133
+172	10704	Rutschman, Adley	BAL	C	172.53	146	198	-47.53	15	Perfect Imperfection DC 2	125
+173	11186	Vest, Will	DET	P	173.20	142	206	151.80	15	Bronx Yankees DC1	325
+174	11595	Bibee, Tanner	CLE	P	173.73	159	204	15.27	15	Rufe Too-Early-Meatball DC	189
+175	11394	Aranda, Jonathan	TB	1B	174.20	145	208	-36.20	15	@Butlerj25	138
+176	9840	Suarez, Ranger	PHI	P	176.07	166	192	24.93	15	The Robot DC1	201
+177	10220	Herrera, Ivan	STL	UT	176.13	147	213	10.87	15	@ven_armbarn	187
+178	8942	Rodon, Carlos	NYY	P	178.60	151	236	-92.60	15	Perfect Imperfection DC 2	86
+179	9652	Pagan, Emilio	CIN	P	180.93	77	234	153.07	15	Dommy Meatballs	334
+180	11664	Uribe, Abner	MLW	P	181.73	141	225	140.27	15	Rufe Too-Early-Meatball DC	322
+181	8228	Profar, Jurickson	ATL	OF	182.47	142	209	24.53	15	Dommy Meatballs	207
+182	11921	Shaw, Matt	CHC	3B	184.07	161	214	21.93	15	Perfect Imperfection DC 2	206
+183	9655	Happ, Ian	CHC	OF	184.73	167	210	7.27	15	KCBubba Meatball	192
+184	11117	Moreno, Gabriel	ARZ	C	185.20	163	202	-4.20	15	@steveymer	181
+185	11118	Alvarez, Francisco	NYM	C	186.33	167	206	6.67	15	@Butlerj25	193
+186	11581	Frelick, Sal	MLW	OF	188.13	134	219	27.87	15	Bronx Yankees DC1	216
+187	8924	Walker, Christian	HOU	1B	189.80	154	246	-13.80	15	Perfect Imperfection DC 2	176
+188	10831	Torkelson, Spencer	DET	1B	190.67	165	219	-54.67	15	So Many Miles	136
+189	11886	Horton, Cade	CHC	P	191.00	161	218	-23.00	15	@Butlerj25	168
+190	11596	Barger, Addison	TOR	3B, OF	191.40	168	215	-38.40	15	Unregulated Nervous System DC1	153
+191	12459	Early, Connelly	BOS	P	191.93	155	220	41.07	15	Cleveland Dustmites	233
+192	10721	Cabrera, Edward	MIA	P	192.00	155	218	-69.00	15	Unregulated Nervous System DC1	123
+193	11901	Teel, Kyle	CWS	C	192.20	165	216	28.80	15	@gmarti12	221
+194	10068	Lowe, Brandon	TB	2B	193.53	163	238	4.47	15	@Butlerj25	198
+195	11086	Stott, Bryson	PHI	2B	193.60	170	228	21.40	15	Perfect Imperfection DC 2	215
+196	11421	Burleson, Alec	STL	1B, OF	193.93	176	209	67.07	15	The Robot DC1	261
+197	10331	Baz, Shane	TB	P	197.80	169	214	26.20	15	@DOUGHBOYS	224
+198	11346	Tovar, Ezequiel	COL	SS	198.27	166	224	-38.27	15	The Robot DC1	160
+199	11802	Abbott, Andrew	CIN	P	200.27	180	219	44.73	15	Perfect Imperfection DC 2	245
+200	11940	Sasaki, Roki	LAD	P	201.33	151	245	27.67	15	KCBubba Meatball	229
+201	10153	Reynolds, Bryan	PIT	OF	201.40	176	229	-7.40	15	@DOUGHBOYS	194
+202	10319	Lewis, Royce	MIN	3B	203.80	171	226	6.20	15	@steveymer	210
+203	9973	Gore, MacKenzie	WAS	P	205.93	189	237	43.07	15	Rufe Too-Early-Meatball DC	249
+204	10933	Bubic, Kris	KC	P	205.93	164	237	-1.93	15	@ven_armbarn	204
+205	8961	Nola, Aaron	PHI	P	207.33	184	236	3.67	15	@steveymer	211
+206	12364	Lile, Daylen	WAS	OF	208.60	166	253	54.40	15	Cleveland Dustmites	263
+207	11613	McLain, Matt	CIN	2B	209.20	167	247	17.80	15	@DOUGHBOYS	227
+208	10180	Varsho, Daulton	TOR	OF	210.87	176	240	-15.87	15	So Many Miles	195
+209	11749	Dominguez, Jasson	NYY	OF	212.67	189	235	52.33	15	Bronx Yankees DC1	265
+210	12456	Jensen, Carter	KC	C	212.67	191	259	63.33	15	Bronx Yankees DC1	276
+211	12084	Beck, Jordan	COL	OF	214.53	190	242	44.47	15	KCBubba Meatball	259
+212	7689	Trout, Mike	LAA	OF	214.53	178	240	-0.53	15	Dommy Meatballs	214
+213	10920	Dingler, Dillon	DET	C	214.87	186	238	10.13	15	So Many Miles	225
+214	9750	Flaherty, Jack	DET	P	215.13	197	224	-71.13	15	@ven_armbarn	144
+215	12453	Stewart, Sal	CIN	1B	215.27	194	239	74.73	15	@gmarti12	290
+216	10218	Paredes, Isaac	HOU	3B	217.53	166	272	-44.53	15	Cleveland Dustmites	173
+217	8417	Bogaerts, Xander	SD	SS	217.73	180	261	2.27	15	The Robot DC1	220
+218	9263	Contreras, Willson	STL	1B	219.20	196	259	-131.20	15	Unregulated Nervous System DC1	88
+219	10422	Lopez, Otto	MIA	SS, 2B	219.27	193	247	-0.27	15	Rufe Too-Early-Meatball DC	219
+220	12211	Caglianone, Jac	KC	OF	219.73	191	255	-58.73	15	@gmarti12	161
+221	8800	Realmuto, J.T.	PHI	C	221.80	194	255	-50.80	15	The Robot DC1	171
+222	11892	Montgomery, Colson	CWS	SS	222.00	169	263	-14.00	15	Unregulated Nervous System DC1	208
+223	11530	Carpenter, Kerry	DET	OF	222.67	167	267	-59.67	15	@Butlerj25	163
+224	11218	Jax, Griffin	TB	P	225.20	157	266	105.80	15	@steveymer	331
+225	12469	Griffin, Konnor	PIT	SS	226.00	181	290	18.00	15	Dommy Meatballs	244
+226	9919	Laureano, Ramon	SD	OF	226.73	207	253	10.27	15	Dommy Meatballs	237
+227	10213	Ramos, Heliot	SF	OF	226.80	211	247	-30.80	15	So Many Miles	196
+228	9772	Scott, Tanner	LAD	P	227.40	182	360	-82.40	15	Bronx Yankees DC1	145
+229	9944	Gallen, Zac	ARZ	P	227.80	175	281	-22.80	15	Bronx Yankees DC1	205
+230	11786	Caballero, Jose	NYY	OF, 2B, 3B, SS	228.33	184	253	64.67	15	Cleveland Dustmites	293
+231	9087	Boyd, Matthew	CHC	P	229.20	212	249	12.80	15	Bloom DC1 - Meatball	242
+232	12204	Durbin, Caleb	MLW	3B	232.80	200	262	22.20	15	So Many Miles	255
+233	11794	Walker, Ryan	SF	P	235.20	184	284	189.80	15	Perfect Imperfection DC 2	425
+234	11556	Steer, Spencer	CIN	1B	235.53	210	272	33.47	15	Bloom DC1 - Meatball	269
+235	10279	Garcia Jr., Luis	WAS	2B	235.67	212	285	-18.67	15	@ven_armbarn	217
+236	11600	Manzardo, Kyle	CLE	1B	238.07	207	261	65.93	15	Dommy Meatballs	304
+237	9778	Torres, Gleyber	DET	2B	240.80	215	259	-31.80	15	Bloom DC1 - Meatball	209
+238	10358	Stephenson, Tyler	CIN	C	242.33	213	264	-43.33	15	KCBubba Meatball	199
+239	12351	Murakami, Munetaka	FA	3B	242.80	149	304	55.20	15	Unregulated Nervous System DC1	298
+240	10332	McClanahan, Shane	TB	P	244.33	220	262	28.67	15	Unregulated Nervous System DC1	273
+241	11599	Wells, Austin	NYY	C	247.13	226	291	-57.13	15	The Robot DC1	190
+242	11887	Waldrep, Hurston	ATL	P	248.67	211	301	-86.67	15	KCBubba Meatball	162
+243	11327	Leiter, Jack	TEX	P	249.40	227	267	-36.40	15	Unregulated Nervous System DC1	213
+244	10792	Finnegan, Kyle	DET	P	250.00	193	300	139.00	15	Bloom DC1 - Meatball	389
+245	11709	Abreu, Wilyer	BOS	OF	250.33	235	266	11.67	15	Rufe Too-Early-Meatball DC	262
+246	11636	Miller, Bryce	SEA	P	250.40	217	307	-10.40	15	@steveymer	240
+247	8231	Cole, Gerrit	NYY	P	250.53	215	300	-53.53	15	@DOUGHBOYS	197
+248	10506	Kelly, Merrill	ARZ	P	251.13	221	281	-15.13	15	Perfect Imperfection DC 2	236
+249	11609	Cowser, Colton	BAL	OF	251.20	214	280	0.80	15	KCBubba Meatball	252
+250	9784	Moniak, Mickey	COL	OF	251.67	224	278	-48.67	15	Cleveland Dustmites	203
+251	10282	Vientos, Mark	NYM	3B	253.73	228	307	-2.73	15	@gmarti12	251
+252	11123	Baty, Brett	NYM	2B, 3B	254.40	225	282	-11.40	15	Unregulated Nervous System DC1	243
+253	9599	Santander, Anthony	TOR	OF	254.40	229	282	-69.40	15	Perfect Imperfection DC 2	185
+254	12430	Melton, Troy	DET	P	255.33	212	303	72.67	15	Unregulated Nervous System DC1	328
+255	8602	Semien, Marcus	NYM	2B	256.73	228	289	-34.73	15	KCBubba Meatball	222
+256	11075	O'Hoppe, Logan	LAA	C	256.73	221	286	-33.73	15	@Butlerj25	223
+257	8832	Polanco, Jorge	NYM	2B	257.27	200	319	66.73	15	@ven_armbarn	324
+258	9248	Musgrove, Joe	SD	P	258.27	235	312	-30.27	15	@Butlerj25	228
+259	10159	Mize, Casey	DET	P	258.67	232	295	-46.67	15	Bloom DC1 - Meatball	212
+260	12201	Cameron, Noah	KC	P	258.67	221	307	-0.67	15	@Butlerj25	258
+261	10658	Grisham, Trent	NYY	OF	260.33	232	298	45.67	15	Bronx Yankees DC1	306
+262	11501	Sosa, Lenyn	CWS	1B, 2B	263.40	232	301	-105.40	15	Cleveland Dustmites	158
+263	8691	Muncy, Max	LAD	3B	263.40	209	305	-13.40	15	The Robot DC1	250
+264	10344	Friedl, TJ	CIN	OF	263.53	251	283	32.47	15	Perfect Imperfection DC 2	296
+265	10946	Jeffers, Ryan	MIN	C	265.40	232	287	-39.40	15	So Many Miles	226
+266	12470	McGonigle, Kevin	DET	SS	266.60	236	295	-36.60	15	@gmarti12	230
+267	11326	Nelson, Ryne	ARZ	P	266.80	226	310	-10.80	15	So Many Miles	256
+268	7789	Stanton, Giancarlo	NYY	OF	267.00	234	308	-26.00	15	@steveymer	241
+269	11147	Kim, Ha-Seong	ATL	SS	267.60	220	320	14.40	15	KCBubba Meatball	282
+270	10899	Winn, Masyn	STL	SS	269.27	232	294	4.73	15	Dommy Meatballs	274
+271	10254	Lowe, Josh	TB	OF	270.87	240	301	-17.87	15	@Butlerj25	253
+272	8656	Correa, Carlos	HOU	3B, SS	275.07	235	314	-5.07	15	@steveymer	270
+273	11371	Henriquez, Ronny	MIA	P	276.27	256	323	137.73	15	@ven_armbarn	414
+274	12305	Smith, Shane	CWS	P	276.33	197	311	-22.33	15	@DOUGHBOYS	254
+275	10401	Cantillo, Joey	CLE	P	276.73	248	318	23.27	15	@steveymer	300
+276	10125	Bohm, Alec	PHI	3B	278.27	218	340	-43.27	15	Bronx Yankees DC1	235
+277	11662	Ferrer, Jose A.	SEA	P	278.87	160	709	47.13	15	Perfect Imperfection DC 2	326
+278	10224	Burger, Jake	TEX	1B	279.67	215	319	-7.67	15	Bloom DC1 - Meatball	272
+279	10381	Abreu, Bryan	HOU	P	280.20	235	331	64.80	15	So Many Miles	345
+280	11060	Uceta, Edwin	TB	P	280.40	243	319	157.60	15	@Butlerj25	438
+281	9964	Garcia, Adolis	PHI	OF	280.73	255	316	-14.73	15	Perfect Imperfection DC 2	266
+282	12148	Matthews, Zebby	MIN	P	281.93	172	321	-124.93	15	@ven_armbarn	157
+283	12215	Messick, Parker	CLE	P	283.33	244	375	-35.33	15	Cleveland Dustmites	248
+284	10481	Arraez, Luis	SD	1B	284.80	249	344	-9.80	15	Perfect Imperfection DC 2	275
+285	11131	Priester, Quinn	MLW	P	286.67	259	337	-40.67	15	Bronx Yankees DC1	246
+286	10417	Vargas, Miguel	CWS	1B, 3B	288.33	253	319	-2.33	15	So Many Miles	286
+287	12302	Wetherholt, JJ	STL	SS	288.67	258	321	-70.67	15	Cleveland Dustmites	218
+288	12238	Henderson, Logan	MLW	P	289.07	211	341	-57.07	15	Rufe Too-Early-Meatball DC	232
+289	12226	Beavers, Dylan	BAL	OF	292.87	253	333	8.13	15	@steveymer	301
+290	11903	Lee, Jung Hoo	SF	OF	294.87	269	314	44.13	15	Rufe Too-Early-Meatball DC	339
+291	10925	Clement, Ernie	TOR	2B, 3B, SS	295.53	258	318	-15.53	15	The Robot DC1	280
+292	10788	Vaughn, Andrew	MLW	1B	295.53	272	315	41.47	15	@ven_armbarn	337
+293	12028	Leasure, Jordan	CWS	P	295.60	259	346	266.40	15	Rufe Too-Early-Meatball DC	562
+294	11159	Ober, Bailey	MIN	P	296.27	276	333	-1.27	15	Bronx Yankees DC1	295
+295	10133	Gimenez, Andres	TOR	2B	298.33	274	343	37.67	15	Bronx Yankees DC1	336
+296	11420	Seymour, Ian	TB	P	298.60	273	324	-110.60	15	Cleveland Dustmites	188
+297	9824	O'Hearn, Ryan	SD	1B, OF	298.73	274	327	18.27	15	@DOUGHBOYS	317
+298	11999	Ashcraft, Braxton	PIT	P	298.93	278	334	77.07	15	So Many Miles	376
+299	10569	Edman, Tommy	LAD	2B, OF	299.40	270	327	44.60	15	@DOUGHBOYS	344
+300	12012	Narvaez, Carlos	BOS	C	299.47	262	369	-35.47	15	@ven_armbarn	264
+301	11594	Olson, Reese	DET	P	300.40	258	326	4.60	15	Perfect Imperfection DC 2	305
+302	12344	Tong, Jonah	NYM	P	300.67	247	401	-69.67	15	The Robot DC1	231
+303	11357	Donovan, Brendan	STL	2B	301.53	275	331	28.47	15	@steveymer	330
+304	11844	Schanuel, Nolan	LAA	1B	303.20	286	328	59.80	15	Unregulated Nervous System DC1	363
+305	11182	Senga, Kodai	NYM	P	305.33	285	345	-14.33	15	The Robot DC1	291
+306	8666	Manaea, Sean	NYM	P	309.93	267	357	-42.93	15	Dommy Meatballs	267
+307	11825	Keith, Colt	DET	2B, 3B	310.07	288	349	-27.07	15	@Butlerj25	283
+308	9710	Bader, Harrison	PHI	OF	313.20	285	348	-25.20	15	@Butlerj25	288
+309	10207	Rodriguez, Grayson	LAA	P	314.13	289	354	5.87	15	@gmarti12	320
+310	9765	Robles, Victor	SEA	OF	315.87	270	368	41.13	15	Dommy Meatballs	357
+311	11740	Lee, Brooks	MIN	2B, 3B, SS	316.53	286	358	-32.53	15	@DOUGHBOYS	284
+312	12331	Smith, Cam	HOU	OF	317.13	279	338	-23.13	15	@ven_armbarn	294
+313	11753	Carter, Evan	TEX	OF	317.53	271	387	79.47	15	@ven_armbarn	397
+314	11325	Volpe, Anthony	NYY	SS	317.67	293	367	-40.67	15	@ven_armbarn	277
+315	10325	Weathers, Ryan	MIA	P	319.60	298	345	-72.60	15	@ven_armbarn	247
+316	10236	Sanchez, Jesus	HOU	OF	321.27	267	369	-18.27	15	Unregulated Nervous System DC1	303
+317	12490	Okamoto, Kazuma	FA	3B	322.00	230	399	265.00	15	@DOUGHBOYS	587
+318	11919	DeLauter, Chase	CLE	OF	322.00	267	372	-44.00	15	Cleveland Dustmites	278
+319	7886	Taillon, Jameson	CHC	P	323.87	294	374	-26.87	15	Dommy Meatballs	297
+320	11162	O'Brien, Riley	STL	P	324.13	232	385	183.87	15	Unregulated Nervous System DC1	508
+321	8478	Ozuna, Marcell	ATL	UT	324.67	296	374	55.33	15	@gmarti12	380
+322	10072	Mullins, Cedric	TB	OF	325.07	273	374	14.93	15	The Robot DC1	340
+323	12191	Quero, Edgar	CWS	C	326.00	268	392	-34.00	15	Rufe Too-Early-Meatball DC	292
+324	10145	Singer, Brady	CIN	P	326.33	307	349	-27.33	15	Bloom DC1 - Meatball	299
+325	11898	Warren, Will	NYY	P	327.07	302	351	55.93	15	Cleveland Dustmites	383
+326	9452	Kelly, Carson	CHC	C	328.27	298	390	-71.27	15	@DOUGHBOYS	257
+327	9993	McKinstry, Zach	DET	3B, SS, OF	328.33	283	374	20.67	15	KCBubba Meatball	349
+328	11362	Bello, Brayan	BOS	P	329.13	290	385	-42.13	15	@DOUGHBOYS	287
+329	10980	Jung, Josh	TEX	3B	330.07	284	363	4.93	15	Perfect Imperfection DC 2	335
+330	11576	Wallner, Matt	MIN	OF	330.07	286	368	-14.07	15	So Many Miles	316
+331	11439	Lawlar, Jordan	ARZ	3B	331.47	275	385	-24.47	15	@ven_armbarn	307
+332	12452	Tolle, Payton	BOS	P	331.73	297	386	-46.73	15	So Many Miles	285
+333	12359	Taylor, Grant	CWS	P	334.40	266	437	70.60	15	So Many Miles	405
+334	11778	Canzone, Dominic	SEA	OF	337.73	310	363	-4.73	15	Unregulated Nervous System DC1	333
+335	12303	Crawford, Justin	PHI	OF	337.93	257	381	72.07	15	@gmarti12	410
+336	8221	Castellanos, Nick	PHI	OF	338.60	289	449	-36.60	15	Bloom DC1 - Meatball	302
+337	11603	Norby, Connor	MIA	3B	338.80	311	385	-59.80	15	Rufe Too-Early-Meatball DC	279
+338	11907	Snelling, Robby	MIA	P	342.87	320	384	-15.87	15	Dommy Meatballs	327
+339	11947	Scott II, Victor	STL	OF	343.07	303	413	90.93	15	@DOUGHBOYS	434
+340	12227	Meidroth, Chase	CWS	2B, SS	343.53	305	396	28.47	15	KCBubba Meatball	372
+341	10355	Casas, Triston	BOS	1B	344.00	304	420	-110.00	15	@ven_armbarn	234
+342	10915	Detmers, Reid	LAA	P	347.00	300	398	71.00	15	Unregulated Nervous System DC1	418
+343	9555	Holmes, Clay	NYM	P	347.53	299	408	-33.53	15	@DOUGHBOYS	314
+344	12259	Patrick, Chad	MLW	P	347.60	309	379	27.40	15	So Many Miles	375
+345	10146	Marsh, Brandon	PHI	OF	350.13	212	418	35.87	15	Perfect Imperfection DC 2	386
+346	11441	Smith, Josh	TEX	1B, 3B, SS	351.07	325	371	-4.07	15	@DOUGHBOYS	347
+347	9799	Keller, Mitch	PIT	P	351.53	296	382	-8.53	15	@Butlerj25	343
+348	11619	Burrows, Mike	PIT	P	353.73	301	388	-43.73	15	The Robot DC1	310
+349	12202	Eldridge, Bryce	SF	UT	354.07	324	400	-13.07	15	@gmarti12	341
+350	11187	Soriano, Jose	LAA	P	354.20	322	406	35.80	15	@steveymer	390
+351	12472	Miller, Aidan	PHI	SS	355.93	285	425	-9.93	15	So Many Miles	346
+352	10335	Woods Richardson, Simeon	MIN	P	356.67	309	422	-37.67	15	KCBubba Meatball	319
+353	10438	Kikuchi, Yusei	LAA	P	356.73	295	428	63.27	15	@steveymer	420
+354	10971	Cavalli, Cade	WAS	P	357.07	313	387	2.93	15	@steveymer	360
+355	10760	Gil, Luis	NYY	P	358.60	317	395	-6.60	15	Rufe Too-Early-Meatball DC	352
+356	11434	Horwitz, Spencer	PIT	1B	360.27	325	411	-5.27	15	Bronx Yankees DC1	355
+357	11342	Clemens, Kody	MIN	OF, 2B, 1B	360.33	323	401	39.67	15	The Robot DC1	400
+358	11585	Painter, Andrew	PHI	P	361.00	301	433	62.00	15	Unregulated Nervous System DC1	423
+359	9312	Lugo, Seth	KC	P	362.33	337	394	-39.33	15	Cleveland Dustmites	323
+360	10143	Naylor, Bo	CLE	C	365.93	313	445	-17.93	15	@Butlerj25	348
+361	10327	Murphy, Sean	ATL	C	365.93	315	412	8.07	15	@DOUGHBOYS	374
+362	10204	Sheets, Gavin	SD	OF	366.53	332	405	39.47	15	So Many Miles	406
+363	12217	Ballesteros, Moises	CHC	UT	367.13	319	406	-58.13	15	Rufe Too-Early-Meatball DC	309
+364	10347	Santillan, Tony	CIN	P	367.47	181	637	34.53	15	KCBubba Meatball	402
+365	11553	Estrada, Jeremiah	SD	P	367.60	304	417	95.40	15	@Butlerj25	463
+366	8426	Wacha, Michael	KC	P	369.47	322	395	-61.47	15	Cleveland Dustmites	308
+367	11934	Mayer, Marcelo	BOS	3B	372.27	333	418	31.73	15	@DOUGHBOYS	404
+368	11586	Pfaadt, Brandon	ARZ	P	372.40	346	405	-60.40	15	KCBubba Meatball	312
+369	10181	Peterson, David	NYM	P	372.80	346	425	-18.80	15	@ven_armbarn	354
+370	10350	Larnach, Trevor	MIN	OF	373.80	345	397	19.20	15	Unregulated Nervous System DC1	393
+371	11889	Mayo, Coby	BAL	1B	374.07	344	422	4.93	15	KCBubba Meatball	379
+372	10774	Ponce, Cody	TOR	P	375.40	282	507	252.60	15	Unregulated Nervous System DC1	628
+373	11841	Lopez, Jacob	ATH	P	376.47	323	434	8.53	15	Bronx Yankees DC1	385
+374	12241	Clarke, Denzel	ATH	OF	377.07	330	452	-16.07	15	@steveymer	361
+375	10477	Steele, Justin	CHC	P	377.60	309	416	98.40	15	Perfect Imperfection DC 2	476
+376	12195	Campbell, Kristian	BOS	2B	380.60	335	461	-99.60	15	@gmarti12	281
+377	9856	Castro, Willi	CHC	2B, 3B, OF	380.73	334	459	-30.73	15	@gmarti12	350
+378	8724	Giolito, Lucas	BOS	P	383.07	336	412	101.93	15	Perfect Imperfection DC 2	485
+379	11193	Wells, Tyler	BAL	P	383.13	358	414	-70.13	15	@Butlerj25	313
+380	10885	Walker, Jordan	STL	OF	383.67	334	423	67.33	15	@steveymer	451
+381	11588	Bradley, Taj	MIN	P	384.27	333	422	-69.27	15	So Many Miles	315
+382	9789	O'Neill, Tyler	BAL	OF	384.47	340	445	-113.47	15	@steveymer	271
+383	8694	Crawford, J.P.	SEA	SS	385.33	295	435	-12.33	15	@Butlerj25	373
+384	9726	McMahon, Ryan	NYY	3B	387.00	354	437	24.00	15	The Robot DC1	411
+385	12190	Rushing, Dalton	LAD	C	388.60	329	482	59.40	15	Unregulated Nervous System DC1	448
+386	11225	Nootbaar, Lars	STL	OF	389.87	357	420	-68.87	15	The Robot DC1	321
+387	10307	Meadows, Parker	DET	OF	390.13	349	430	-101.13	15	KCBubba Meatball	289
+388	12194	Moore, Christian	LAA	2B	391.40	363	429	-73.40	15	@Butlerj25	318
+389	11836	Cecconi, Slade	CLE	P	392.40	357	427	-1.40	15	@steveymer	391
+390	10263	Ruiz, Keibert	WAS	C	394.13	346	474	48.87	15	Cleveland Dustmites	443
+391	10123	Morejon, Adrian	SD	P	396.33	210	522	40.67	15	@DOUGHBOYS	437
+392	10717	Javier, Cristian	HOU	P	397.27	332	448	-30.27	15	@ven_armbarn	367
+393	12480	Benge, Carson	NYM	OF	397.67	351	481	242.33	15	The Robot DC1	640
+394	8331	Soler, Jorge	LAA	OF	398.00	356	431	-3.00	15	Perfect Imperfection DC 2	395
+395	12179	Collins, Isaac	KC	OF	401.07	346	496	-3.07	15	Cleveland Dustmites	398
+396	12434	Morales, Luis	ATH	P	401.73	373	466	75.27	15	Dommy Meatballs	477
+397	11861	Vodnik, Victor	COL	P	402.60	353	515	104.40	15	Dommy Meatballs	507
+398	9410	Lopez, Reynaldo	ATL	P	402.80	351	467	38.20	15	The Robot DC1	441
+399	8879	Bassitt, Chris	TOR	P	403.00	358	438	-33.00	15	The Robot DC1	370
+400	10356	Freeman, Tyler	COL	OF	403.53	342	444	-65.53	15	Cleveland Dustmites	338
+401	11625	Ortiz, Joey	MLW	SS	404.53	363	439	-40.53	15	Dommy Meatballs	364
+402	9763	Hays, Austin	CIN	OF	404.87	321	450	-93.87	15	@gmarti12	311
+403	12067	Mangum, Jake	TB	OF	405.13	287	535	-9.13	15	Bronx Yankees DC1	396
+404	10248	India, Jonathan	KC	OF, 3B, 2B	406.07	355	447	-14.07	15	Bloom DC1 - Meatball	392
+405	9742	Mahle, Tyler	TEX	P	407.07	368	448	-42.07	15	Perfect Imperfection DC 2	365
+406	10766	Cronenworth, Jake	SD	2B	408.33	332	457	17.67	15	Bronx Yankees DC1	426
+407	11634	Roupp, Landen	SF	P	409.40	373	457	-28.40	15	The Robot DC1	381
+408	10832	Meyer, Max	MIA	P	409.40	376	497	-141.40	15	Unregulated Nervous System DC1	268
+409	11395	Faucher, Calvin	MIA	P	409.40	323	568	22.60	15	KCBubba Meatball	432
+410	10183	Kremer, Dean	BAL	P	410.13	390	449	4.87	15	Bronx Yankees DC1	415
+411	9417	Benintendi, Andrew	CWS	OF	410.53	354	494	-81.53	15	Bloom DC1 - Meatball	329
+412	11823	Garcia, Robert	TEX	P	412.53	326	487	145.47	15	@Butlerj25	558
+413	9936	Keller, Brad	CHC	P	413.87	350	516	140.13	15	@DOUGHBOYS	554
+414	11668	Triolo, Jared	PIT	1B, 3B, SS	414.13	349	461	58.87	15	Cleveland Dustmites	473
+415	12479	Emerson, Colt	SEA	SS	416.40	315	476	19.60	15	So Many Miles	436
+416	9609	Rengifo, Luis	LAA	2B, 3B	416.67	356	470	-60.67	15	Perfect Imperfection DC 2	356
+417	12461	Cole, Zach	HOU	OF	417.33	376	476	239.67	15	Dommy Meatballs	657
+418	11632	Abel, Mick	MIN	P	418.13	376	504	-47.13	15	@gmarti12	371
+419	11514	Fermin, Freddy	SD	C	418.73	305	474	39.27	15	Cleveland Dustmites	458
+420	10434	Perez, Wenceel	DET	OF	421.33	360	469	-43.33	15	@Butlerj25	378
+421	11276	Gonzalez, Romy	BOS	1B, 2B	422.93	360	547	7.07	15	The Robot DC1	430
+422	9791	Soroka, Michael	ARZ	P	423.13	368	495	7.87	15	@gmarti12	431
+423	10067	Springs, Jeffrey	ATH	P	423.93	395	465	-54.93	15	Rufe Too-Early-Meatball DC	369
+424	12478	White, Thomas	MIA	P	426.80	366	480	-68.80	15	Unregulated Nervous System DC1	358
+425	8223	Arenado, Nolan	STL	3B	427.93	397	471	-6.93	15	@steveymer	421
+426	8958	Severino, Luis	ATH	P	427.93	382	466	-76.93	15	The Robot DC1	351
+427	11190	Whitlock, Garrett	BOS	P	428.73	329	481	69.27	15	@Butlerj25	498
+428	12047	Jones, Spencer	NYY	OF	429.73	330	551	86.27	15	Bronx Yankees DC1	516
+429	10379	Rocchio, Brayan	CLE	2B, SS	432.40	375	502	14.60	15	Dommy Meatballs	447
+430	10061	McNeil, Jeff	NYM	2B, OF	433.73	359	504	87.27	15	@gmarti12	521
+431	9860	Littell, Zack	CIN	P	435.80	357	473	-23.80	15	Rufe Too-Early-Meatball DC	412
+432	9706	Kittredge, Andrew	BAL	P	436.60	254	584	193.40	15	@steveymer	630
+433	12024	Williams, Carson	TB	SS	436.87	349	503	-28.87	15	@Butlerj25	408
+434	10287	Liberatore, Matthew	STL	P	438.53	406	480	-31.53	15	@DOUGHBOYS	407
+435	9430	Weaver, Luke	NYY	P	440.60	395	488	56.40	15	@DOUGHBOYS	497
+436	12128	Baldwin, Brooks	CWS	OF	441.20	398	502	-53.20	15	Unregulated Nervous System DC1	388
+437	9725	Hoskins, Rhys	MLW	1B	441.67	364	509	38.33	15	@steveymer	480
+438	9977	Mountcastle, Ryan	BAL	1B	442.53	339	543	32.47	15	Bronx Yankees DC1	475
+439	9470	Higashioka, Kyle	TEX	C	442.67	411	521	23.33	15	So Many Miles	466
+440	12040	Jenkins, Walker	MIN	OF	443.20	391	551	84.80	15	@Butlerj25	528
+441	11924	Povich, Cade	BAL	P	446.47	389	478	-33.47	15	Cleveland Dustmites	413
+442	8951	Berrios, Jose	TOR	P	447.80	384	484	-2.80	15	Bronx Yankees DC1	445
+443	12482	Mack, Joe	MIA	C	448.20	391	483	68.80	15	@ven_armbarn	517
+444	12050	Caissie, Owen	CHC	OF	448.67	396	557	-39.67	15	KCBubba Meatball	409
+445	11905	Johnston, Troy	COL	OF	449.47	347	540	69.53	15	Rufe Too-Early-Meatball DC	519
+446	10290	Amaya, Miguel	CHC	C	450.33	384	530	-31.33	15	Bloom DC1 - Meatball	419
+447	12214	Kim, Hyeseong	LAD	2B	451.13	352	520	-27.13	15	Dommy Meatballs	424
+448	11893	Jones, Jared	PIT	P	454.67	387	525	-26.67	15	Cleveland Dustmites	428
+449	10999	Meyers, Jake	HOU	OF	455.27	404	528	-113.27	15	KCBubba Meatball	342
+450	11868	Boyle, Joe	TB	P	455.53	387	524	-123.53	15	Bloom DC1 - Meatball	332
+451	9262	Caratini, Victor	HOU	C	456.53	302	601	-79.53	15	@DOUGHBOYS	377
+452	8962	Bell, Josh	MIN	1B	457.33	407	531	-24.33	15	@Butlerj25	433
+453	12137	McGreevy, Michael	STL	P	458.93	408	513	-12.93	15	Perfect Imperfection DC 2	446
+454	11933	Lowder, Rhett	CIN	P	458.93	432	502	-57.93	15	@gmarti12	401
+455	11102	Bailey, Patrick	SF	C	459.00	365	497	-3.00	15	Bronx Yankees DC1	456
+456	10446	Thomas, Lane	KC	OF	459.47	387	527	-43.47	15	Perfect Imperfection DC 2	416
+457	11935	Brown, Ben	CHC	P	459.53	416	509	-32.53	15	@ven_armbarn	427
+458	10528	Romero, JoJo	STL	P	459.60	361	542	4.40	15	@DOUGHBOYS	464
+459	12435	Kayfus, C.J.	CLE	OF	460.20	415	507	0.80	15	@gmarti12	461
+460	9677	Maton, Phil	CHC	P	461.53	391	573	269.47	15	@gmarti12	731
+461	8643	Baez, Javier	DET	3B, SS, OF	463.27	395	517	-21.27	15	Rufe Too-Early-Meatball DC	442
+462	9379	Eflin, Zach	BAL	P	464.53	386	551	128.47	15	Cleveland Dustmites	593
+463	12198	Sproat, Brandon	NYM	P	465.40	427	500	-112.40	15	Cleveland Dustmites	353
+464	10833	Martin, Austin	MIN	OF	466.13	433	512	2.87	15	KCBubba Meatball	469
+465	11624	Gelof, Zack	ATH	2B	466.73	416	505	137.27	15	Dommy Meatballs	604
+466	10318	Mauricio, Ronny	NYM	3B	467.67	420	524	-50.67	15	Dommy Meatballs	417
+467	12010	Nunez, Nasim	WAS	SS	468.67	386	577	126.33	15	Bronx Yankees DC1	595
+468	11297	Brash, Matt	SEA	P	469.87	392	549	155.13	15	Bronx Yankees DC1	625
+469	10892	Oviedo, Johan	BOS	P	470.20	400	578	-20.20	15	@steveymer	450
+470	9124	Rea, Colin	CHC	P	470.67	428	519	15.33	15	Bronx Yankees DC1	486
+471	10262	Hayes, Ke'Bryan	CIN	3B	471.13	385	559	-49.13	15	Bloom DC1 - Meatball	422
+472	12216	Bazzana, Travis	CLE	2B	472.33	407	561	-88.33	15	@ven_armbarn	384
+473	10200	Arias, Gabriel	CLE	2B, SS	474.73	408	538	15.27	15	The Robot DC1	490
+474	11038	Gonzales, Nick	PIT	2B	475.33	425	521	-23.33	15	Bloom DC1 - Meatball	452
+475	12502	Baez, Joshua	STL	OF	476.53	421	519	109.47	15	So Many Miles	586
+476	12020	Arrighetti, Spencer	HOU	P	478.27	382	554	-21.27	15	@ven_armbarn	457
+477	11743	Schmitt, Casey	SF	2B, 3B	479.40	396	560	-26.40	15	Unregulated Nervous System DC1	453
+478	5420	Verlander, Justin	SF	P	480.27	407	550	28.73	15	Bloom DC1 - Meatball	509
+479	11637	Lukes, Nathan	TOR	OF	480.33	331	551	-86.33	15	Dommy Meatballs	394
+480	10626	Yastrzemski, Mike	ATL	OF	482.47	434	519	-11.47	15	The Robot DC1	471
+481	11937	Ford, Harry	WAS	C	484.00	402	540	-3.00	15	@steveymer	481
+482	12161	Ginn, J.T.	ATH	P	484.27	452	552	-6.27	15	Unregulated Nervous System DC1	478
+483	11912	Scott, Christian	NYM	P	487.73	421	556	26.27	15	Dommy Meatballs	514
+484	11266	Latz, Jacob	TEX	P	490.40	437	544	-7.40	15	Unregulated Nervous System DC1	483
+485	11943	Hicks, Liam	MIA	1B, C	490.67	408	568	192.33	15	Cleveland Dustmites	683
+486	11283	Crawford, Kutter	BOS	P	491.20	395	615	131.80	15	Cleveland Dustmites	623
+487	12403	Hernandez, Heriberto	MIA	OF	491.67	450	568	-62.67	15	Rufe Too-Early-Meatball DC	429
+488	10245	Bart, Joey	PIT	C	492.07	429	567	-133.07	15	Bloom DC1 - Meatball	359
+489	9802	Dubon, Mauricio	ATL	2B, 3B, SS, OF	492.13	444	567	91.87	15	@DOUGHBOYS	584
+490	9921	Erceg, Lucas	KC	P	492.80	447	536	205.20	15	Cleveland Dustmites	698
+491	12183	Rocker, Kumar	TEX	P	493.80	429	615	71.20	15	Bronx Yankees DC1	565
+492	12355	Matthews, Brice	HOU	2B	493.93	454	564	62.07	15	So Many Miles	556
+493	10303	Gorman, Nolan	STL	3B, 2B	497.40	439	552	7.60	15	Bronx Yankees DC1	505
+494	12266	Svanson, Matt	STL	P	501.73	451	566	172.27	15	@DOUGHBOYS	674
+495	12301	Muncy, Max	ATH	2B, 3B	502.47	446	569	147.53	15	@gmarti12	650
+496	11926	House, Brady	WAS	3B	502.73	461	560	-7.73	15	So Many Miles	495
+497	6837	Scherzer, Max	TOR	P	504.73	452	554	91.27	15	Perfect Imperfection DC 2	596
+498	9523	Andujar, Miguel	CIN	3B, OF	508.00	449	594	-7.00	15	The Robot DC1	501
+499	11597	Harrison, Kyle	BOS	P	508.20	443	604	-140.20	15	Cleveland Dustmites	368
+500	10309	Smith, Pavin	ARZ	1B	509.67	449	558	-9.67	15	@gmarti12	500
+501	10147	Garrett, Braxton	MIA	P	510.60	425	573	202.40	15	Cleveland Dustmites	713
+502	10296	Lowe, Nathaniel	BOS	1B	511.20	357	567	-129.20	15	Rufe Too-Early-Meatball DC	382
+503	12367	Clark, Max	DET	OF	512.27	439	572	145.73	15	Unregulated Nervous System DC1	658
+504	11331	Veen, Zac	COL	OF	512.80	414	608	5.20	15	Cleveland Dustmites	518
+505	12250	Tawa, Tim	ARZ	1B, OF, 2B	513.00	442	560	29.00	15	Bloom DC1 - Meatball	542
+506	10142	Alexander, Blaze	ARZ	3B	514.40	455	554	23.60	15	Unregulated Nervous System DC1	538
+507	9123	Armstrong, Shawn	TEX	P	514.53	371	627	-35.53	15	Bloom DC1 - Meatball	479
+508	10769	Cleavinger, Garrett	TB	P	514.80	325	633	102.20	15	@DOUGHBOYS	617
+509	11755	Burke, Sean	CWS	P	516.73	441	572	-6.73	15	@steveymer	510
+510	12199	Thomas, Colby	ATH	OF	517.33	471	570	-6.33	15	@steveymer	511
+511	11105	Doval, Camilo	NYY	P	518.07	451	568	27.93	15	Bronx Yankees DC1	546
+512	12389	Blubaugh, AJ	HOU	P	518.27	454	622	-156.27	15	Bloom DC1 - Meatball	362
+513	11986	McDonald, Trevor	SF	P	520.20	424	605	89.80	15	The Robot DC1	610
+514	12345	Perkins, Jack	ATH	P	521.00	477	623	-37.00	15	Dommy Meatballs	484
+515	11424	Varland, Louis	TOR	P	522.27	457	607	168.73	15	@steveymer	691
+516	9800	Burnes, Corbin	ARZ	P	522.93	430	626	-63.93	15	Rufe Too-Early-Meatball DC	459
+517	12177	Sanoja, Javier	MIA	2B, 3B, OF	524.47	479	586	-89.47	15	So Many Miles	435
+518	12169	Halvorsen, Seth	COL	P	525.33	391	683	156.67	14	Rufe Too-Early-Meatball DC	682
+519	8126	Goldschmidt, Paul	NYY	1B	525.53	466	610	24.47	15	The Robot DC1	550
+520	11745	Gasser, Robert	MLW	P	526.00	446	608	-160.00	15	Bronx Yankees DC1	366
+521	12124	Wrobleski, Justin	LAD	P	526.40	455	580	84.60	15	@gmarti12	611
+522	11895	Saggese, Thomas	STL	2B, SS	529.27	445	574	-37.27	15	KCBubba Meatball	492
+523	12477	Waldschmidt, Ryan	ARZ	OF	530.93	451	595	106.07	15	@ven_armbarn	637
+524	10210	Conine, Griffin	MIA	OF	532.00	436	582	11.00	15	Unregulated Nervous System DC1	543
+525	8650	Stephenson, Robert	LAA	P	536.07	426	650	191.93	15	Cleveland Dustmites	728
+526	12189	Condon, Charlie	COL	1B	536.73	412	615		15		
+527	12450	Crooks, Jimmy	STL	C	538.73	442	619		15		
+528	10468	Holmes, Grant	ATL	P	538.87	424	651	-8.87	15	@gmarti12	530
+529	10880	Pages, Pedro	STL	C	539.20	446	644	36.80	15	Bronx Yankees DC1	576
+530	11736	Encarnacion-Strand, Christian	CIN	1B	539.40	485	600	-57.40	15	Bloom DC1 - Meatball	482
+531	9788	Bauers, Jake	MLW	OF, 1B	540.87	445	575	48.13	15	KCBubba Meatball	589
+532	11629	Yoshida, Masataka	BOS	UT	541.67	485	623	-4.67	15	Dommy Meatballs	537
+533	11923	Williams, Jett	NYM	SS	542.93	472	610	-102.93	15	@gmarti12	440
+534	9172	Kepler, Max	PHI	OF	543.60	482	593	-31.60	15	Bloom DC1 - Meatball	512
+535	11204	Mitchell, Garrett	MLW	OF	543.73	500	670	59.27	15	Unregulated Nervous System DC1	603
+536	12329	Rodriguez-Cruz, Elmer	NYY	P	544.13	486	620	149.87	15	Dommy Meatballs	694
+537	10024	Lauer, Eric	TOR	P	545.20	493	648	-96.20	15	Bloom DC1 - Meatball	449
+538	10705	Heim, Jonah	TEX	C	545.73	404	713	20.27	15	Perfect Imperfection DC 2	566
+539	9795	Jansen, Danny	TEX	C	546.47	491	620	160.53	15	@DOUGHBOYS	707
+540	10372	Ashby, Aaron	MLW	P	548.67	514	616	-74.67	15	@ven_armbarn	474
+541	11106	Beeter, Clayton	WAS	P	549.13	391	668		15		
+542	11965	Amador, Adael	COL	2B	549.27	430	708		15		
+543	11822	Leahy, Kyle	STL	P	549.27	469	655	7.73	15	@DOUGHBOYS	557
+544	11855	Phillips, Connor	CIN	P	549.53	387	683	-24.53	15	So Many Miles	525
+545	12346	Walcott, Sebastian	TEX	SS	550.73	424	705	41.27	15	Rufe Too-Early-Meatball DC	592
+546	12009	Kolek, Stephen	KC	P	550.80	461	595	-163.80	15	Dommy Meatballs	387
+547	10189	May, Dustin	STL	P	551.33	490	623	39.67	15	The Robot DC1	591
+548	8632	Rodriguez, Eduardo	ARZ	P	552.40	511	629	-97.40	15	Perfect Imperfection DC 2	455
+549	12338	Kemp, Otto	PHI	3B	552.80	489	645	-85.80	15	@DOUGHBOYS	467
+550	11863	Gipson-Long, Sawyer	DET	P	555.20	472	610	34.80	15	@gmarti12	590
+551	8688	Pederson, Joc	TEX	UT	555.73	490	653	-52.73	15	Cleveland Dustmites	503
+552	11754	Joyce, Ben	LAA	P	555.73	496	640	-64.73	15	@gmarti12	491
+553	11990	Rodriguez, Emmanuel	MIN	OF	562.47	485	637	-108.47	15	Dommy Meatballs	454
+554	12181	Wagaman, Eric	MIA	1B, OF	563.13	507	668	-69.13	15	@DOUGHBOYS	494
+555	8748	Martinez, Nick	CIN	P	564.20	486	599	41.80	15	Bronx Yankees DC1	606
+556	12192	Mathews, Quinn	STL	P	564.20	528	698	-51.20	15	Unregulated Nervous System DC1	513
+557	11046	Hassell III, Robert	WAS	OF	564.53	471	692	33.47	15	Unregulated Nervous System DC1	598
+558	12026	Birdsong, Hayden	SF	P	565.80	509	656	-39.80	15	So Many Miles	526
+559	11838	Schneider, Davis	TOR	2B, OF	567.40	480	662	-47.40	15	The Robot DC1	520
+560	12439	Karros, Kyle	COL	3B	568.53	430	634	-27.53	15	@steveymer	541
+561	12014	Fitts, Richard	STL	P	568.60	478	656		14		
+562	12481	Wiggins, Jaxon	CHC	P	568.87	483	745	154.13	15	Unregulated Nervous System DC1	723
+563	10126	Thomas, Alek	ARZ	OF	569.93	513	636	-47.93	15	KCBubba Meatball	522
+564	9557	Sosa, Edmundo	PHI	2B, 3B	571.27	506	643	-39.27	15	Rufe Too-Early-Meatball DC	532
+565	11681	DeLuca, Jonny	TB	OF	573.73	449	702	-134.73	14	KCBubba Meatball	439
+566	11401	Sears, JP	SD	P	574.93	503	655	-106.93	15	@Butlerj25	468
+567	11606	Mead, Curtis	CWS	1B, 3B	575.00	531	633	26.00	15	@steveymer	601
+568	10203	Lux, Gavin	CIN	OF	575.53	427	694	-6.53	15	Bloom DC1 - Meatball	569
+569	11906	Quero, Jeferson	MLW	C	576.00	426	693		15		
+570	9863	Kiner-Falefa, Isiah	TOR	3B, SS	577.60	524	702	-32.60	15	Perfect Imperfection DC 2	545
+571	10694	Kay, Anthony	CWS	P	580.00	431	710		12		
+572	11792	Bradford, Cody	TEX	P	580.93	513	681	60.07	15	@gmarti12	641
+573	11280	Junk, Janson	MIA	P	581.47	486	701	-119.47	15	KCBubba Meatball	462
+574	12097	Sterner, Justin	ATH	P	583.40	490	674		15		
+575	11145	Yorke, Nick	PIT	2B	584.20	528	719	48.80	15	Unregulated Nervous System DC1	633
+576	10764	Raley, Luke	SEA	1B, OF	584.80	514	731	-95.80	15	Rufe Too-Early-Meatball DC	489
+577	11902	Festa, David	MIN	P	586.07	462	724	-98.07	15	Cleveland Dustmites	488
+578	11364	Sands, Cole	MIN	P	586.73	499	711		14		
+579	11528	Gaddis, Hunter	CLE	P	586.73	520	642	39.27	15	Perfect Imperfection DC 2	626
+580	9779	Kopech, Michael	LAD	P	587.13	511	738	75.87	15	Unregulated Nervous System DC1	663
+581	12046	Melton, Jacob	HOU	OF	587.27	532	697	43.73	15	@steveymer	631
+582	12489	Ingle, Cooper	CLE	C	588.67	498	658	-9.67	14	Rufe Too-Early-Meatball DC	579
+583	11910	Ryan, River	LAD	P	589.00	541	611	-34.00	15	So Many Miles	555
+584	10345	Myers, Tobias	MLW	P	589.80	488	677	-18.80	15	@steveymer	571
+585	12288	Bergert, Ryan	KC	P	591.93	539	674	-121.93	15	@gmarti12	470
+586	11223	Vierling, Matt	DET	OF	592.87	476	667	-14.87	15	Cleveland Dustmites	578
+587	10853	Baker, Bryan	TB	P	594.07	466	678	32.93	15	Dommy Meatballs	627
+588	12279	Garcia, Jhostynxon	PIT	OF	596.07	465	702		11		
+589	12249	Young, Cole	SEA	2B	597.13	487	748	2.87	15	@steveymer	600
+590	9175	Houser, Adrian	TB	P	598.87	505	685	-34.87	15	@ven_armbarn	564
+591	12144	Del Castillo, Adrian	ARZ	UT	600.07	529	686	-101.07	15	KCBubba Meatball	499
+592	12473	Ritchie, JR	ATL	P	600.87	531	682	89.13	15	@steveymer	690
+593	12098	Schneemann, Daniel	CLE	2B, 3B, OF	602.20	552	654	-75.20	15	@DOUGHBOYS	527
+594	12406	Ritter, Ryan	COL	2B, SS	603.27	487	666	11.73	15	So Many Miles	615
+595	11742	Davis, Henry	PIT	C	603.27	492	718	25.73	15	Bloom DC1 - Meatball	629
+596	12592	Song, Sung-mun	FA	3B	604.27	435	738		14		
+597	10234	Jackson, Jeremiah	BAL	OF	604.60	527	680	-144.60	14	The Robot DC1	460
+598	9515	Alvarado, Jose	PHI	P	606.13	545	694		15		
+599	10205	Valera, George	CLE	UT	607.27	529	720	-208.27	15	Rufe Too-Early-Meatball DC	399
+600	11154	Morel, Christopher	MIA	OF	607.53	418	735	35.47	15	@Butlerj25	643
+601	11678	Matos, Luis	SF	OF	607.67	505	728	11.33	15	KCBubba Meatball	619
+602	11675	Martinez, Angel	CLE	2B, OF	608.20	510	707		15		
+603	10784	Vesia, Alex	LAD	P	608.20	433	716	26.80	14	Perfect Imperfection DC 2	635
+604	11650	Harris, Hogan	ATH	P	609.07	482	732		15		
+605	12369	Lord, Brad	WAS	P	611.33	545	661	-2.33	15	Rufe Too-Early-Meatball DC	609
+606	8979	Moncada, Yoan	LAA	3B	613.87	547	687	-90.87	15	@Butlerj25	523
+607	11988	Teng, Kai-Wei	SF	P	615.27	526	671	-56.27	14	KCBubba Meatball	559
+608	10444	Moore, Dylan	TEX	2B, OF	617.33	484	697	-102.33	14	Perfect Imperfection DC 2	515
+609	9475	Gurriel Jr., Lourdes	ARZ	OF	618.40	555	698	100.60	14	Bloom DC1 - Meatball	719
+610	12476	Culpepper, Kaelen	MIN	SS	618.67	489	694	32.33	15	The Robot DC1	651
+611	10748	Griffin, Foster	TOR	P	619.67	179	733		14		
+612	10226	McCarthy, Jake	ARZ	OF	620.47	505	677	74.53	14	Perfect Imperfection DC 2	695
+613	11614	Acuna, Luisangel	NYM	2B	622.27	516	667	-73.27	15	Rufe Too-Early-Meatball DC	549
+614	8808	Yates, Kirby	LAD	P	623.27	530	698	-35.27	15	@Butlerj25	588
+615	12440	Gilbert, Drew	SF	OF	623.93	518	734		15		
+616	10308	Sandoval, Patrick	BOS	P	626.47	564	691	-53.47	15	Unregulated Nervous System DC1	573
+617	10842	Lee, Dylan	ATL	P	628.33	452	726	49.67	14	@Butlerj25	678
+618	10640	Civale, Aaron	CHC	P	629.27	510	735	59.73	14	Bloom DC1 - Meatball	689
+619	11516	Massey, Michael	KC	2B	629.73	515	671	-11.73	14	@Butlerj25	618
+620	11920	Hernaiz, Darell	ATH	3B, SS	631.13	555	681	-32.13	14	Bloom DC1 - Meatball	599
+621	12360	Barco, Hunter	PIT	P	631.33	535	691	-46.33	15	So Many Miles	585
+622	10499	Lawrence, Justin	PIT	P	631.60	520	737		14		
+623	8280	Quintana, Jose	MLW	P	633.80	566	720	-85.80	15	Cleveland Dustmites	548
+624	12486	Gibson, Trey	BAL	P	636.60	586	703	-59.60	14	@ven_armbarn	577
+625	10225	Fraley, Jake	TB	OF	637.47	506	714	-5.47	15	Bloom DC1 - Meatball	632
+626	12496	Rada, Nelson	LAA	OF	642.20	581	744	56.80	15	Rufe Too-Early-Meatball DC	699
+627	12307	Ward, Ryan	LAD	OF	643.73	559	696		13		
+628	12209	Dollander, Chase	COL	P	644.60	549	744	-92.60	14	KCBubba Meatball	552
+629	12231	Freeland, Alex	LAD	3B	645.80	582	673	-85.80	13	@gmarti12	560
+630	9205	Strahm, Matt	PHI	P	648.07	570	694	60.93	14	KCBubba Meatball	709
+631	12219	Fernandez, Yanquiel	COL	OF	649.33	540	697		14		
+632	11984	Perales, Luis	WAS	P	652.33	508	748	61.67	12	@ven_armbarn	714
+633	12300	Osuna, Alejandro	TEX	OF	653.07	466	734	-113.07	14	@steveymer	540
+634	12197	Schultz, Noah	CWS	P	653.47	575	705	-120.47	13	Cleveland Dustmites	533
+635	11587	Stone, Gavin	LAD	P	654.60	590	737	-71.60	14	@Butlerj25	583
+636	10362	Benson, Will	CIN	OF	657.40	560	729	-161.40	14	So Many Miles	496
+637	11375	Weiss, Ryan	HOU	P	657.67	533	746		13		
+638	10112	Means, John	CLE	P	658.67	575	744	-36.67	14	Rufe Too-Early-Meatball DC	622
+639	11956	Whisenhunt, Carson	SF	P	659.73	565	750	-47.73	13	KCBubba Meatball	612
+640	11810	Mlodzinski, Carmen	PIT	P	659.93	561	745	-14.93	15	So Many Miles	645
+641	9838	Dominguez, Seranthony	TOR	P	660.00	581	734	26.00	15	Perfect Imperfection DC 2	686
+642	11289	Fortes, Nick	TB	C	661.53	554	747	-56.53	13	Perfect Imperfection DC 2	605
+643	11531	Grissom, Vaughn	LAA	2B	661.67	444	727		8		
+644	11605	Tiedemann, Ricky	TOR	P	662.20	557	702	45.80	12	@Butlerj25	708
+645	10485	France, Ty	TOR	1B	662.47	597	749		14		
+646	8807	Rojas, Miguel	LAD	3B, 2B, SS	663.40	559	741	21.60	14	Bronx Yankees DC1	685
+647	9028	Lorenzen, Michael	KC	P	663.53	593	738	-157.53	13	Perfect Imperfection DC 2	506
+648	8212	Sanchez, Gary	BAL	C	664.07	541	712	-97.07	10	Dommy Meatballs	567
+649	12512	Bratt, Mitch	ARZ	P	664.93	586	716	59.07	14	Dommy Meatballs	724
+650	12484	Jump, Gage	ATH	P	666.67	584	740	-194.67	13	Rufe Too-Early-Meatball DC	472
+651	12415	Fuentes, Didier	ATL	P	667.20	585	710	-165.20	12	Rufe Too-Early-Meatball DC	502
+652	12517	McDougal, Tanner	CWS	P	667.27	541	736	68.73	14	So Many Miles	736
+653	11307	Elder, Bryce	ATL	P	667.53	481	731	-264.53	14	@Butlerj25	403
+654	11952	Loperfido, Joey	TOR	OF	667.67	562	746	-132.67	15	Bronx Yankees DC1	535
+655	10524	Akin, Keegan	BAL	P	668.40	504	698	-16.40	9	Rufe Too-Early-Meatball DC	652
+656	9764	Buehler, Walker	PHI	P	669.93	582	739	63.07	13	@Butlerj25	733
+657	10937	Wong, Connor	BOS	C	670.00	567	740		12		
+658	12501	Rodriguez, Jesus	SF	C	670.20	576	734		13		
+659	12483	Anderson, Kade	SEA	P	670.60	556	723		13		
+660	12220	Klassen, George	LAA	P	670.60	555	745	49.40	12	@steveymer	720
+661	12514	Valdez, Esmerlyn	PIT	OF	670.67	513	724		11		
+662	11954	Pauley, Graham	MIA	3B	672.20	594	733		14		
+663	12493	Pecko, Ethan	HOU	P	672.47	636	715	32.53	13	So Many Miles	705
+664	10304	Jones, Nolan	CLE	OF	673.27	579	734	-37.27	13	Bronx Yankees DC1	636
+665	12213	Bradfield, Enrique	BAL	OF	674.53	561	728	46.47	12	@steveymer	721
+666	10838	Bleday, JJ	ATH	OF	677.87	559	741	-124.87	11	@Butlerj25	553
+667	11412	Allen, Logan	CLE	P	678.00	539	715	-96.00	11	KCBubba Meatball	582
+668	9583	Anderson, Drew	DET	P	678.13	484	723		8		
+669	12034	Crim, Blaine	COL	1B	678.40	575	743		12		
+670	11846	Young, Jacob	WAS	OF	678.47	614	738		13		
+671	9894	Estrada, Thairo	COL	2B	678.73	580	722	-115.73	11	Cleveland Dustmites	563
+672	7538	Flores, Wilmer	SF	1B	679.93	541	740		11		
+673	9500	Rosario, Amed	NYY	3B	680.20	533	746	-13.20	11	@ven_armbarn	667
+674	11584	Rodriguez, Endy	PIT	1B	680.93	550	704		10		
+675	10955	Walls, Taylor	TB	SS	681.87	641	713	-21.87	14	@steveymer	660
+676	10688	Speier, Gabe	SEA	P	682.20	558	748	58.80	11	The Robot DC1	741
+677	11403	Jameson, Drey	ARZ	P	682.53	571	743	64.47	13	Dommy Meatballs	747
+678	11941	Bliss, Ryan	SEA	2B	682.60	579	725		12		
+679	12491	Lagrange, Carlos	NYY	P	682.93	544	682	34.07	7	Dommy Meatballs	717
+680	8659	McCullers Jr., Lance	HOU	P	683.27	542	732		12		
+681	11557	Cruz, Fernando	NYY	P	684.80	493	720	7.20	11	Bloom DC1 - Meatball	692
+682	12511	Anderson, Max	DET	2B	685.47	555	735	32.53	11	Unregulated Nervous System DC1	718
+683	10976	Irvin, Jake	WAS	P	685.53	571	729	-151.53	8	@ven_armbarn	534
+684	12210	Roden, Alan	MIN	OF	685.80	612	731	-198.80	11	@ven_armbarn	487
+685	10445	Urias, Ramon	HOU	2B, 3B	686.00	589	747	-112.00	12	Dommy Meatballs	574
+686	11876	Kerkering, Orion	PHI	P	686.07	599	745	-17.07	13	Rufe Too-Early-Meatball DC	669
+687	11470	Martin, Davis	CWS	P	687.00	560	748	-48.00	13	Rufe Too-Early-Meatball DC	639
+688	12392	Tidwell, Blade	SF	P	688.20	459	749		11		
+689	8633	Harvey, Hunter	KC	P	688.33	577	738	-0.33	11	Unregulated Nervous System DC1	688
+690	10025	Adam, Jason	SD	P	689.73	512	745	35.27	11	Perfect Imperfection DC 2	725
+691	9892	Soto, Gregory	PIT	P	690.20	476	733		7		
+692	11547	Assad, Javier	CHC	P	690.53	590	750	-34.53	14	Perfect Imperfection DC 2	656
+693	12131	Hopkins, Brody	TB	P	690.53	618	748	-14.53	12	So Many Miles	676
+694	8689	Matz, Steven	TB	P	690.87	474	749		10		
+695	10839	Encarnacion, Jerar	SF	OF	691.00	479	734		10		
+696	11651	Bernabel, Warming	COL	1B	692.27	579	662	-21.27	7	@gmarti12	671
+697	11370	Duran, Ezequiel	TEX	1B, SS	692.47	570	738		13		
+698	10406	Alcantara, Kevin	CHC	OF	692.93	626	746	-141.93	11	@gmarti12	551
+699	9938	Kinley, Tyler	ATL	P	694.47	584	749	-158.47	10	Perfect Imperfection DC 2	536
+700	10662	Ginkel, Kevin	ARZ	P	696.93	519	741	45.07	9	Rufe Too-Early-Meatball DC	742
+701	12498	Johnson, Ty	TB	P	697.00	593	742	-95.00	13	Bloom DC1 - Meatball	602
+702	9734	Minter, A.J.	NYM	P	699.40	584	730		9		
+703	11417	Ashcraft, Graham	CIN	P	699.40	567	695	-20.40	8	KCBubba Meatball	679
+704	12196	Smith, Hagen	CWS	P	699.73	531	744		9		
+705	9698	Tauchman, Mike	CWS	OF	700.40	591	735	-76.40	10	@ven_armbarn	624
+706	9880	Tellez, Rowdy	TEX	1B	700.53	631	739		10		
+707	11916	Rodriguez, Yariel	TOR	P	702.47	645	743		11		
+708	11262	Pozo, Yohel	STL	C	703.07	535	746		9		
+709	11719	Perkins, Blake	MLW	OF	703.07	545	747	22.93	10	Bronx Yankees DC1	726
+710	12519	Crow, Coleman	MLW	P	703.40	549	716		7		
+711	12352	Made, Jesus	MLW	SS	703.47	581	734		8		
+712	10725	Rogers, Tyler	TOR	P	703.53	362	716		5		
+713	8897	McCann, James	ARZ	C	703.67	611	730		8		
+714	8954	Conforto, Michael	LAD	OF	703.93	634	718	-259.93	11	@ven_armbarn	444
+715	11680	Winn, Keaton	SF	P	705.73	522	715		5		
+716	8895	Garcia, Yimi	TOR	P	706.40	558	743	-10.40	11	Bronx Yankees DC1	696
+717	11399	Outman, James	MIN	OF	706.53	633	710		10		
+718	12475	Clifford, Ryan	NYM	1B	706.73	643	719		9		
+719	10415	Luciano, Marco	PIT	SS	708.27	605	749		8		
+720	12164	Zeferjahn, Ryan	LAA	P	708.60	588	719		7		
+721	12299	De Vries, Leodalis	SD	SS	709.07	617	712		9		
+722	12485	Ortiz, Abimelec	TEX	1B	709.13	616	734	17.87	9	@ven_armbarn	727
+723	9600	Torrens, Luis	NYM	C	709.33	587	739	38.67	10	Unregulated Nervous System DC1	748
+724	12340	Alvarado, Elvis	ATH	P	709.47	422	737	-65.47	7	@DOUGHBOYS	644
+725	11645	Hamilton, David	BOS	2B	710.00	573	750	-96.00	8	@DOUGHBOYS	614
+726	11043	Campusano, Luis	SD	UT	710.00	600	746	-8.00	11	KCBubba Meatball	702
+727	9648	Leiter Jr., Mark	ATH	P	710.27	506	671		4		
+728	12111	King, Bryan	HOU	P	710.33	242	737		3		
+729	11762	Flores, Rafael	PIT	1B	710.67	639	734		10		
+730	11874	Fitzgerald, Tyler	SF	2B	710.73	554	742		9		
+731	9549	Garver, Mitch	SEA	C	710.93	587	718		8		
+732	9807	Yarbrough, Ryan	NYY	P	711.20	659	728		10		
+733	11904	Vasil, Mike	CWS	P	711.33	550	744	-69.33	12	KCBubba Meatball	642
+734	12521	Montgomery, Braden	CWS	OF	711.33	612	740		8		
+735	11126	Topa, Justin	MIN	P	711.67	619	750	34.33	11	Perfect Imperfection DC 2	746
+736	11980	Hodge, Porter	CHC	P	712.33	614	740		9		
+737	12171	Dana, Caden	LAA	P	713.13	626	739		7		
+738	10854	Manoah, Alek	LAA	P	713.60	583	745		7		
+739	10926	Espino, Daniel	CLE	P	713.73	634	741	-166.73	9	@ven_armbarn	547
+740	11797	Monasterio, Andruw	MLW	SS	713.87	602	749		7		
+741	11856	Saalfrank, Andrew	ARZ	P	713.87	563	750		8		
+742	11789	Fry, David	CLE	UT	714.60	652	743		9		
+743	12534	Ward, Braiden	COL	OF	718.60	409	607	-18.60	2	The Robot DC1	700
+744	11350	Diaz, Alexis	TEX	P	718.80	481	716		4		
+745	12186	Henriquez, Edgardo	LAD	P	719.00	560	746	-65.00	6	@ven_armbarn	654
+746	11615	De Los Santos, Deyvison	MIA	1B	719.13	602	750		10		
+747	10259	Gray, Josiah	WAS	P	719.27	585	749		7		
+748	11130	Francis, Bowden	TOR	P	719.53	642	733	-215.53	8	@ven_armbarn	504
+749	10187	Hall, DL	MLW	P	719.60	633	747		9		
+750	11677	Vasquez, Randy	SD	P	719.80	635	700	-149.80	6	@steveymer	570
+751	10408	Isbel, Kyle	KC	OF	719.87	631	750		9		
+752	11592	Julien, Edouard	MIN	1B, 2B	720.00	630	750		9		
+753	11621	Montgomery, Mason	TB	P	720.27	583	748		8		
+754	8919	Pham, Tommy	PIT	OF	721.13	627	718		7		
+755	11459	Holton, Tyler	DET	P	721.20	483	572	-18.20	2	@Butlerj25	703
+756	9644	Jimenez, Joe	ATL	P	721.67	640	739	-153.67	8	Unregulated Nervous System DC1	568
+757	11847	Wicks, Jordan	CHC	P	721.80	483	744	-114.80	3	@ven_armbarn	607
+758	12348	Susana, Jarlin	WAS	P	722.20	615	750		7		
+759	11165	Bazardo, Eduard	SEA	P	722.80	647	723	-18.80	8	@DOUGHBOYS	704
+760	12008	Slaten, Justin	BOS	P	723.53	478	721		4		
+761	8756	Treinen, Blake	LAD	P	723.60	618	750	21.40	6	Bronx Yankees DC1	745
+762	11820	Myers, Dane	MIA	OF	724.27	657	711	-116.27	6	Cleveland Dustmites	608
+763	12290	Acosta, Maximo	MIA	3B	724.33	612	741		5		
+764	11489	Koenig, Jared	MLW	P	724.67	528	728		3		
+765	12538	Long, Jonathon	CHC	1B	725.07	646	735		6		
+766	12503	Susac, Daniel	SF	C	725.13	424	735		3		
+767	11073	Miller, Bobby	LAD	P	725.53	628	741		9		
+768	12487	Doyle, Liam	STL	P	725.67	653	741		9		
+769	12296	Dreyer, Jack	LAD	P	725.73	627	716		5		
+770	11080	Toglia, Michael	COL	1B	725.73	592	736	-181.73	4	Dommy Meatballs	544
+771	11961	Montero, Keider	DET	P	726.40	646	747		6		
+772	10223	Jones, Jahmai	DET	OF	726.67	616	737		5		
+773	8947	Newcomb, Sean	ATH	P	727.47	584	725		5		
+774	12387	Morgan, David	SD	P	727.73	578	673		3		
+775	11994	Corniell, Jose	TEX	P	727.93	635	745		6		
+776	12518	Alderman, Kemp	MIA	OF	728.53	664	745		7		
+777	12488	Briceno, Josue	DET	C	729.13	623	739	-17.13	5	Rufe Too-Early-Meatball DC	712
+778	11423	Henry, Cole	WAS	P	729.47	604	708		4		
+779	11090	Paris, Kyren	LAA	OF	729.67	668	740	9.33	8	KCBubba Meatball	739
+780	11771	Kjerstad, Heston	BAL	OF	729.93	665	747		7		
+781	11975	Mejia, Juan	COL	P	729.93	682	714		6		
+782	11442	Pallante, Andre	STL	P	730.20	663	738	18.80	7	Bloom DC1 - Meatball	749
+783	11157	Gomez, Yoendrys	TB	P	730.60	629	704		4		
+784	9862	Trevino, Jose	CIN	C	731.00	672	746	-70.00	8	@steveymer	661
+785	10246	Wentz, Joey	ATL	P	731.67	651	742	-134.67	5	Dommy Meatballs	597
+786	12206	Maxwell, Zach	CIN	P	732.33	665	731	17.67	6	@steveymer	750
+787	11377	Suwinski, Jack	PIT	OF	732.60	600	740		4		
+788	12159	Casparius, Ben	LAD	P	733.33	702	744	-78.33	8	Bronx Yankees DC1	655
+789	11938	Thompson, Sterlin	COL	OF	733.33	648	740		6		
+790	12155	Sweeney, Trey	DET	SS	733.33	636	728	-68.33	4	Perfect Imperfection DC 2	665
+791	12428	Freeman, Cody	TEX	2B	734.40	626	727	-28.40	3	So Many Miles	706
+792	12129	Alvarez Jr., Nacho	ATL	3B	734.47	670	725		5		
+793	12377	Williamson, Ben	SEA	3B	734.80	686	721		5		
+794	12167	Sabrowski, Erik	CLE	P	734.87	509	509		1		
+795	11969	Herz, DJ	WAS	P	735.20	609	741		3		
+796	8272	Corbin, Patrick	TEX	P	735.40	654	746	-206.40	5	KCBubba Meatball	529
+797	11148	Sugano, Tomoyuki	BAL	P	735.67	662	748	-196.67	4	Bloom DC1 - Meatball	539
+798	11382	Noel, Jhonkensy	CLE	OF	735.87	632	643		2		
+799	11978	Mena, Cristian	ARZ	P	736.33	678	744		6		
+800	12500	Davalillo, David	TEX	P	736.40	668	742		5		
+801	10295	Pearson, Nate	HOU	P	736.47	673	748		5		
+802	9828	Wynns, Austin	ATH	C	736.47	659	716		3		
+803	12223	Young, Brandon	BAL	P	736.53	607	678		2		
+804	10165	Schmidt, Clarke	NYY	P	736.73	670	740		5		
+805	10574	Alexander, Jason	HOU	P	736.80	671	745	-175.80	6	The Robot DC1	561
+806	12423	Poulin, PJ	WAS	P	736.93	632	659		2		
+807	12494	Bernal, Leonardo	STL	C	737.00	549	743		2		
+808	9525	Enns, Dietrich	BAL	P	737.40	662	701	-56.40	3	The Robot DC1	681
+809	12374	Tolbert, Tyler	KC	OF	737.87	631	745	-90.87	3	@DOUGHBOYS	647
+810	9387	Frazier, Adam	KC	2B, OF	737.93	687	720		4		
+811	12462	Guzman, Denzer	LAA	SS	737.93	605	735		3		
+812	8189	Pomeranz, Drew	CHC	P	738.73	639	679	-61.73	2	@DOUGHBOYS	677
+813	12232	Prielipp, Connor	MIN	P	738.80	692	746		6		
+814	12354	Pratt, Cooper	MLW	SS	738.93	588	733		2		
+815	12353	Lee, Hao-Yu	DET	3B	739.60	655	676		2		
+816	10850	Adams, Riley	WAS	C	739.67	626	706		2		
+817	12455	Farris, Mitch	LAA	P	739.80	605	729		2		
+818	11205	Bender, Anthony	MIA	P	740.07	676	746		4		
+819	12051	Wilken, Brock	MLW	3B	740.20	618	722		2		
+820	10518	Romano, Jordan	PHI	P	740.27	679	737	-56.27	5	@ven_armbarn	684
+821	10109	Straw, Myles	TOR	OF	740.27	650	722		3		
+822	8835	Hernandez, Enrique	LAD	1B, 3B, OF	740.33	641	744	-67.33	4	@Butlerj25	673
+823	10734	Phillips, Tyler	MIA	P	740.93	687	750		5		
+824	12280	Dobbins, Hunter	BOS	P	741.00	671	741	-160.00	4	@gmarti12	581
+825	11773	Brito, Juan	CLE	2B	741.00	678	731	-40.00	4	@gmarti12	701
+826	12030	Rodriguez, Hector	CIN	OF	741.27	696	749		5		
+827	11776	Fermin, Jose	STL	2B	741.27	698	727	-120.27	4	The Robot DC1	621
+828	12444	Church, Nathan	STL	OF	741.47	685	748		4		
+829	10425	Palacios, Richie	TB	OF	741.67	678	720	-166.67	3	Perfect Imperfection DC 2	575
+830	10274	Taveras, Leody	BAL	OF	741.80	685	726		3		
+831	10197	Pereira, Everson	CWS	OF	742.27	677	694		2		
+832	11468	Silseth, Chase	LAA	P	742.40	649	724		2		
+833	12445	Peguero, Joel	SF	P	742.40	673	743		4		
+834	10531	Rogers, Jake	DET	C	742.53	677	739		4		
+835	12609	Alberto, Alexander	CWS	P	742.60	641	735		2		
+836	11156	Peraza, Oswald	LAA	3B	742.67	689	722		3		
+837	12358	Rincones Jr., Gabriel	PHI	OF	742.80	699	717		3		
+838	10442	Webb, Jacob	TEX	P	742.80	628	628		1		
+839	11172	Zerpa, Angel	KC	P	742.93	630	630		1		
+840	9642	Sewald, Paul	DET	P	743.00	631	631		1		
+841	10661	Clase, Emmanuel	CLE	P	743.07	660	723	-171.07	2	Bloom DC1 - Meatball	572
+842	12600	Paez, Jedixson	CWS	P	743.13	685	729		3		
+843	11573	Young, Jared	NYM	UT	743.13	655	729		2		
+844	12540	Drake, Kohl	ARZ	P	743.20	661	724		2		
+845	12208	Evans, Logan	SEA	P	743.27	699	750	-73.27	5	The Robot DC1	670
+846	12427	Cortes, Carlos	ATH	OF	743.27	696	741		5		
+847	12505	Arnold, Jamie	ATH	P	743.53	654	736		2		
+848	10346	Gonsolin, Tony	LAD	P	743.53	687	748		3		
+849	12492	Saiki, Hiroto	FA	P	743.60	670	721		2		
+850	12378	Fulford, Braxton	COL	C	743.80	682	744		3		
+851	11945	Teodo, Emiliano	TEX	P	743.80	643	643	-11.80	1	KCBubba Meatball	732
+852	10857	Allen, Nick	HOU	SS	743.87	644	644		1		
+853	10691	Heineman, Tyler	TOR	C	743.87	662	733		2		
+854	11784	Scholtens, Jesse	TB	P	743.87	646	749		2		
+855	11890	Black, Tyler	MLW	1B	743.93	681	715		2		
+856	12382	Gibson, Cade	MIA	P	744.07	647	647		1		
+857	12221	Agnos, Zach	COL	P	744.07	647	647		1		
+858	10209	Canning, Griffin	NYM	P	744.53	695	731	-29.53	3	Bronx Yankees DC1	715
+859	12049	Locklear, Tyler	ARZ	1B	744.87	661	749	-150.87	2	@ven_armbarn	594
+860	11620	McGarry, Griff	WAS	P	745.00	717	726		3		
+861	10161	Paddack, Chris	DET	P	745.07	702	747	-252.07	3	@Butlerj25	493
+862	9589	Milner, Hoby	CHC	P	745.13	663	663		1		
+863	12045	Petty, Chase	CIN	P	745.40	699	749		4		
+864	12528	Torres, Bryan	STL	OF	745.47	714	745	-15.47	4	The Robot DC1	730
+865	10873	Hancock, Emerson	SEA	P	745.67	690	732	-214.67	2	The Robot DC1	531
+866	12421	Nunez, Eduarniel	ATH	P	745.67	671	671		1		
+867	8929	Refsnyder, Rob	BOS	OF	745.67	701	743		3		
+868	12595	Troy, Tommy	ARZ	2B	745.73	709	743		4		
+869	9646	Montgomery, Jordan	MLW	P	745.73	678	745	-111.73	2	Dommy Meatballs	634
+870	11617	Malloy, Justyn-Henry	DET	OF	745.80	673	673		1		
+871	10645	Urquidy, Jose	DET	P	745.80	673	673		1		
+872	12121	Orze, Eric	MIN	P	745.87	691	734		2		
+873	12394	Fisher, Braydon	TOR	P	745.93	689	737		2		
+874	12141	Hurter, Brant	DET	P	745.93	709	745		3		
+875	9934	Cortes, Nestor	SD	P	746.00	676	676	-93.00	1	Cleveland Dustmites	653
+876	12033	Hence, Tink	STL	P	746.13	708	741	-80.13	3	Bronx Yankees DC1	666
+877	11936	Takahashi, Kona	FA	P	746.33	709	723		2		
+878	9290	Okert, Steven	HOU	P	746.40	704	729		2		
+879	12522	Perez, Junior	ATH	OF	746.67	714	723	-11.67	2	So Many Miles	735
+880	12145	Dezenzo, Zach	HOU	OF	746.67	691	746	-133.67	2	@Butlerj25	613
+881	11689	Headrick, Brent	NYY	P	746.73	707	747		3		
+882	6696	McCutchen, Andrew	PIT	UT	746.73	717	738		3		
+883	12270	Lugo, Matthew	LAA	OF	746.80	688	688	-3.80	1	Cleveland Dustmites	743
+884	12525	Stephen, Khal	CLE	P	746.87	716	724		2		
+885	7867	Iglesias, Jose	SD	SS, 2B, 3B	746.93	690	690		1		
+886	11536	Nardi, Andrew	MIA	P	746.93	690	690		1		
+887	10060	Festa, Matt	CLE	P	747.07	692	692		1		
+888	8222	Sano, Miguel	LAA	3B	747.13	693	693		1		
+889	10007	McCormick, Chas	HOU	OF	747.27	695	695		1		
+890	12106	Bivens, Spencer	SF	P	747.27	695	695		1		
+891	9907	Siri, Jose	NYM	OF	747.47	727	743		3		
+892	12368	Johnson, Ryan	LAA	P	747.53	708	742		2		
+893	12497	Reimer, Jacob	NYM	3B	747.60	700	700	-18.60	1	Rufe Too-Early-Meatball DC	729
+894	8363	Raley, Brooks	NYM	P	747.60	707	744		2		
+895	10910	Mears, Nick	MLW	P	747.60	700	700		1		
+896	8969	Arroyo, Christian	BOS	2B	747.80	703	703		1		
+897	11849	Millas, Drew	WAS	C	747.87	704	704		1		
+898	8211	d'Arnaud, Travis	LAA	C	747.93	721	735	-99.93	2	@Butlerj25	648
+899	12537	Gonzalez, Gabriel	MIN	OF	747.93	705	705		1		
+900	12447	Brown, McCade	COL	P	748.07	707	707		1		
+901	12370	Koss, Christian	SF	2B	748.13	708	708		1		
+902	11427	Schuemann, Max	ATH	2B, 3B, SS	748.13	709	750	-32.13	2	Perfect Imperfection DC 2	716
+903	12332	Morgan, Tre'	TB	1B	748.20	709	709		1		
+904	8452	Pressly, Ryan	CHC	P	748.33	711	711		1		
+905	11850	Funderburk, Kody	MIN	P	748.33	711	711		1		
+906	12004	Fernandez, Ryan	STL	P	748.40	712	712		1		
+907	12380	Morillo, Juan	ARZ	P	748.47	713	713		1		
+908	12390	Thomas, Rhylan	SEA	OF	748.47	713	713		1		
+909	12454	Alvarez, Andrew	WAS	P	748.67	717	750		2		
+910	12283	Seymour, Carson	SF	P	748.80	718	718		1		
+911	12269	Hoglund, Gunnar	ATH	P	748.87	719	719	-76.87	1	KCBubba Meatball	672
+912	12607	Baumler, Carter	TEX	P	749.00	725	747		2		
+913	9524	Mateo, Jorge	BAL	SS	749.00	721	721	-15.00	1	@DOUGHBOYS	734
+914	12546	White, Josh	MIA	P	749.13	732	742		2		
+915	12048	Hill, Jaden	COL	P	749.13	725	749		2		
+916	12123	Gordon, Tanner	COL	P	749.20	724	724		1		
+917	12582	Areinamo, Jadher	TB	SS	749.27	725	725		1		
+918	12495	Bolte, Henry	ATH	OF	749.27	725	725		1		
+919	11929	Jung, Jace	DET	3B	749.33	726	726		1		
+920	12153	Ribalta, Orlando	WAS	P	749.47	728	728		1		
+921	12596	Furman, Nate	SF	2B	749.47	728	728		1		
+922	12559	Valencia, Eduardo	DET	C	749.47	728	728		1		
+923	10483	Burke, Brock	LAA	P	749.60	730	730		1		
+924	10247	Rodriguez, Johnathan	CLE	OF	749.60	730	730	-129.60	1	@gmarti12	620
+925	12543	Bennett, Jake	WAS	P	749.67	740	742		2		
+926	7514	Santana, Carlos	CHC	1B	749.73	732	732		1		
+927	10193	Ruiz, Esteury	LAD	OF	749.73	732	732		1		
+928	8645	Johnson, Pierce	ATL	P	749.87	734	734		1		
+929	11515	Eaton, Nate	BOS	OF	750.00	736	736		1		
+930	12593	Forret, Michael	BAL	P	750.00	736	736		1		
+931	10960	Thompson, Ryan	ARZ	P	750.00	738	749		2		
+932	8007	Wilson, Justin	BOS	P	750.07	737	737		1		
+933	11780	Chaparro, Andres	WAS	1B	750.07	737	737		1		
+934	11951	Triantos, James	CHC	2B	750.13	738	738	-112.13	1	Cleveland Dustmites	638
+935	12122	Bigge, Hunter	TB	P	750.20	742	748		2		
+936	10604	Mattson, Isaac	PIT	P	750.20	739	739		1		
+937	10267	Robinson, Kristian	ARZ	OF	750.20	739	739		1		
+938	12291	Santos, Winston	TEX	P	750.40	742	742		1		
+939	11808	Bido, Osvaldo	ATL	P	750.40	742	742		1		
+940	12610	Wood, Gage	PHI	P	750.40	746	747		2		
+941	10487	Sborz, Josh	TEX	P	750.47	743	743		1		
+942	12612	King, Seaver	FA	SS	750.47	743	743		1		
+943	12542	Velazquez , Ralphy	CLE	1B	750.53	744	744		1		
+944	10501	Herget, Jimmy	COL	P	750.53	747	748		2		
+945	11379	Bautista, Felix	BAL	P	750.60	745	745		1		
+946	12225	Yoho, Craig	MLW	P	750.73	747	747		1		
+947	12611	Bremner, Tyler	FA	P	750.73	747	747		1		
+948	9295	Marquez, German	COL	P	750.80	748	748		1		
+949	9886	Alzolay, Adbert	CHC	P	750.80	748	748		1		
+950	9937	Fernandez, Julian	WAS	P	750.93	750	750		1		
