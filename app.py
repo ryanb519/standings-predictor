@@ -26,10 +26,11 @@ def getAggregateHitterProj(list):
 def getAggregatePitcherProj(list):
   df = pd.DataFrame()
   for i in list:
-    data = "https://raw.githubusercontent.com/ryanb519/standings-predictor/main/data/"+i+"_pitchers.csv"
-    projDF = pd.read_csv(data)
-    projDF['#Proj'] = 1
-    df = pd.concat([df,projDF])
+    if i != 'thebatx':
+      data = "https://raw.githubusercontent.com/ryanb519/standings-predictor/main/data/"+i+"_pitchers.csv"
+      projDF = pd.read_csv(data)
+      projDF['#Proj'] = 1
+      df = pd.concat([df,projDF])
 
   aggDF = df.groupby(by=['xMLBAMID','playerid','PlayerName'], as_index=False).agg({
     'IP':'mean','W':'mean','ERA':'mean','WHIP':'mean','SO':'mean','SV':'mean','L':'mean','GS':'mean','G':'mean',
