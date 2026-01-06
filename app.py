@@ -33,8 +33,9 @@ def getAggregatePitcherProj(list):
     projDF['#Proj'] = 1
     df = pd.concat([df,projDF])
 
+  #Using 'min' for SV because THE BAT doesn't project it.
   aggDF = df.groupby(by=['xMLBAMID','playerid','PlayerName'], as_index=False).agg({
-    'IP':'mean','W':'mean','ERA':'mean','WHIP':'mean','SO':'mean','SV':'mean','L':'mean','GS':'mean','G':'mean',
+    'IP':'mean','W':'mean','ERA':'mean','WHIP':'mean','SO':'mean','SV':'max','L':'mean','GS':'mean','G':'mean',
     'HLD':'mean','BS':'mean','TBF':'mean','H':'mean','R':'mean','ER':'mean','HR':'mean','BB':'mean','IBB':'mean',
     'HBP':'mean','HR/9':'mean','K%':'mean','BB%':'mean','K-BB%':'mean','GB%':'mean','AVG':'mean','BABIP':'mean',
     'LOB%':'mean','FIP':'mean','WAR':'mean','QS':'mean','Team':'min','#Proj':'sum'})#,'Source':'transform(lambda x: '',''.join(x))'})'Source':'mean',
