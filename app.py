@@ -391,6 +391,8 @@ with right_col:
             st.warning("Please upload a TSV draft file first.")
         elif len(selected_systems) == 0:
             st.warning("Please select at least one projection system.")
+        elif len(selected_systems) == 1 and 'thebatx' in selected_systems:
+            st.warning("Please select an additional projection system. The Bat X does not project pitchers.")
         else:
             hitter_picks_df, pitcher_picks_df, standings_df = calculate_standings(picks_df, selected_systems, starters_only)
             hitter_picks_df = format_standings_df(hitter_picks_df)
