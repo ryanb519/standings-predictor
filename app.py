@@ -25,12 +25,13 @@ def getAggregateHitterProj(list):
 
 def getAggregatePitcherProj(list):
   df = pd.DataFrame()
+  if 'thebatx' in list: #no pitcher projections from The Bat X.
+    list.remove('thebatx')
   for i in list:
-    if i != 'thebatx':
-      data = "https://raw.githubusercontent.com/ryanb519/standings-predictor/main/data/"+i+"_pitchers.csv"
-      projDF = pd.read_csv(data)
-      projDF['#Proj'] = 1
-      df = pd.concat([df,projDF])
+    data = "https://raw.githubusercontent.com/ryanb519/standings-predictor/main/data/"+i+"_pitchers.csv"
+    projDF = pd.read_csv(data)
+    projDF['#Proj'] = 1
+    df = pd.concat([df,projDF])
 
   aggDF = df.groupby(by=['xMLBAMID','playerid','PlayerName'], as_index=False).agg({
     'IP':'mean','W':'mean','ERA':'mean','WHIP':'mean','SO':'mean','SV':'mean','L':'mean','GS':'mean','G':'mean',
@@ -169,6 +170,7 @@ def calculate_standings(picks_df, projections, starters):
   )
 
   # Calculate Grand Total Score and Rank
+  final_standings = final_standings.fillna(0)
   final_standings['Grand_Total_Score'] = final_standings['Hitter_Score'] + final_standings['Pitcher_Score']
   final_standings['Overall_Rank'] = final_standings['Grand_Total_Score'].rank(method='min', ascending=False).astype(int)
 
