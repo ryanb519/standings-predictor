@@ -389,7 +389,7 @@ with right_col:
     if calculate_button:
         # --- PASSWORD CHECK ---
         if password_input != CORRECT_PASSWORD:
-            st.error("❌ Invalid password. Please try again.")
+            st.error("❌ Invalid password. Please see the [**2026 Tools Hub**](https://www.patreon.com/posts/2026-tools-hub-143534173?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link) for the password.")
             st.stop()  # Immediately end execution of this rerun
         if uploaded is None:
             st.warning("Please upload a TSV draft file first.")
