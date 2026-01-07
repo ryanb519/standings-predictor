@@ -316,7 +316,7 @@ with left_col:
     CORRECT_PASSWORD = "mascot"  # <-- set your password here
 
     st.subheader("Access Required")
-    password_input = st.text_input("Enter password:", type="password", key="password_field")
+    password_input = st.text_input("Enter password (available in the [**2026 Tools Hub**](https://www.patreon.com/posts/2026-tools-hub-143534173?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link)):", type="password", key="password_field")
 
     st.subheader("Draft Picks")
     uploaded = st.file_uploader("Upload Draft Picks (.tsv)", type=["tsv"], accept_multiple_files=False)
@@ -341,24 +341,24 @@ with left_col:
     st.markdown("---")
     st.subheader("Projection Systems")
     # Six individual checkboxes as requested
-    st.write("Select projection systems to include:")
+    st.write("Select [**projection systems**](https://www.fangraphs.com/projections?pos=all&stats=bat&type=steamer) to include:")
     col_a, col_b = st.columns(2)
     with col_a:
         use_steamer = st.checkbox("Steamer", value=False)
-        use_fgdc = st.checkbox("FanGraphs Depth Charts", value=True)
+        use_fgdc = st.checkbox("FanGraphs Depth Charts", value=False)
         use_thebat = st.checkbox("The Bat", value=False)
     with col_b:
         use_thebatx = st.checkbox("The Bat X", value=False)
-        use_oopsy = st.checkbox("OOPSY", value=False)
-        use_atc = st.checkbox("ATC", value=False)
+        #use_oopsy = st.checkbox("OOPSY", value=False)
+        #use_atc = st.checkbox("ATC", value=False)
 
     selected_systems = []
     if use_steamer: selected_systems.append("steamer")
     if use_fgdc: selected_systems.append("fangraphsdc")
     if use_thebat: selected_systems.append("thebat")
     if use_thebatx: selected_systems.append("thebatx")
-    if use_oopsy: selected_systems.append("oopsy")
-    if use_atc: selected_systems.append("atc")
+    #if use_oopsy: selected_systems.append("oopsy")
+    #if use_atc: selected_systems.append("atc")
 
     st.markdown("---")
     st.subheader("Roster Option")
