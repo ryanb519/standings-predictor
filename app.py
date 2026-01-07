@@ -21,6 +21,9 @@ def getAggregateHitterProj(list):
     'ISO':'mean','BABIP':'mean','wRC+':'mean','WAR':'mean','Team':'min','#Proj':'sum'})#,'Source':'transform(lambda x: '',''.join(x))'})
   aggDF.rename(columns={'playerid':'FanGraphsID','PlayerName':'Name','xMLBAMID':'MLBAMID'},inplace=True)
   aggDF = aggDF[aggDF['PA'] > 1]
+
+  #REMOVE A'S MAX MUNCY
+  aggDF = aggDF[aggDF['FanGraphsID'] != '29779']
   return aggDF
 
 def getAggregatePitcherProj(list):
