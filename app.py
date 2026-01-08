@@ -6,6 +6,16 @@ from datetime import datetime
 import requests
 import unicodedata
 
+# Example: Hiding the footer
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 def getAggregateHitterProj(list):
   df = pd.DataFrame()
   for i in list:
