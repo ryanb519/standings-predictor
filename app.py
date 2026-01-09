@@ -362,7 +362,7 @@ with left_col:
         use_thebat = st.checkbox("The Bat", value=False)
     with col_b:
         use_thebatx = st.checkbox("The Bat X", value=False)
-        #use_oopsy = st.checkbox("OOPSY", value=False)
+        use_oopsy = st.checkbox("OOPSY", value=False)
         #use_atc = st.checkbox("ATC", value=False)
 
     selected_systems = []
