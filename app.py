@@ -370,7 +370,7 @@ with left_col:
     if use_fgdc: selected_systems.append("fangraphsdc")
     if use_thebat: selected_systems.append("thebat")
     if use_thebatx: selected_systems.append("thebatx")
-    #if use_oopsy: selected_systems.append("oopsy")
+    if use_oopsy: selected_systems.append("oopsy")
     #if use_atc: selected_systems.append("atc")
 
     st.markdown("---")
