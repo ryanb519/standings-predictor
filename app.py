@@ -71,8 +71,12 @@ def calculate_standings(picks_df, projections, starters):
     #Remove accents
     name = unicodedata.normalize("NFD", name)
     name = "".join(c for c in name if unicodedata.category(c) != "Mn")
-      
+    
     suffixes = {"Jr.", "Sr.", "II", "III", "IV", "V"}
+
+    #Exceptions for crazy names
+    if name == "Elly De La Cruz":
+      return "De La Cruz, Elly"
 
     parts = name.strip().split()
 
