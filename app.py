@@ -30,7 +30,7 @@ def getAggregateHitterProj(list):
     'SH':'mean','GDP':'mean','CS':'mean','OBP':'mean','SLG':'mean','OPS':'mean','wOBA':'mean','BB%':'mean','K%':'mean',
     'ISO':'mean','BABIP':'mean','wRC+':'mean','WAR':'mean','Team':'min','#Proj':'sum'})#,'Source':'transform(lambda x: '',''.join(x))'})
   aggDF.rename(columns={'playerid':'FanGraphsID','PlayerName':'Name','xMLBAMID':'MLBAMID'},inplace=True)
-  aggDF = aggDF[aggDF['PA'] > 1]
+  aggDF = aggDF[aggDF['PA'] > 5]
 
   #REMOVE A'S MAX MUNCY
   aggDF = aggDF[aggDF['FanGraphsID'] != '29779']
@@ -53,7 +53,7 @@ def getAggregatePitcherProj(list):
     'HBP':'mean','HR/9':'mean','K%':'mean','BB%':'mean','K-BB%':'mean','GB%':'mean','AVG':'mean','BABIP':'mean',
     'LOB%':'mean','FIP':'mean','WAR':'mean','QS':'mean','Team':'min','#Proj':'sum'})#,'Source':'transform(lambda x: '',''.join(x))'})'Source':'mean',
   aggDF.rename(columns={'playerid':'FanGraphsID','PlayerName':'Name','xMLBAMID':'MLBAMID'},inplace=True)
-  aggDF = aggDF[aggDF['IP'] > 1]
+  aggDF = aggDF[aggDF['IP'] > 5]
   return aggDF
 
 def calculate_standings(picks_df, projections, starters):
