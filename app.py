@@ -367,7 +367,7 @@ with left_col:
     with col_b:
         use_thebatx = st.checkbox("The Bat X", value=False)
         use_oopsy = st.checkbox("OOPSY", value=False)
-        #use_atc = st.checkbox("ATC", value=False)
+        use_atc = st.checkbox("ATC", value=False)
 
     selected_systems = []
     if use_steamer: selected_systems.append("steamer")
@@ -375,7 +375,7 @@ with left_col:
     if use_thebat: selected_systems.append("thebat")
     if use_thebatx: selected_systems.append("thebatx")
     if use_oopsy: selected_systems.append("oopsy")
-    #if use_atc: selected_systems.append("atc")
+    if use_atc: selected_systems.append("atc")
 
     st.markdown("---")
     st.subheader("Roster Option")
