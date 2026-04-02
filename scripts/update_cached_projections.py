@@ -32,8 +32,9 @@ def upload_df_to_github(df, repo_name, file_path, commit_message, github_token):
 github_token = os.getenv("TOKEN_PRIVATE")  # stored securely in GitHub Actions secrets
 repo_name = "ryanb519/standings-predictor"
     
-# 2. Get Projections and upload into GitHub
-projList = ['steamer','fangraphsdc','thebat','thebatx','oopsy','atc']
+# 2. Get Projections and upload into GitHub #NOTE added 'r' to projections for in-season ROS. Remove 'r' for preseason proj.
+# For example 'steamerr' is 'steamer', 'ratcdc' should be 'atc', etc.
+projList = ['steamerr','rfangraphsdc','rthebat','rthebatx','roopsydc','ratcdc']
 
 for i in projList:
   data = requests.get("https://www.fangraphs.com/api/projections?pos=all&stats=bat&type="+i).json()
