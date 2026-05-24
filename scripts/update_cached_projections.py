@@ -54,9 +54,14 @@ df = pd.DataFrame(data)
 upload_df_to_github(df, repo_name, "data/fangraphs/schedule.csv", "Daily update: hitters", github_token)
 
 #PROBABLES
-data = requests.get("https://www.fangraphs.com/api/roster-resource/probables-grid/data").json()
-df = pd.DataFrame(data)
-upload_df_to_github(df, repo_name, "data/fangraphs/probables.csv", "Daily update: hitters", github_token)
+probables = requests.get("https://www.fangraphs.com/api/roster-resource/probables-grid/data").json()
+probables = probables['games']
+probables = pd.json_normalize(probables)
+probables = pd.DataFrame(probables)
+#5/2/26 RB had to rename columns due to format change
+probables = probables[['teamId','league','division','abbName','gameDate','dh','isHome','team.sp.playerId','team.sp.name','team.sp.throws','team.sp.UPURL','team.primaryPitcher','team.opener','team.notes','opponent.teamId','opponent.abbName','opponent.sp.playerId','opponent.sp.name','opponent.sp.throws','opponent.sp.UPURL']]
+probables.columns = ['TeamId','League','Division','AbbName','GameDate','dh','isHome','teamSPPlayerId','teamSPPlayerName','Throws','teamSPURL','teamPrimaryPitcher','teamOpener','teamNotes','OpponentId','OpponentAbbName','OpponentSPPlayerId','OpponentSPPlayerName','OpponentThrows','OpponentSPURL']
+upload_df_to_github(probables, repo_name, "data/fangraphs/probables.csv", "Daily update: hitters", github_token)
 
 #2026 HITTER STATS
 data = requests.get("https://www.fangraphs.com/api/leaders/major-league/data?age=&pos=all&stats=bat&lg=all&qual=5&season=2026&season1=2026&startdate=2026-03-01&enddate=2026-11-01&month=0&hand=&team=0&pageitems=2000000000&pagenum=1&ind=0&rost=0&players=&type=8&postseason=&sortdir=default&sortstat=WAR").json()
