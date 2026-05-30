@@ -175,8 +175,8 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 18,NL,C,CIN,2026-06-07,0,False,35333,Chase Burns,R,/players/chase-burns/35333/stats/pitching,,,,28,STL,29869,Michael McGreevy,R,/players/michael-mcgreevy/29869/stats/pitching
 18,NL,C,CIN,2026-06-08,0,False,29911,Andrew Abbott,L,/players/andrew-abbott/29911/stats/pitching,,,,29,SDP,19374,Walker Buehler,R,/players/walker-buehler/19374/stats/pitching
 19,NL,W,COL,2026-05-29,0,True,14843,Michael Lorenzen,R,/players/michael-lorenzen/14843/stats/pitching,,,,30,SFG,17995,Logan Webb,R,/players/logan-webb/17995/stats/pitching
-19,NL,W,COL,2026-05-30,0,True,27669,Tanner Gordon,R,/players/tanner-gordon/27669/stats/pitching,,,,30,SFG,12718,Adrian Houser,R,/players/adrian-houser/12718/stats/pitching
-19,NL,W,COL,2026-05-31,0,True,21446,Ryan Feltner,R,/players/ryan-feltner/21446/stats/pitching,,,,30,SFG,11486,Robbie Ray,L,/players/robbie-ray/11486/stats/pitching
+19,NL,W,COL,2026-05-30,0,True,21446,Ryan Feltner,R,/players/ryan-feltner/21446/stats/pitching,,,,30,SFG,12718,Adrian Houser,R,/players/adrian-houser/12718/stats/pitching
+19,NL,W,COL,2026-05-31,0,True,27669,Tanner Gordon,R,/players/tanner-gordon/27669/stats/pitching,,,,30,SFG,11486,Robbie Ray,L,/players/robbie-ray/11486/stats/pitching
 19,NL,W,COL,2026-06-01,0,False,16256,Kyle Freeland,L,/players/kyle-freeland/16256/stats/pitching,,,,1,LAA,22100,José Soriano,R,/players/jose-soriano/22100/stats/pitching
 19,NL,W,COL,2026-06-02,0,False,35321,Tomoyuki Sugano,R,/players/tomoyuki-sugano/35321/stats/pitching,,,,1,LAA,24492,Grayson Rodriguez,R,/players/grayson-rodriguez/24492/stats/pitching
 19,NL,W,COL,2026-06-03,0,False,14843,Michael Lorenzen,R,/players/michael-lorenzen/14843/stats/pitching,,,,1,LAA,29357,Walbert Ureña,R,/players/walbert-urena/29357/stats/pitching
@@ -281,8 +281,8 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 29,NL,W,SDP,2026-06-07,0,True,24719,Randy Vásquez,R,/players/randy-vasquez/24719/stats/pitching,,,,25,NYM,15873,Sean Manaea,L,/players/sean-manaea/15873/stats/pitching
 29,NL,W,SDP,2026-06-08,0,True,19374,Walker Buehler,R,/players/walker-buehler/19374/stats/pitching,,,,18,CIN,29911,Andrew Abbott,L,/players/andrew-abbott/29911/stats/pitching
 30,NL,W,SFG,2026-05-29,0,False,17995,Logan Webb,R,/players/logan-webb/17995/stats/pitching,,,,19,COL,14843,Michael Lorenzen,R,/players/michael-lorenzen/14843/stats/pitching
-30,NL,W,SFG,2026-05-30,0,False,12718,Adrian Houser,R,/players/adrian-houser/12718/stats/pitching,,,,19,COL,27669,Tanner Gordon,R,/players/tanner-gordon/27669/stats/pitching
-30,NL,W,SFG,2026-05-31,0,False,11486,Robbie Ray,L,/players/robbie-ray/11486/stats/pitching,,,,19,COL,21446,Ryan Feltner,R,/players/ryan-feltner/21446/stats/pitching
+30,NL,W,SFG,2026-05-30,0,False,12718,Adrian Houser,R,/players/adrian-houser/12718/stats/pitching,,,,19,COL,21446,Ryan Feltner,R,/players/ryan-feltner/21446/stats/pitching
+30,NL,W,SFG,2026-05-31,0,False,11486,Robbie Ray,L,/players/robbie-ray/11486/stats/pitching,,,,19,COL,27669,Tanner Gordon,R,/players/tanner-gordon/27669/stats/pitching
 30,NL,W,SFG,2026-06-01,0,False,30076,Landen Roupp,R,/players/landen-roupp/30076/stats/pitching,,,,23,MIL,27758,Kyle Harrison,L,/players/kyle-harrison/27758/stats/pitching
 30,NL,W,SFG,2026-06-02,0,False,26448,Trevor McDonald,R,/players/trevor-mcdonald/26448/stats/pitching,,,,23,MIL,30113,Chad Patrick,R,/players/chad-patrick/30113/stats/pitching
 30,NL,W,SFG,2026-06-03,0,False,17995,Logan Webb,R,/players/logan-webb/17995/stats/pitching,,,,23,MIL,27926,Coleman Crow,R,/players/coleman-crow/27926/stats/pitching
