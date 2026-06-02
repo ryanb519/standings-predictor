@@ -2,7 +2,7 @@ import pandas as pd
 from github import Github
 import os
 import requests
-import cloudscraper
+#import cloudscraper
 
 def upload_df_to_github(df, repo_name, file_path, commit_message, github_token):
     """Uploads a Pandas DataFrame to GitHub as a CSV."""
@@ -33,6 +33,7 @@ def upload_df_to_github(df, repo_name, file_path, commit_message, github_token):
 github_token = os.getenv("TOKEN_PRIVATE")  # stored securely in GitHub Actions secrets
 repo_name = "ryanb519/standings-predictor"
 
+'''
 # 1a TEST
 scraper = cloudscraper.create_scraper()
 r = scraper.get("https://www.fangraphs.com/api/leaders/major-league/data?age=&pos=all&stats=bat&lg=all&qual=1&season=2026&season1=2026&startdate=2026-03-01&enddate=2026-11-01&month=0&hand=&team=0&pageitems=2000000000&pagenum=1&ind=0&rost=0&players=&type=8&postseason=&sortdir=default&sortstat=WAR")
@@ -41,7 +42,7 @@ probables = probables['data']
 df = pd.DataFrame(data)
 df['IDfg'] = df['playerid']
 upload_df_to_github(df, repo_name, "data/fangraphs/fgb26.csv", "Daily update: hitters", github_token)
-
+'''
 
 # 2. Get Projections and upload into GitHub #NOTE added 'r' to projections for in-season ROS. Remove 'r' for preseason proj.
 # For example 'steamerr' is 'steamer', 'ratcdc' should be 'atc', etc.
