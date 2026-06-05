@@ -75,7 +75,7 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 8,AL,C,MIN,2026-06-10,0,False,31827,Zebby Matthews,R,/players/zebby-matthews/31827/stats/pitching,,,,6,DET,31807,Troy Melton,R,/players/troy-melton/31807/stats/pitching
 8,AL,C,MIN,2026-06-11,0,False,21390,Joe Ryan,R,/players/joe-ryan/21390/stats/pitching,,,,6,DET,17295,Framber Valdez,L,/players/framber-valdez/17295/stats/pitching
 8,AL,C,MIN,2026-06-12,0,True,31857,Connor Prielipp,L,/players/connor-prielipp/31857/stats/pitching,,,,28,STL,22294,Matthew Liberatore,L,/players/matthew-liberatore/22294/stats/pitching
-8,AL,C,MIN,2026-06-13,0,True,30187,Mike Paredes,R,/players/michael-paredes/30187/stats/pitching,,,,28,STL,29869,Michael McGreevy,R,/players/michael-mcgreevy/29869/stats/pitching
+8,AL,C,MIN,2026-06-13,0,True,30187,Mike Paredes,R,/players/mike-paredes/30187/stats/pitching,,,,28,STL,29869,Michael McGreevy,R,/players/michael-mcgreevy/29869/stats/pitching
 8,AL,C,MIN,2026-06-14,0,True,22543,Taj Bradley,R,/players/taj-bradley/22543/stats/pitching,,,,28,STL,19716,Dustin May,R,/players/dustin-may/19716/stats/pitching
 9,AL,E,NYY,2026-06-04,0,True,16137,Carlos Rodón,L,/players/carlos-rodon/16137/stats/pitching,,,,5,CLE,27500,Slade Cecconi,R,/players/slade-cecconi/27500/stats/pitching
 9,AL,E,NYY,2026-06-05,0,True,23796,Ryan Weathers,L,/players/ryan-weathers/23796/stats/pitching,,,,3,BOS,12768,Sonny Gray,R,/players/sonny-gray/12768/stats/pitching
@@ -125,12 +125,12 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 13,AL,W,TEX,2026-06-12,0,False,30146,Jack Leiter,R,/players/jack-leiter/30146/stats/pitching,,,,3,BOS,17277,Ranger Suarez,L,/players/ranger-suarez/17277/stats/pitching
 13,AL,W,TEX,2026-06-13,0,False,10954,Jacob deGrom,R,/players/jacob-degrom/10954/stats/pitching,,,,3,BOS,33666,Connelly Early,L,/players/connelly-early/33666/stats/pitching
 13,AL,W,TEX,2026-06-14,0,False,9132,Nathan Eovaldi,R,/players/nathan-eovaldi/9132/stats/pitching,,,,3,BOS,35466,Payton Tolle,L,/players/payton-tolle/35466/stats/pitching
-14,AL,E,TOR,2026-06-04,0,False,sa3018180,Chad Dallas,R,/players/john-dallas/sa3018180/stats/pitching,,,,16,ATL,10603,Chris Sale,L,/players/chris-sale/10603/stats/pitching
+14,AL,E,TOR,2026-06-04,0,False,30158,Chad Dallas,R,/players/chad-dallas/30158/stats/pitching,,,,16,ATL,10603,Chris Sale,L,/players/chris-sale/10603/stats/pitching
 14,AL,E,TOR,2026-06-05,0,True,35456,Trey Yesavage,R,/players/trey-yesavage/35456/stats/pitching,,,,2,BAL,27819,Brandon Young,R,/players/brandon-young/27819/stats/pitching
 14,AL,E,TOR,2026-06-06,0,True,31621,Spencer Miles,R,/players/spencer-miles/31621/stats/pitching,,,,2,BAL,24586,Kyle Bradish,R,/players/kyle-bradish/24586/stats/pitching
 14,AL,E,TOR,2026-06-07,0,True,14107,Kevin Gausman,R,/players/kevin-gausman/14107/stats/pitching,,,,2,BAL,22264,Shane Baz,R,/players/shane-baz/22264/stats/pitching
 14,AL,E,TOR,2026-06-08,0,True,9323,Patrick Corbin,L,/players/patrick-corbin/9323/stats/pitching,,,,26,PHI,20778,Cristopher Sánchez,L,/players/cristopher-sanchez/20778/stats/pitching
-14,AL,E,TOR,2026-06-09,0,True,sa3018180,Chad Dallas,R,/players/john-dallas/sa3018180/stats/pitching,,,,26,PHI,10310,Zack Wheeler,R,/players/zack-wheeler/10310/stats/pitching
+14,AL,E,TOR,2026-06-09,0,True,30158,Chad Dallas,R,/players/chad-dallas/30158/stats/pitching,,,,26,PHI,10310,Zack Wheeler,R,/players/zack-wheeler/10310/stats/pitching
 14,AL,E,TOR,2026-06-10,0,True,35456,Trey Yesavage,R,/players/trey-yesavage/35456/stats/pitching,,,,26,PHI,19959,Jesús Luzardo,L,/players/jesus-luzardo/19959/stats/pitching
 14,AL,E,TOR,2026-06-12,0,True,35456,Trey Yesavage,R,/players/trey-yesavage/35456/stats/pitching,,,,9,NYY,30182,Will Warren,R,/players/will-warren/30182/stats/pitching
 14,AL,E,TOR,2026-06-13,0,True,14107,Kevin Gausman,R,/players/kevin-gausman/14107/stats/pitching,,,,9,NYY,32095,Cam Schlittler,R,/players/cameron-schlittler/32095/stats/pitching
@@ -145,7 +145,7 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 15,NL,W,ARI,2026-06-12,0,False,13164,Eduardo Rodriguez,L,/players/eduardo-rodriguez/13164/stats/pitching,,,,18,CIN,26378,Nick Lodolo,L,/players/nick-lodolo/26378/stats/pitching
 15,NL,W,ARI,2026-06-13,0,False,18383,Michael Soroka,R,/players/michael-soroka/18383/stats/pitching,,,,18,CIN,33876,Rhett Lowder,R,/players/rhett-lowder/33876/stats/pitching
 15,NL,W,ARI,2026-06-14,0,False,19291,Zac Gallen,R,/players/zac-gallen/19291/stats/pitching,,,,18,CIN,29911,Andrew Abbott,L,/players/andrew-abbott/29911/stats/pitching
-16,NL,E,ATL,2026-06-04,0,True,10603,Chris Sale,L,/players/chris-sale/10603/stats/pitching,,,,14,TOR,sa3018180,Chad Dallas,R,/players/john-dallas/sa3018180/stats/pitching
+16,NL,E,ATL,2026-06-04,0,True,10603,Chris Sale,L,/players/chris-sale/10603/stats/pitching,,,,14,TOR,30158,Chad Dallas,R,/players/chad-dallas/30158/stats/pitching
 16,NL,E,ATL,2026-06-05,0,True,6902,Martín Pérez,L,/players/martin-perez/6902/stats/pitching,,,,27,PIT,17594,Mitch Keller,R,/players/mitch-keller/17594/stats/pitching
 16,NL,E,ATL,2026-06-06,0,True,27498,Spencer Strider,R,/players/spencer-strider/27498/stats/pitching,,,,27,PIT,23793,Braxton Ashcraft,R,/players/braxton-ashcraft/23793/stats/pitching
 16,NL,E,ATL,2026-06-07,0,True,27779,Bryce Elder,R,/players/bryce-elder/27779/stats/pitching,,,,27,PIT,29868,Bubba Chandler,R,/players/bubba-chandler/29868/stats/pitching
@@ -219,8 +219,8 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 23,NL,C,MIL,2026-06-08,0,False,27758,Kyle Harrison,L,/players/kyle-harrison/27758/stats/pitching,,,,10,ATH,17677,Jeffrey Springs,L,/players/jeffrey-springs/17677/stats/pitching
 23,NL,C,MIL,2026-06-09,0,False,29812,Robert Gasser,L,/players/robert-gasser/29812/stats/pitching,,,,10,ATH,27889,J.T. Ginn,R,/players/jt-ginn/27889/stats/pitching
 23,NL,C,MIL,2026-06-10,0,False,33850,Brandon Sproat,R,/players/brandon-sproat/33850/stats/pitching,,,,10,ATH,31468,Jack Perkins,R,/players/jackson-perkins/31468/stats/pitching
-23,NL,C,MIL,2026-06-12,0,True,16162,Brandon Woodruff,R,/players/brandon-woodruff/16162/stats/pitching,,,,26,PHI,30091,Andrew Painter,R,/players/andrew-painter/30091/stats/pitching
-23,NL,C,MIL,2026-06-13,0,True,31623,Jacob Misiorowski,R,/players/jacob-misiorowski/31623/stats/pitching,,,,26,PHI,16149,Aaron Nola,R,/players/aaron-nola/16149/stats/pitching
+23,NL,C,MIL,2026-06-12,0,True,31623,Jacob Misiorowski,R,/players/jacob-misiorowski/31623/stats/pitching,,,,26,PHI,30091,Andrew Painter,R,/players/andrew-painter/30091/stats/pitching
+23,NL,C,MIL,2026-06-13,0,True,27814,Shane Drohan,L,/players/shane-drohan/27814/stats/pitching,,,,26,PHI,16149,Aaron Nola,R,/players/aaron-nola/16149/stats/pitching
 23,NL,C,MIL,2026-06-14,0,True,27758,Kyle Harrison,L,/players/kyle-harrison/27758/stats/pitching,,,,26,PHI,20778,Cristopher Sánchez,L,/players/cristopher-sanchez/20778/stats/pitching
 24,NL,E,WSN,2026-06-05,0,False,16432,Foster Griffin,L,/players/foster-griffin/16432/stats/pitching,,,,15,ARI,11156,Merrill Kelly,R,/players/merrill-kelly/11156/stats/pitching
 24,NL,E,WSN,2026-06-06,0,False,15823,Zack Littell,R,/players/zack-littell/15823/stats/pitching,,,,15,ARI,13164,Eduardo Rodriguez,L,/players/eduardo-rodriguez/13164/stats/pitching
@@ -245,10 +245,10 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 26,NL,E,PHI,2026-06-06,0,True,30091,Andrew Painter,R,/players/andrew-painter/30091/stats/pitching,,,,4,CHW,29878,Sean Burke,R,/players/sean-burke/29878/stats/pitching
 26,NL,E,PHI,2026-06-07,0,True,16149,Aaron Nola,R,/players/aaron-nola/16149/stats/pitching,,,,4,CHW,31743,David Sandlin,R,/players/david-sandlin/31743/stats/pitching
 26,NL,E,PHI,2026-06-08,0,False,20778,Cristopher Sánchez,L,/players/cristopher-sanchez/20778/stats/pitching,,,,14,TOR,9323,Patrick Corbin,L,/players/patrick-corbin/9323/stats/pitching
-26,NL,E,PHI,2026-06-09,0,False,10310,Zack Wheeler,R,/players/zack-wheeler/10310/stats/pitching,,,,14,TOR,sa3018180,Chad Dallas,R,/players/john-dallas/sa3018180/stats/pitching
+26,NL,E,PHI,2026-06-09,0,False,10310,Zack Wheeler,R,/players/zack-wheeler/10310/stats/pitching,,,,14,TOR,30158,Chad Dallas,R,/players/chad-dallas/30158/stats/pitching
 26,NL,E,PHI,2026-06-10,0,False,19959,Jesús Luzardo,L,/players/jesus-luzardo/19959/stats/pitching,,,,14,TOR,35456,Trey Yesavage,R,/players/trey-yesavage/35456/stats/pitching
-26,NL,E,PHI,2026-06-12,0,False,30091,Andrew Painter,R,/players/andrew-painter/30091/stats/pitching,,,,23,MIL,16162,Brandon Woodruff,R,/players/brandon-woodruff/16162/stats/pitching
-26,NL,E,PHI,2026-06-13,0,False,16149,Aaron Nola,R,/players/aaron-nola/16149/stats/pitching,,,,23,MIL,31623,Jacob Misiorowski,R,/players/jacob-misiorowski/31623/stats/pitching
+26,NL,E,PHI,2026-06-12,0,False,30091,Andrew Painter,R,/players/andrew-painter/30091/stats/pitching,,,,23,MIL,31623,Jacob Misiorowski,R,/players/jacob-misiorowski/31623/stats/pitching
+26,NL,E,PHI,2026-06-13,0,False,16149,Aaron Nola,R,/players/aaron-nola/16149/stats/pitching,,,,23,MIL,27814,Shane Drohan,L,/players/shane-drohan/27814/stats/pitching
 26,NL,E,PHI,2026-06-14,0,False,20778,Cristopher Sánchez,L,/players/cristopher-sanchez/20778/stats/pitching,,,,23,MIL,27758,Kyle Harrison,L,/players/kyle-harrison/27758/stats/pitching
 27,NL,C,PIT,2026-06-04,0,False,27863,Jared Jones,R,/players/jared-jones/27863/stats/pitching,,,,21,HOU,24282,Kai-Wei Teng,R,/players/kai-wei-teng/24282/stats/pitching
 27,NL,C,PIT,2026-06-05,0,False,17594,Mitch Keller,R,/players/mitch-keller/17594/stats/pitching,,,,16,ATL,6902,Martín Pérez,L,/players/martin-perez/6902/stats/pitching
@@ -267,7 +267,7 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 28,NL,C,STL,2026-06-10,0,False,26108,Andre Pallante,R,/players/andre-pallante/26108/stats/pitching,,,,25,NYM,18679,Freddy Peralta,R,/players/freddy-peralta/18679/stats/pitching
 28,NL,C,STL,2026-06-11,0,False,24763,Kyle Leahy,R,/players/kyle-leahy/24763/stats/pitching,,,,25,NYM,30107,Christian Scott,R,/players/christian-scott/30107/stats/pitching
 28,NL,C,STL,2026-06-12,0,False,22294,Matthew Liberatore,L,/players/matthew-liberatore/22294/stats/pitching,,,,8,MIN,31857,Connor Prielipp,L,/players/connor-prielipp/31857/stats/pitching
-28,NL,C,STL,2026-06-13,0,False,29869,Michael McGreevy,R,/players/michael-mcgreevy/29869/stats/pitching,,,,8,MIN,30187,Mike Paredes,R,/players/michael-paredes/30187/stats/pitching
+28,NL,C,STL,2026-06-13,0,False,29869,Michael McGreevy,R,/players/michael-mcgreevy/29869/stats/pitching,,,,8,MIN,30187,Mike Paredes,R,/players/mike-paredes/30187/stats/pitching
 28,NL,C,STL,2026-06-14,0,False,19716,Dustin May,R,/players/dustin-may/19716/stats/pitching,,,,8,MIN,22543,Taj Bradley,R,/players/taj-bradley/22543/stats/pitching
 29,NL,W,SDP,2026-06-04,0,False,15474,Lucas Giolito,R,/players/lucas-giolito/15474/stats/pitching,,,,26,PHI,10310,Zack Wheeler,R,/players/zack-wheeler/10310/stats/pitching
 29,NL,W,SDP,2026-06-05,0,True,19853,Michael King,R,/players/michael-king/19853/stats/pitching,,,,25,NYM,30107,Christian Scott,R,/players/christian-scott/30107/stats/pitching
