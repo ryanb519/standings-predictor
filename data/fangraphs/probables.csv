@@ -53,8 +53,8 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 6,AL,C,DET,2026-06-12,0,False,22267,Tarik Skubal,L,/players/tarik-skubal/22267/stats/pitching,,,,5,CLE,30134,Tanner Bibee,R,/players/tanner-bibee/30134/stats/pitching
 6,AL,C,DET,2026-06-13,0,False,17479,Jack Flaherty,R,/players/jack-flaherty/17479/stats/pitching,,,,5,CLE,23335,Joey Cantillo,L,/players/joey-cantillo/23335/stats/pitching
 6,AL,C,DET,2026-06-14,0,False,20492,Casey Mize,R,/players/casey-mize/20492/stats/pitching,,,,5,CLE,30122,Gavin Williams,R,/players/gavin-williams/30122/stats/pitching
-6,AL,C,DET,2026-06-15,0,False,8700,Justin Verlander,R,/players/justin-verlander/8700/stats/pitching,,,,21,HOU,25880,Hunter Brown,R,/players/hunter-brown/25880/stats/pitching
-6,AL,C,DET,2026-06-16,0,False,17295,Framber Valdez,L,/players/framber-valdez/17295/stats/pitching,,,,21,HOU,24282,Kai-Wei Teng,R,/players/kai-wei-teng/24282/stats/pitching
+6,AL,C,DET,2026-06-15,0,False,17295,Framber Valdez,L,/players/framber-valdez/17295/stats/pitching,,,,21,HOU,25880,Hunter Brown,R,/players/hunter-brown/25880/stats/pitching
+6,AL,C,DET,2026-06-16,0,False,8700,Justin Verlander,R,/players/justin-verlander/8700/stats/pitching,,,,21,HOU,24282,Kai-Wei Teng,R,/players/kai-wei-teng/24282/stats/pitching
 6,AL,C,DET,2026-06-17,0,False,22630,Keider Montero,R,/players/keider-montero/22630/stats/pitching,,,,21,HOU,17969,Peter Lambert,R,/players/peter-lambert/17969/stats/pitching
 7,AL,C,KCR,2026-06-07,0,False,30184,Noah Cameron,L,/players/noah-cameron/30184/stats/pitching,,,,8,MIN,31857,Connor Prielipp,L,/players/connor-prielipp/31857/stats/pitching
 7,AL,C,KCR,2026-06-09,0,True,21487,Stephen Kolek,R,/players/stephen-kolek/21487/stats/pitching,,,,13,TEX,9132,Nathan Eovaldi,R,/players/nathan-eovaldi/9132/stats/pitching
@@ -198,8 +198,8 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 21,AL,W,HOU,2026-06-12,0,False,37124,Tatsuya Imai,R,/players/tatsuya-imai/37124/stats/pitching,,,,7,KCR,24452,Luinder Avila,R,/players/luinder-avila/24452/stats/pitching
 21,AL,W,HOU,2026-06-13,0,False,24728,Mike Burrows,R,/players/mike-burrows/24728/stats/pitching,,,,7,KCR,30184,Noah Cameron,L,/players/noah-cameron/30184/stats/pitching
 21,AL,W,HOU,2026-06-14,0,False,29921,Spencer Arrighetti,R,/players/spencer-arrighetti/29921/stats/pitching,,,,7,KCR,21487,Stephen Kolek,R,/players/stephen-kolek/21487/stats/pitching
-21,AL,W,HOU,2026-06-15,0,True,25880,Hunter Brown,R,/players/hunter-brown/25880/stats/pitching,,,,6,DET,8700,Justin Verlander,R,/players/justin-verlander/8700/stats/pitching
-21,AL,W,HOU,2026-06-16,0,True,24282,Kai-Wei Teng,R,/players/kai-wei-teng/24282/stats/pitching,,,,6,DET,17295,Framber Valdez,L,/players/framber-valdez/17295/stats/pitching
+21,AL,W,HOU,2026-06-15,0,True,25880,Hunter Brown,R,/players/hunter-brown/25880/stats/pitching,,,,6,DET,17295,Framber Valdez,L,/players/framber-valdez/17295/stats/pitching
+21,AL,W,HOU,2026-06-16,0,True,24282,Kai-Wei Teng,R,/players/kai-wei-teng/24282/stats/pitching,,,,6,DET,8700,Justin Verlander,R,/players/justin-verlander/8700/stats/pitching
 21,AL,W,HOU,2026-06-17,0,True,17969,Peter Lambert,R,/players/peter-lambert/17969/stats/pitching,,,,6,DET,22630,Keider Montero,R,/players/keider-montero/22630/stats/pitching
 22,NL,W,LAD,2026-06-07,0,True,29839,Emmet Sheehan,R,/players/emmet-sheehan/29839/stats/pitching,,,,1,LAA,22100,José Soriano,R,/players/jose-soriano/22100/stats/pitching
 22,NL,W,LAD,2026-06-09,0,False,19316,Eric Lauer,L,/players/eric-lauer/19316/stats/pitching,,,,27,PIT,33677,Paul Skenes,R,/players/paul-skenes/33677/stats/pitching
