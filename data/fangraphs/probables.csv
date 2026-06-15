@@ -169,7 +169,7 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 17,NL,C,CHC,2026-06-24,0,False,23590,Ben Brown,R,/players/ben-brown/23590/stats/pitching,,,,25,NYM,15873,Sean Manaea,L,/players/sean-manaea/15873/stats/pitching
 18,NL,C,CIN,2026-06-14,0,True,29911,Andrew Abbott,L,/players/andrew-abbott/29911/stats/pitching,,,,15,ARI,19291,Zac Gallen,R,/players/zac-gallen/19291/stats/pitching
 18,NL,C,CIN,2026-06-15,0,True,35333,Chase Burns,R,/players/chase-burns/35333/stats/pitching,,,,25,NYM,22191,Tobias Myers,R,/players/tobias-myers/22191/stats/pitching
-18,NL,C,CIN,2026-06-16,0,True,25377,Brady Singer,R,/players/brady-singer/25377/stats/pitching,,,,25,NYM,30107,Christian Scott,R,/players/christian-scott/30107/stats/pitching
+18,NL,C,CIN,2026-06-16,0,True,25377,Brady Singer,R,/players/brady-singer/25377/stats/pitching,,,,25,NYM,20302,David Peterson,L,/players/david-peterson/20302/stats/pitching
 18,NL,C,CIN,2026-06-17,0,True,26378,Nick Lodolo,L,/players/nick-lodolo/26378/stats/pitching,,,,25,NYM,33703,Nolan McLean,R,/players/nolan-mclean/33703/stats/pitching
 18,NL,C,CIN,2026-06-19,0,False,33876,Rhett Lowder,R,/players/rhett-lowder/33876/stats/pitching,,,,9,NYY,32095,Cam Schlittler,R,/players/cameron-schlittler/32095/stats/pitching
 18,NL,C,CIN,2026-06-20,0,False,29911,Andrew Abbott,L,/players/andrew-abbott/29911/stats/pitching,,,,9,NYY,30182,Will Warren,R,/players/will-warren/30182/stats/pitching
@@ -239,11 +239,11 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 24,NL,E,WSN,2026-06-24,0,True,27473,Cade Cavalli,R,/players/cade-cavalli/27473/stats/pitching,,,,26,PHI,16149,Aaron Nola,R,/players/aaron-nola/16149/stats/pitching
 25,NL,E,NYM,2026-06-14,0,True,18679,Freddy Peralta,R,/players/freddy-peralta/18679/stats/pitching,,,,16,ATL,27779,Bryce Elder,R,/players/bryce-elder/27779/stats/pitching
 25,NL,E,NYM,2026-06-15,0,False,22191,Tobias Myers,R,/players/tobias-myers/22191/stats/pitching,,,,18,CIN,35333,Chase Burns,R,/players/chase-burns/35333/stats/pitching
-25,NL,E,NYM,2026-06-16,0,False,30107,Christian Scott,R,/players/christian-scott/30107/stats/pitching,,,,18,CIN,25377,Brady Singer,R,/players/brady-singer/25377/stats/pitching
+25,NL,E,NYM,2026-06-16,0,False,20302,David Peterson,L,/players/david-peterson/20302/stats/pitching,,,,18,CIN,25377,Brady Singer,R,/players/brady-singer/25377/stats/pitching
 25,NL,E,NYM,2026-06-17,0,False,33703,Nolan McLean,R,/players/nolan-mclean/33703/stats/pitching,,,,18,CIN,26378,Nick Lodolo,L,/players/nick-lodolo/26378/stats/pitching
 25,NL,E,NYM,2026-06-18,0,False,15873,Sean Manaea,L,/players/sean-manaea/15873/stats/pitching,,,,26,PHI,16149,Aaron Nola,R,/players/aaron-nola/16149/stats/pitching
 25,NL,E,NYM,2026-06-20,0,False,18679,Freddy Peralta,R,/players/freddy-peralta/18679/stats/pitching,,,,26,PHI,20778,Cristopher Sánchez,L,/players/cristopher-sanchez/20778/stats/pitching
-25,NL,E,NYM,2026-06-21,0,False,30107,Christian Scott,R,/players/christian-scott/30107/stats/pitching,,,,26,PHI,10310,Zack Wheeler,R,/players/zack-wheeler/10310/stats/pitching
+25,NL,E,NYM,2026-06-21,0,False,22191,Tobias Myers,R,/players/tobias-myers/22191/stats/pitching,,,,26,PHI,10310,Zack Wheeler,R,/players/zack-wheeler/10310/stats/pitching
 25,NL,E,NYM,2026-06-22,0,True,33703,Nolan McLean,R,/players/nolan-mclean/33703/stats/pitching,,,,17,CHC,21690,Edward Cabrera,R,/players/edward-cabrera/21690/stats/pitching
 25,NL,E,NYM,2026-06-23,0,True,31838,Kodai Senga,R,/players/kodai-senga/31838/stats/pitching,,,,17,CHC,15440,Matthew Boyd,L,/players/matthew-boyd/15440/stats/pitching
 25,NL,E,NYM,2026-06-24,0,True,15873,Sean Manaea,L,/players/sean-manaea/15873/stats/pitching,,,,17,CHC,23590,Ben Brown,R,/players/ben-brown/23590/stats/pitching
@@ -253,7 +253,7 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 26,NL,E,PHI,2026-06-17,0,True,30091,Andrew Painter,R,/players/andrew-painter/30091/stats/pitching,,,,20,MIA,18684,Sandy Alcantara,R,/players/sandy-alcantara/18684/stats/pitching
 26,NL,E,PHI,2026-06-18,0,True,16149,Aaron Nola,R,/players/aaron-nola/16149/stats/pitching,,,,25,NYM,15873,Sean Manaea,L,/players/sean-manaea/15873/stats/pitching
 26,NL,E,PHI,2026-06-20,0,True,20778,Cristopher Sánchez,L,/players/cristopher-sanchez/20778/stats/pitching,,,,25,NYM,18679,Freddy Peralta,R,/players/freddy-peralta/18679/stats/pitching
-26,NL,E,PHI,2026-06-21,0,True,10310,Zack Wheeler,R,/players/zack-wheeler/10310/stats/pitching,,,,25,NYM,30107,Christian Scott,R,/players/christian-scott/30107/stats/pitching
+26,NL,E,PHI,2026-06-21,0,True,10310,Zack Wheeler,R,/players/zack-wheeler/10310/stats/pitching,,,,25,NYM,22191,Tobias Myers,R,/players/tobias-myers/22191/stats/pitching
 26,NL,E,PHI,2026-06-22,0,False,19959,Jesús Luzardo,L,/players/jesus-luzardo/19959/stats/pitching,,,,24,WSN,16432,Foster Griffin,L,/players/foster-griffin/16432/stats/pitching
 26,NL,E,PHI,2026-06-23,0,False,30091,Andrew Painter,R,/players/andrew-painter/30091/stats/pitching,,,,24,WSN,15823,Zack Littell,R,/players/zack-littell/15823/stats/pitching
 26,NL,E,PHI,2026-06-24,0,False,16149,Aaron Nola,R,/players/aaron-nola/16149/stats/pitching,,,,24,WSN,27473,Cade Cavalli,R,/players/cade-cavalli/27473/stats/pitching
