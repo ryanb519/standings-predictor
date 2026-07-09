@@ -57,7 +57,7 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 8,AL,C,MIN,2026-07-17,0,False,22543,Taj Bradley,R,/players/taj-bradley/22543/stats/pitching,,,,17,CHC,33829,Shota Imanaga,L,/players/shota-imanaga/33829/stats/pitching
 8,AL,C,MIN,2026-07-18,0,False,21224,Bailey Ober,R,/players/bailey-ober/21224/stats/pitching,,,,17,CHC,15440,Matthew Boyd,L,/players/matthew-boyd/15440/stats/pitching
 9,AL,E,NYY,2026-07-08,0,False,13125,Gerrit Cole,R,/players/gerrit-cole/13125/stats/pitching,,,,12,TBR,21483,Shane McClanahan,L,/players/shane-mcclanahan/21483/stats/pitching
-9,AL,E,NYY,2026-07-09,0,False,16502,Ryan Yarbrough,L,/players/ryan-yarbrough/16502/stats/pitching,,,,12,TBR,25385,Drew Rasmussen,R,/players/drew-rasmussen/25385/stats/pitching
+9,AL,E,NYY,2026-07-09,0,False,14739,Paul Blackburn,R,/players/paul-blackburn/14739/stats/pitching,,,,12,TBR,25385,Drew Rasmussen,R,/players/drew-rasmussen/25385/stats/pitching
 9,AL,E,NYY,2026-07-10,0,False,23796,Ryan Weathers,L,/players/ryan-weathers/23796/stats/pitching,,,,24,WSN,15823,Zack Littell,R,/players/zack-littell/15823/stats/pitching
 9,AL,E,NYY,2026-07-11,0,False,32095,Cam Schlittler,R,/players/cameron-schlittler/32095/stats/pitching,,,,24,WSN,9803,Miles Mikolas,R,/players/miles-mikolas/9803/stats/pitching
 9,AL,E,NYY,2026-07-12,0,False,30182,Will Warren,R,/players/will-warren/30182/stats/pitching,,,,24,WSN,27473,Cade Cavalli,R,/players/cade-cavalli/27473/stats/pitching
@@ -78,7 +78,7 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 11,AL,W,SEA,2026-07-17,0,True,22250,Logan Gilbert,R,/players/logan-gilbert/22250/stats/pitching,,,,30,SFG,17995,Logan Webb,R,/players/logan-webb/17995/stats/pitching
 11,AL,W,SEA,2026-07-18,0,True,25436,George Kirby,R,/players/george-kirby/25436/stats/pitching,,,,30,SFG,11486,Robbie Ray,L,/players/robbie-ray/11486/stats/pitching
 12,AL,E,TBR,2026-07-08,0,True,21483,Shane McClanahan,L,/players/shane-mcclanahan/21483/stats/pitching,,,,9,NYY,13125,Gerrit Cole,R,/players/gerrit-cole/13125/stats/pitching
-12,AL,E,TBR,2026-07-09,0,True,25385,Drew Rasmussen,R,/players/drew-rasmussen/25385/stats/pitching,,,,9,NYY,16502,Ryan Yarbrough,L,/players/ryan-yarbrough/16502/stats/pitching
+12,AL,E,TBR,2026-07-09,0,True,25385,Drew Rasmussen,R,/players/drew-rasmussen/25385/stats/pitching,,,,9,NYY,14739,Paul Blackburn,R,/players/paul-blackburn/14739/stats/pitching
 12,AL,E,TBR,2026-07-10,0,True,12730,Nick Martinez,R,/players/nick-martinez/12730/stats/pitching,,,,11,SEA,15689,Luis Castillo,R,/players/luis-castillo/15689/stats/pitching
 12,AL,E,TBR,2026-07-11,0,True,20253,Griffin Jax,R,/players/griffin-jax/20253/stats/pitching,,,,11,SEA,22250,Logan Gilbert,R,/players/logan-gilbert/22250/stats/pitching
 12,AL,E,TBR,2026-07-12,0,True,27932,Ian Seymour,L,/players/ian-seymour/27932/stats/pitching,,,,11,SEA,27470,Emerson Hancock,R,/players/emerson-hancock/27470/stats/pitching
