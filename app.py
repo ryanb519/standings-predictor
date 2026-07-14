@@ -370,7 +370,7 @@ with left_col:
         use_atc = st.checkbox("ATC", value=False)
 
     selected_systems = []
-    if use_steamer: selected_systems.append("steamerr")
+    if use_steamer: selected_systems.append("steamer")
     if use_fgdc: selected_systems.append("fangraphsdc")
     if use_thebat: selected_systems.append("thebat")
     if use_thebatx: selected_systems.append("thebatx")
