@@ -110,3 +110,12 @@ upload_df_to_github(ytd, repo_name, "data/fangraphs/month0.csv", "Daily update: 
 upload_df_to_github(vL, repo_name, "data/fangraphs/month13.csv", "Daily update: pitchers", github_token)
 upload_df_to_github(vR, repo_name, "data/fangraphs/month13.csv", "Daily update: pitchers", github_token)
 upload_df_to_github(l30, repo_name, "data/fangraphs/month3.csv", "Daily update: pitchers", github_token)
+
+rr = pd.DataFrame()
+for i in range(1,31):
+    data = requests.get("https://www.fangraphs.com/api/depth-charts/roster?teamid={}".format(i)).json()
+    data = pd.DataFrame(data)
+    data['teamid'] = i
+    rr = pd.concat([rr,data])
+    
+upload_df_to_github(rr, repo_name, "data/fangraphs/rr.csv", "Daily update: pitchers", github_token)
