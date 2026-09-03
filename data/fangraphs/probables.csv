@@ -115,8 +115,8 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 12,AL,E,TBR,2026-09-08,0,False,18679,Freddy Peralta,R,/players/freddy-peralta/18679/stats/pitching,,,,16,ATL,29960,AJ Smith-Shawver,R,/players/aj-smith-shawver/29960/stats/pitching
 12,AL,E,TBR,2026-09-09,0,False,20253,Griffin Jax,R,/players/griffin-jax/20253/stats/pitching,,,,16,ATL,16944,Grant Holmes,R,/players/grant-holmes/16944/stats/pitching
 12,AL,E,TBR,2026-09-10,0,False,21483,Shane McClanahan,L,/players/shane-mcclanahan/21483/stats/pitching,,,,16,ATL,10603,Chris Sale,L,/players/chris-sale/10603/stats/pitching
-12,AL,E,TBR,2026-09-11,0,True,12730,Nick Martinez,R,/players/nick-martinez/12730/stats/pitching,,,,21,HOU,17969,Peter Lambert,R,/players/peter-lambert/17969/stats/pitching
-12,AL,E,TBR,2026-09-12,0,True,25385,Drew Rasmussen,R,/players/drew-rasmussen/25385/stats/pitching,,,,21,HOU,33515,Ethan Pecko,R,/players/ethan-pecko/33515/stats/pitching
+12,AL,E,TBR,2026-09-11,0,True,12730,Nick Martinez,R,/players/nick-martinez/12730/stats/pitching,,,,21,HOU,33515,Ethan Pecko,R,/players/ethan-pecko/33515/stats/pitching
+12,AL,E,TBR,2026-09-12,0,True,25385,Drew Rasmussen,R,/players/drew-rasmussen/25385/stats/pitching,,,,21,HOU,17969,Peter Lambert,R,/players/peter-lambert/17969/stats/pitching
 13,AL,W,TEX,2026-09-02,0,True,27597,Cody Bradford,L,/players/cody-bradford/27597/stats/pitching,,,,10,ATH,25098,Jacob Lopez,L,/players/jacob-lopez/25098/stats/pitching
 13,AL,W,TEX,2026-09-03,0,True,19312,Cal Quantrill,R,/players/cal-quantrill/19312/stats/pitching,,,,12,TBR,21483,Shane McClanahan,L,/players/shane-mcclanahan/21483/stats/pitching
 13,AL,W,TEX,2026-09-04,0,True,31843,Kumar Rocker,R,/players/kumar-rocker/31843/stats/pitching,,,,12,TBR,12730,Nick Martinez,R,/players/nick-martinez/12730/stats/pitching
@@ -139,8 +139,8 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 14,AL,E,TOR,2026-09-12,0,True,29921,Spencer Arrighetti,R,/players/spencer-arrighetti/29921/stats/pitching,,,,2,BAL,24586,Kyle Bradish,R,/players/kyle-bradish/24586/stats/pitching
 15,NL,W,ARI,2026-09-02,0,True,,,,,,,,26,PHI,30091,Andrew Painter,R,/players/andrew-painter/30091/stats/pitching
 15,NL,W,ARI,2026-09-04,0,False,11156,Merrill Kelly,R,/players/merrill-kelly/11156/stats/pitching,,,,21,HOU,17606,Cristian Javier,R,/players/cristian-javier/17606/stats/pitching
-15,NL,W,ARI,2026-09-05,0,False,27782,Brandon Pfaadt,R,/players/brandon-pfaadt/27782/stats/pitching,,,,21,HOU,17969,Peter Lambert,R,/players/peter-lambert/17969/stats/pitching
-15,NL,W,ARI,2026-09-06,0,False,13164,Eduardo Rodriguez,L,/players/eduardo-rodriguez/13164/stats/pitching,,,,21,HOU,33515,Ethan Pecko,R,/players/ethan-pecko/33515/stats/pitching
+15,NL,W,ARI,2026-09-05,0,False,27782,Brandon Pfaadt,R,/players/brandon-pfaadt/27782/stats/pitching,,,,21,HOU,33515,Ethan Pecko,R,/players/ethan-pecko/33515/stats/pitching
+15,NL,W,ARI,2026-09-06,0,False,13164,Eduardo Rodriguez,L,/players/eduardo-rodriguez/13164/stats/pitching,,,,21,HOU,17969,Peter Lambert,R,/players/peter-lambert/17969/stats/pitching
 15,NL,W,ARI,2026-09-07,0,False,30003,Mitch Bratt,L,/players/mitch-bratt/30003/stats/pitching,,,,7,KCR,30184,Noah Cameron,L,/players/noah-cameron/30184/stats/pitching
 15,NL,W,ARI,2026-09-08,0,False,30412,Jose Cabrera,R,/players/jose-cabrera/30412/stats/pitching,,,,7,KCR,14078,Michael Wacha,R,/players/michael-wacha/14078/stats/pitching
 15,NL,W,ARI,2026-09-09,0,False,19291,Zac Gallen,R,/players/zac-gallen/19291/stats/pitching,,,,7,KCR,21537,Daniel Lynch IV,L,/players/daniel-lynch-iv/21537/stats/pitching
@@ -197,13 +197,13 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 21,AL,W,HOU,2026-09-02,0,True,27581,Hayden Wesneski,R,/players/hayden-wesneski/27581/stats/pitching,,,,4,CHW,21448,Davis Martin,R,/players/davis-martin/21448/stats/pitching
 21,AL,W,HOU,2026-09-03,0,True,25880,Hunter Brown,R,/players/hunter-brown/25880/stats/pitching,,,,4,CHW,15689,Luis Castillo,R,/players/luis-castillo/15689/stats/pitching
 21,AL,W,HOU,2026-09-04,0,True,17606,Cristian Javier,R,/players/cristian-javier/17606/stats/pitching,,,,15,ARI,11156,Merrill Kelly,R,/players/merrill-kelly/11156/stats/pitching
-21,AL,W,HOU,2026-09-05,0,True,17969,Peter Lambert,R,/players/peter-lambert/17969/stats/pitching,,,,15,ARI,27782,Brandon Pfaadt,R,/players/brandon-pfaadt/27782/stats/pitching
-21,AL,W,HOU,2026-09-06,0,True,33515,Ethan Pecko,R,/players/ethan-pecko/33515/stats/pitching,,,,15,ARI,13164,Eduardo Rodriguez,L,/players/eduardo-rodriguez/13164/stats/pitching
+21,AL,W,HOU,2026-09-05,0,True,33515,Ethan Pecko,R,/players/ethan-pecko/33515/stats/pitching,,,,15,ARI,27782,Brandon Pfaadt,R,/players/brandon-pfaadt/27782/stats/pitching
+21,AL,W,HOU,2026-09-06,0,True,17969,Peter Lambert,R,/players/peter-lambert/17969/stats/pitching,,,,15,ARI,13164,Eduardo Rodriguez,L,/players/eduardo-rodriguez/13164/stats/pitching
 21,AL,W,HOU,2026-09-08,0,False,27581,Hayden Wesneski,R,/players/hayden-wesneski/27581/stats/pitching,,,,26,PHI,30091,Andrew Painter,R,/players/andrew-painter/30091/stats/pitching
 21,AL,W,HOU,2026-09-09,0,False,25880,Hunter Brown,R,/players/hunter-brown/25880/stats/pitching,,,,26,PHI,20778,Cristopher Sánchez,L,/players/cristopher-sanchez/20778/stats/pitching
 21,AL,W,HOU,2026-09-10,0,False,17606,Cristian Javier,R,/players/cristian-javier/17606/stats/pitching,,,,26,PHI,10310,Zack Wheeler,R,/players/zack-wheeler/10310/stats/pitching
-21,AL,W,HOU,2026-09-11,0,False,17969,Peter Lambert,R,/players/peter-lambert/17969/stats/pitching,,,,12,TBR,12730,Nick Martinez,R,/players/nick-martinez/12730/stats/pitching
-21,AL,W,HOU,2026-09-12,0,False,33515,Ethan Pecko,R,/players/ethan-pecko/33515/stats/pitching,,,,12,TBR,25385,Drew Rasmussen,R,/players/drew-rasmussen/25385/stats/pitching
+21,AL,W,HOU,2026-09-11,0,False,33515,Ethan Pecko,R,/players/ethan-pecko/33515/stats/pitching,,,,12,TBR,12730,Nick Martinez,R,/players/nick-martinez/12730/stats/pitching
+21,AL,W,HOU,2026-09-12,0,False,17969,Peter Lambert,R,/players/peter-lambert/17969/stats/pitching,,,,12,TBR,25385,Drew Rasmussen,R,/players/drew-rasmussen/25385/stats/pitching
 22,NL,W,LAD,2026-09-02,0,True,33825,Yoshinobu Yamamoto,R,/players/yoshinobu-yamamoto/33825/stats/pitching,,,,28,STL,31910,Brycen Mautz,L,/players/brycen-mautz/31910/stats/pitching
 22,NL,W,LAD,2026-09-03,0,True,22267,Tarik Skubal,L,/players/tarik-skubal/22267/stats/pitching,,,,28,STL,33851,Quinn Mathews,L,/players/quinn-mathews/33851/stats/pitching
 22,NL,W,LAD,2026-09-04,0,True,13543,Blake Snell,L,/players/blake-snell/13543/stats/pitching,,,,24,WSN,35462,Jackson Kent,L,/players/jackson-kent/35462/stats/pitching
@@ -235,7 +235,7 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 24,NL,E,WSN,2026-09-12,0,True,29914,Andrew Alvarez,L,/players/andrew-alvarez/29914/stats/pitching,,,,1,LAA,29357,Walbert Ureña,R,/players/walbert-urena/29357/stats/pitching
 25,NL,E,NYM,2026-09-02,0,False,21546,Justin Hagenman,R,/players/justin-hagenman/21546/stats/pitching,,,,12,TBR,20253,Griffin Jax,R,/players/griffin-jax/20253/stats/pitching
 25,NL,E,NYM,2026-09-04,0,True,33703,Nolan McLean,R,/players/nolan-mclean/33703/stats/pitching,,,,30,SFG,33760,Matt Wilkinson,L,/players/matthew-wilkinson/33760/stats/pitching
-25,NL,E,NYM,2026-09-05,0,True,33891,Zac Thornton,L,/players/zachary-thornton/33891/stats/pitching,,,,30,SFG,31097,Yunior Marte,R,/players/yunior-marte/31097/stats/pitching
+25,NL,E,NYM,2026-09-05,0,True,33891,Zac Thornton,L,/players/zachary-thornton/33891/stats/pitching,,,,30,SFG,26952,Anthony Molina,R,/players/anthony-molina/26952/stats/pitching
 25,NL,E,NYM,2026-09-06,0,True,30107,Christian Scott,R,/players/christian-scott/30107/stats/pitching,,,,30,SFG,17995,Logan Webb,R,/players/logan-webb/17995/stats/pitching
 25,NL,E,NYM,2026-09-07,0,False,32157,Jonah Tong,R,/players/jonah-tong/32157/stats/pitching,,,,20,MIA,27768,Eury Pérez,R,/players/eury-perez/27768/stats/pitching
 25,NL,E,NYM,2026-09-08,0,False,15873,Sean Manaea,L,/players/sean-manaea/15873/stats/pitching,,,,20,MIA,18684,Sandy Alcantara,R,/players/sandy-alcantara/18684/stats/pitching
@@ -279,15 +279,15 @@ TeamId,League,Division,AbbName,GameDate,dh,isHome,teamSPPlayerId,teamSPPlayerNam
 29,NL,W,SDP,2026-09-07,0,True,24719,Randy Vásquez,R,/players/randy-vasquez/24719/stats/pitching,,,,24,WSN,30061,Will Dion,L,/players/will-dion/30061/stats/pitching
 29,NL,W,SDP,2026-09-08,0,True,20492,Casey Mize,R,/players/casey-mize/20492/stats/pitching,,,,24,WSN,21504,Jake Irvin,R,/players/jake-irvin/21504/stats/pitching
 29,NL,W,SDP,2026-09-09,0,True,19374,Walker Buehler,R,/players/walker-buehler/19374/stats/pitching,,,,24,WSN,35462,Jackson Kent,L,/players/jackson-kent/35462/stats/pitching
-29,NL,W,SDP,2026-09-11,0,False,15454,Nick Pivetta,R,/players/nick-pivetta/15454/stats/pitching,,,,30,SFG,31097,Yunior Marte,R,/players/yunior-marte/31097/stats/pitching
+29,NL,W,SDP,2026-09-11,0,False,15454,Nick Pivetta,R,/players/nick-pivetta/15454/stats/pitching,,,,30,SFG,26952,Anthony Molina,R,/players/anthony-molina/26952/stats/pitching
 29,NL,W,SDP,2026-09-12,0,False,11486,Robbie Ray,L,/players/robbie-ray/11486/stats/pitching,,,,30,SFG,17995,Logan Webb,R,/players/logan-webb/17995/stats/pitching
 30,NL,W,SFG,2026-09-02,0,False,30076,Landen Roupp,R,/players/landen-roupp/30076/stats/pitching,,,,27,PIT,29868,Bubba Chandler,R,/players/bubba-chandler/29868/stats/pitching
 30,NL,W,SFG,2026-09-03,0,False,31701,Blade Tidwell,R,/players/blade-tidwell/31701/stats/pitching,,,,27,PIT,,,,
 30,NL,W,SFG,2026-09-04,0,False,33760,Matt Wilkinson,L,/players/matthew-wilkinson/33760/stats/pitching,,,,25,NYM,33703,Nolan McLean,R,/players/nolan-mclean/33703/stats/pitching
-30,NL,W,SFG,2026-09-05,0,False,31097,Yunior Marte,R,/players/yunior-marte/31097/stats/pitching,,,,25,NYM,33891,Zac Thornton,L,/players/zachary-thornton/33891/stats/pitching
+30,NL,W,SFG,2026-09-05,0,False,26952,Anthony Molina,R,/players/anthony-molina/26952/stats/pitching,,,,25,NYM,33891,Zac Thornton,L,/players/zachary-thornton/33891/stats/pitching
 30,NL,W,SFG,2026-09-06,0,False,17995,Logan Webb,R,/players/logan-webb/17995/stats/pitching,,,,25,NYM,30107,Christian Scott,R,/players/christian-scott/30107/stats/pitching
 30,NL,W,SFG,2026-09-07,0,True,30076,Landen Roupp,R,/players/landen-roupp/30076/stats/pitching,,,,28,STL,29869,Michael McGreevy,R,/players/michael-mcgreevy/29869/stats/pitching
 30,NL,W,SFG,2026-09-08,0,True,31701,Blade Tidwell,R,/players/blade-tidwell/31701/stats/pitching,,,,28,STL,33851,Quinn Mathews,L,/players/quinn-mathews/33851/stats/pitching
 30,NL,W,SFG,2026-09-09,0,True,33760,Matt Wilkinson,L,/players/matthew-wilkinson/33760/stats/pitching,,,,28,STL,26108,Andre Pallante,R,/players/andre-pallante/26108/stats/pitching
-30,NL,W,SFG,2026-09-11,0,True,31097,Yunior Marte,R,/players/yunior-marte/31097/stats/pitching,,,,29,SDP,15454,Nick Pivetta,R,/players/nick-pivetta/15454/stats/pitching
+30,NL,W,SFG,2026-09-11,0,True,26952,Anthony Molina,R,/players/anthony-molina/26952/stats/pitching,,,,29,SDP,15454,Nick Pivetta,R,/players/nick-pivetta/15454/stats/pitching
 30,NL,W,SFG,2026-09-12,0,True,17995,Logan Webb,R,/players/logan-webb/17995/stats/pitching,,,,29,SDP,11486,Robbie Ray,L,/players/robbie-ray/11486/stats/pitching
